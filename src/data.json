@@ -1,0 +1,265 @@
+[
+  {
+    "id": "1",
+    "title": "aoe2.net",
+    "url": "https://aoe2.net/",
+    "description": "player profiles and ELOs",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "aoe2techtree.net",
+    "url": "https://aoe2techtree.net/",
+    "description": "civilizations tech trees",
+    "tags": [
+      "tool",
+      "techTree"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Halfon",
+    "url": "https://halfon.aoe2.se/",
+    "description": "Building and tech reference",
+    "tags": [
+      "tool",
+      "techTree"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Siege Engineers Recorded Game Database",
+    "url": "https://aoe2recs.com/",
+    "description": "Recorded games directory and stats on players, civs and more.",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "aoe2insights",
+    "url": "https://www.aoe2insights.com/",
+    "description": "Comprehensive player profiles and detailed match analysis for Age of Empires 2 Definitive Edition",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "aoestats",
+    "url": "https://aoestats.io/",
+    "description": "aoestats aggregates the latest ranked matches for Age of Empires II and provides in-depth data and statistics on a civilization basis; stats include: win rate, play rate, win rate vs. game length, and more!",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Rating charts",
+    "url": "https://ratings.aoe2.se/",
+    "description": "Charts showing where a player lies within the AOE rankings.",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "aoe2.club",
+    "url": "https://aoe2.club/",
+    "description": "Rankings, Stats and more",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Captains Mode",
+    "url": "https://aoe2cm.net/",
+    "description": "Draft tool to picks civs for online games and tournaments.",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "aoe2map",
+    "url": "https://aoe2map.net/",
+    "description": "Directory of downloadable maps.",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Professional Age of Empires 2 Calendar",
+    "url": "https://aoe2calendar.com/",
+    "description": "Calendar of pro tournaments",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Hotkey Editor",
+    "url": "https://aokhotkeys.appspot.com/",
+    "description": "A hotkey editor with some popular presets",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Captains Mode",
+    "url": "https://aoe2cm.net/",
+    "description": "Captains mode is a turn-based civilization picker",
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "AOE2Map",
+    "url": "https://aoe2map.net/",
+    "description": "aoe2map.net is a place to share your random map scripts (rms) for Age of Empires II",
+    "tags": []
+  },
+  {
+    "id": "15",
+    "title": "Build Order Guide",
+    "url": "https://buildorderguide.com/#/",
+    "description": "Build Order Guide",
+    "tags": [
+      "tool",
+      "buildOrder"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Age of Empires Federation of Clans",
+    "url": "https://aoecf.com/",
+    "description": "The Federation offers a motivation for players to engage with clans and a motivation for clans to be active and participate in clan events and tournaments.",
+    "tags": [
+      "community"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "AoE Nexus",
+    "url": "https://aoenexus.com/",
+    "description": "Player stats by country and community links",
+    "tags": [
+      "stats"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "aoecompanion",
+    "url": "https://aoecompanion.com/",
+    "description": "Directory of pro and community build orders. Build and share you own build orders.",
+    "tags": [
+      "buildOrder",
+      "guide"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "aoe2.guide",
+    "url": "https://aoe2.guide/",
+    "description": "Tips, guides and build orders.",
+    "tags": [
+      "buildOrder",
+      "guide"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Fandom",
+    "url": "https://ageofempires.fandom.com/wiki/Age_of_Empires_II:Portal",
+    "description": "Everything you need to know from civs, to strategies to tech trees.",
+    "tags": [
+      "wiki"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "liquipedia",
+    "url": "https://liquipedia.net/ageofempires/Main_Page",
+    "description": "Comprehensive Age of Empires wiki with articles covering everything from tournaments, to competitive players and teams.",
+    "tags": [
+      "wiki"
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Reddit r/aoe2",
+    "url": "https://www.reddit.com/r/aoe2/",
+    "description": "r/aoe2: Community for AoE2 players",
+    "tags": [
+      "community"
+    ]
+  },
+  {
+    "id": "23",
+    "title": "AoEZone",
+    "url": "https://www.aoezone.net/",
+    "description": "Daily news on events and tournaments, recorded games, tips and tricks, patches, tools, maps.",
+    "tags": [
+      "community"
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Siege Engineers",
+    "url": "https://aoe2.se/",
+    "description": "Directory of tools and resources.",
+    "tags": [
+      "tool",
+      "guide"
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Spirit Of The Law",
+    "url": "https://www.youtube.com/channel/UChzLZJo-SxuPHz-oYKAIC_g",
+    "description": "the maths of AoE2",
+    "tags": [
+      "guide",
+      "youtube"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "AoE 2 Database",
+    "url": "https://play.google.com/store/apps/details?id=com.aoedb",
+    "description": "AOE database of civs, units and tech trees.",
+    "tags": [
+      "mobile",
+      "techTree"
+    ]
+  },
+  {
+    "id": "27",
+    "title": "openage",
+    "url": "https://openage.sft.mx/",
+    "description": "a free (as in freedom) game engine to implement Age of Empires",
+    "tags": [
+      "games"
+    ]
+  },
+  {
+    "id": "28",
+    "title": "0 A.D.",
+    "url": "https://play0ad.com/",
+    "description": "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.",
+    "tags": [
+      "games"
+    ]
+  }
+]
