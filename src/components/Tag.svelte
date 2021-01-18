@@ -12,4 +12,4 @@
 </style>
 
 
-<div class={`rounded-full text-sm py-1 px-3 font-medium ${colorClass} text-white mr-2`}>{label}</div>
+<div class={`rounded-full text-sm py-1 px-3 mt-1 font-medium ${colorClass} text-white mr-2`}>{label}</div>
