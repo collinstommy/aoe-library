@@ -8,8 +8,8 @@
 <style>
 </style>
 <Router url="">
-	<Route path="/submit"><Library /></Route>
-	<Route path="/"><Submit /></Route>
+	<Route path="/"><Library /></Route>
+	<Route path="/submit"><Submit /></Route>
 </Router>
 
 
