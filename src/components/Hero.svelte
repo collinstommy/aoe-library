@@ -7,7 +7,7 @@
 
 </style>
 
-<section class="sections
+<section class="
   text-center
   bg-blue-800
   w-100

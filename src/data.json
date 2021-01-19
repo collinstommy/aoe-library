@@ -261,5 +261,99 @@
     "tags": [
       "games"
     ]
+  },
+  {
+    "id": "29",
+    "title": "Spirit of the Law",
+    "url": "https: //youtube.com/c/SpiritOfTheLaw",
+    "description": "Videos on civilization overviews, commentaries, or fun questions exploring the mechanics of AoE2.,",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "30",
+    "title": "T-West",
+    "url": "https: //youtube.com/c/TWestYT",
+    "description": "Videos on game mechanics, campaigns, and tutorials",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Hera",
+    "url": "https: //youtube.com/c/HeraAgeofEmpires2",
+    "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Survivalist",
+    "url": "https: //youtube.com/c/SurvivalistAoE",
+    "description": "High level games as well as tutorials videos including build orders and coaching streams.",
+    "tags": [
+      "youtube",
+      "guide"
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Hjörleif",
+    "url": "https: //youtube.com/c/Hjoerleif",
+    "description": "Detailed videos on how to improve specific areas of the your game including boarding luring and unit control.",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "34",
+    "title": "T90",
+    "url": "https://www.youtube.com/channel/UCZUT79WUUpZlZ-XMF7l4CFg",
+    "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Humza Crumza - Youtube",
+    "url": "https://www.youtube.com/channel/UCHgjuvs1eqjdS0pyxMh00Sw",
+    "description": "Civilization specific and non standard build orders.",
+    "tags": [
+      "youtube",
+      "buildOrder"
+    ]
+  },
+  {
+    "id": "36",
+    "title": "T90 - Twitch",
+    "url": "https://www.twitch.tv/t90official",
+    "description": "Low elo games, high level ranked and tournament streaming.",
+    "tags": [
+      "twitch"
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Hera - Twitch",
+    "url": "https://www.twitch.tv/hera",
+    "description": "High level AOE",
+    "tags": [
+      "twitch",
+      "buildOrder",
+      "guide"
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Viper - Twitch",
+    "url": "https://www.twitch.tv/viper",
+    "description": "High level AOE",
+    "tags": [
+      "twitch"
+    ]
   }
 ]

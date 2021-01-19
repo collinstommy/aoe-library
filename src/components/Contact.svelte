@@ -4,10 +4,9 @@
 
   hbspt.forms.create({
     portalId: "4324853",
-    formId: "38edaaac-15d2-4611-a776-f79f37614bec",
-    target: ".submit-form"
+	  formId: "9968d7b0-2a16-4150-bde7-0d914668f5fa",
+    target: ".contact-form"
   });
-
 </script>
 
 <style>
@@ -16,13 +15,12 @@
 
 <main class="flex flex-col justify-center items-center">
   <Hero
-    title="Submit a new item"
-    description="Add a new tools or site by filling in the form below"
+    title="Contact"
   />
   <div>
     <Link class="py-4 flex hover:underline">&#8592; Back</Link>
     <section class="section">
-      <div class="submit-form" />
+      <div class="contact-form" />
     </section>
   </div>
 </main>

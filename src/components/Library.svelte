@@ -58,7 +58,7 @@
 	<div class="p-2 md:p-4 item-container">
 		<Filters />
 		<section class="grid grid-cols-2 md:grid-cols-3 gap-4 section text-gray-900">
-			{#each selectedItems as { title, url, description, tags }, i}
+			{#each selectedItems as { title, url, description, tags = [] }, i}
 				<a class="link" href="{url}" target="_blank">
 					<article class="card hover:shadow-md rounded-md p-4 md:p-8 flex flex-col justify-between transition-shadow border border-gray-200 bg-white">
 					<div>

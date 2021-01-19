@@ -24,7 +24,7 @@
       text: ''
     },
     youtube: {
-      colorClass: 'bg-pink-500',
+      colorClass: 'bg-yellow-800',
       text: ''
     },
     twitch: {

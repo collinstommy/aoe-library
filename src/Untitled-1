@@ -1,0 +1,49 @@
+{
+  id: "2",
+title:Spirit of the Law,
+url: https://youtube.com/c/SpiritOfTheLaw,
+description: Videos on civilization overviews, commentaries, or fun questions exploring the mechanics of AoE2.,
+tags: [
+  'youtube'
+]
+}
+
+{
+  id: "2",
+title:T-West,
+url: https://youtube.com/c/TWestYT,
+description: Videos on game mechanics, campaigns, and tutorials
+tags: [
+  'youtube'
+]
+}
+
+{
+  id: "2",
+title:Hera,
+url: https://youtube.com/c/HeraAgeofEmpires2,
+description: Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.
+tags: [
+  'youtube'
+]
+}
+
+{
+  id: "2",
+title:Survivalist,
+url: https://youtube.com/c/SurvivalistAoE,
+description: 'High level games as well as tutorials videos including build orders and coaching streams',
+tags: [
+  'youtube'
+]
+}
+
+{
+  id: "2",
+title:Hjörleif,
+url: https://youtube.com/c/Hjoerleif,
+description: 'Detailed videos on how to improve specific areas of the your game including boarding luring and unit control',
+tags: [
+  'youtube'
+]
+}

@@ -13,7 +13,7 @@
 
 <section class="w-full section flex flex-col my-5">
 	<h3 class="text-xl mb-2">Filter by:</h3>
-	<div class="flex items-start">
+	<div class="flex items-start flex-col md:flex-row">
 		<div class="flex flex-wrap">
 			{#each tags as [key, value]}
 				<label class={`
@@ -49,7 +49,8 @@
 				rounded-md
 				text-white
 				hover:bg-blue-500
-				whitespace-nowrap"
+				whitespace-nowrap
+				mt-3"
 			>
 				Add +
 			</button>
