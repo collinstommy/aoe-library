@@ -12,6 +12,7 @@
   @tailwind components;
 
   @tailwind utilities;
+  @tailwind colors;
 
 </style>
 <Router url="">
