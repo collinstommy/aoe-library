@@ -1,23 +1,10 @@
-# svelte app
+# AOE Library
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template-webpack.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template-webpack svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+[AOE Library](https://www.aoelibrary.com) is a directory of useful information and tools for Age of Empires 2.
 
 ## Get started
 
-Install the dependencies...
-
 ```bash
-cd svelte-app
 npm install
 ```
 
@@ -29,36 +16,10 @@ npm run dev
 
 Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
+## Contributing
 
-## Deploying to the web
+## New Features
+Before creating a pull request please create an issue so that the idea can be discussed.
 
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+## Bug Fixes / New Data
+Create a pull request and I will review and merge.
