@@ -1,7 +1,7 @@
 
   export const TAGS = {
     tool: {
-      colorClass: 'bg-green-200',
+      colorClass: 'bg-green-100',
       fontColor: 'text-green-700',
     },
     buildOrder: {
@@ -30,13 +30,13 @@
       text: ''
     },
     youtube: {
-      colorClass: 'bg-yellow-700',
-      fontColor: 'text-yellow-100',
+      colorClass: 'bg-red-700',
+      fontColor: 'text-red-100',
       text: ''
     },
     twitch: {
       colorClass: 'bg-purple-700',
-      fontColor: 'text-purple-200',
+      fontColor: 'text-purple-100',
       text: ''
     },
     games: {
@@ -45,13 +45,13 @@
       text: ''
     },
     mobile: {
-      colorClass: 'bg-gray-700',
-      fontColor: 'text-gray-200',
+      colorClass: 'bg-yellow-700',
+      fontColor: 'text-yellow-100',
       text: ''
     },
     techTree: {
-      colorClass: 'bg-purple-700',
-      fontColor: 'text-purple-100',
+      colorClass: 'bg-gray-700',
+      fontColor: 'text-gray-200',
       text: 'tech tree'
     },
   };

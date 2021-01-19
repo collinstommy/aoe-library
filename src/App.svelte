@@ -7,8 +7,14 @@
 
 </script>
 
-<style>
+<style global lang="postcss">
+  @tailwind base;
+  @tailwind components;
+
+  @tailwind utilities;
+
 </style>
+#
 <Router url="">
 	<Route path="/"><Library /></Route>
 	<Route path="/submit"><Submit /></Route>

@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const sveltePreprocess = require('svelte-preprocess');
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
@@ -28,7 +29,18 @@ module.exports = {
 					loader: 'svelte-loader',
 					options: {
 						emitCss: true,
-						hotReload: true
+						hotReload: true,
+						preprocess: sveltePreprocess({
+							// https://github.com/kaisermann/svelte-preprocess/#user-content-options
+							sourceMap: !prod,
+							postcss: {
+								plugins: [
+									require("tailwindcss"),
+									// require("autoprefixer"),
+									require("postcss-nesting")
+								],
+							},
+						}),
 					}
 				}
 			},
@@ -51,10 +63,10 @@ module.exports = {
 			filename: '[name].css'
 		})
 	],
-	devtool: prod ? false: 'source-map',
+	devtool: prod ? false : 'source-map',
 	devServer: {
-    historyApiFallback: {
-      index: 'index.html'
-    }
-  }
+		historyApiFallback: {
+			index: 'index.html'
+		}
+	}
 };
