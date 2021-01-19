@@ -16,10 +16,9 @@ npm run dev
 
 Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
-## Contributing
+## Proposed Features
 
-## New Features
-Before creating a pull request please create an issue so that the idea can be discussed.
-
-## Bug Fixes / New Data
-Create a pull request and I will review and merge.
+- [ ] Voting on items - users can star an item
+- [ ] Set up a database for items which can be directly populated via the form. Would required admin approval.
+- [ ] Featured Items. New tools or sites could be featured for a period of time. These would have a different UI treatment and appear at the top of the directory
+- [ ] Pagination

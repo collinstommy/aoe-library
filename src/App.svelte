@@ -14,7 +14,6 @@
   @tailwind utilities;
 
 </style>
-#
 <Router url="">
 	<Route path="/"><Library /></Route>
 	<Route path="/submit"><Submit /></Route>
