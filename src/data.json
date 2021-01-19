@@ -1,11 +1,40 @@
 [
   {
+    "id": "18",
+    "title": "aoecompanion",
+    "url": "https://aoecompanion.com/",
+    "description": "Directory of pro and community build orders. Build and share you own build orders.",
+    "tags": [
+      "buildOrder",
+      "guide"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "aoestats",
+    "url": "https://aoestats.io/",
+    "description": "aoestats aggregates the latest ranked matches for Age of Empires II and provides in-depth data and statistics on a civilization basis; stats include: win rate, play rate, win rate vs. game length, and more!",
+    "tags": [
+      "tool",
+      "stats"
+    ]
+  },
+  {
     "id": "1",
     "title": "aoe2.net",
     "url": "https://aoe2.net/",
     "description": "player profiles and ELOs",
     "tags": [
       "tool"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Fandom",
+    "url": "https://ageofempires.fandom.com/wiki/Age_of_Empires_II:Portal",
+    "description": "Everything you need to know from civs, to strategies to tech trees.",
+    "tags": [
+      "wiki"
     ]
   },
   {
@@ -43,16 +72,6 @@
     "title": "aoe2insights",
     "url": "https://www.aoe2insights.com/",
     "description": "Comprehensive player profiles and detailed match analysis for Age of Empires 2 Definitive Edition",
-    "tags": [
-      "tool",
-      "stats"
-    ]
-  },
-  {
-    "id": "6",
-    "title": "aoestats",
-    "url": "https://aoestats.io/",
-    "description": "aoestats aggregates the latest ranked matches for Age of Empires II and provides in-depth data and statistics on a civilization basis; stats include: win rate, play rate, win rate vs. game length, and more!",
     "tags": [
       "tool",
       "stats"
@@ -124,13 +143,6 @@
     ]
   },
   {
-    "id": "14",
-    "title": "AOE2Map",
-    "url": "https://aoe2map.net/",
-    "description": "aoe2map.net is a place to share your random map scripts (rms) for Age of Empires II",
-    "tags": []
-  },
-  {
     "id": "15",
     "title": "Build Order Guide",
     "url": "https://buildorderguide.com/#/",
@@ -159,16 +171,6 @@
     ]
   },
   {
-    "id": "18",
-    "title": "aoecompanion",
-    "url": "https://aoecompanion.com/",
-    "description": "Directory of pro and community build orders. Build and share you own build orders.",
-    "tags": [
-      "buildOrder",
-      "guide"
-    ]
-  },
-  {
     "id": "19",
     "title": "aoe2.guide",
     "url": "https://aoe2.guide/",
@@ -176,15 +178,6 @@
     "tags": [
       "buildOrder",
       "guide"
-    ]
-  },
-  {
-    "id": "20",
-    "title": "Fandom",
-    "url": "https://ageofempires.fandom.com/wiki/Age_of_Empires_II:Portal",
-    "description": "Everything you need to know from civs, to strategies to tech trees.",
-    "tags": [
-      "wiki"
     ]
   },
   {
@@ -319,7 +312,7 @@
   },
   {
     "id": "35",
-    "title": "Humza Crumza - Youtube",
+    "title": "Humza Crumza",
     "url": "https://www.youtube.com/channel/UCHgjuvs1eqjdS0pyxMh00Sw",
     "description": "Civilization specific and non standard build orders.",
     "tags": [
