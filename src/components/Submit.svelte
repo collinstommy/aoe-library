@@ -1,28 +1,9 @@
 <script>
-  import Hero from './Hero';  
-	import { Link } from 'svelte-routing';
-
-  hbspt.forms.create({
-    portalId: "4324853",
-    formId: "38edaaac-15d2-4611-a776-f79f37614bec",
-    target: ".submit-form"
-  });
-
+	import Form from './Form';
 </script>
 
-<style>
-
-</style>
-
-<main class="flex flex-col justify-center items-center">
-  <Hero
-    title="Submit a new item"
-    description="Add a new tools or site by filling in the form below"
-  />
-  <div>
-    <Link class="py-4 flex hover:underline">&#8592; Back</Link>
-    <section class="section">
-      <div class="submit-form" />
-    </section>
-  </div>
-</main>
+<Form
+  formId="38edaaac-15d2-4611-a776-f79f37614bec"
+  title="Submit a new item"
+  description="Add a new tools or site by filling in the form below"	
+/>

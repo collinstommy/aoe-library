@@ -17,8 +17,12 @@
 </style>
 <Router url="">
 	<Route path="/"><Library /></Route>
-	<Route path="/submit"><Submit /></Route>
-	<Route path="/contact"><Contact /></Route>
+	<Route path="/submit">
+		<Submit />
+	</Route>
+	<Route path="/contact">
+		<Contact />
+	</Route>
 	<Footer />
 </Router>
 
