@@ -348,5 +348,41 @@
     "tags": [
       "twitch"
     ]
+  },
+  {
+    "id": "40",
+    "title": "AOE ELO",
+    "url": "https://www.aoe-elo.com",
+    "description": "AoE II player rating, based only on tournament games",
+    "tags": [
+      "tools"
+    ]
+  },
+  {
+    "id": "41",
+    "title": "",
+    "url": "https://www.youtube.com/c/AgeofNoob",
+    "description": "Age of Noob's YouTube channel!",
+    "tags": [
+      "youtube"
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Civilization Tool - Age of Noob",
+    "url": "http://tiny.cc/CivilizationTool",
+    "description": "Civilization Tool created by Age of Noob for beginner players!",
+    "tags": [
+      "tools"
+    ]
+  },
+  {
+    "id": "43",
+    "title": "AoE2 DE Patcher",
+    "url": "https://github.com/DJSchaffner/aoe2de_patcher",
+    "description": "A tool for patching AoE2 DE to previous versions of the game. (Steam version only)",
+    "tags": [
+      "tools"
+    ]
   }
 ]
