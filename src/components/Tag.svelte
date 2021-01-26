@@ -3,7 +3,7 @@
   
   export let tag;
 
-  const { colorClass, text, fontColor } = TAGS[tag];
+  const { colorClass, text, fontColor } = TAGS[tag] || {};
   const label = text || tag;
 </script>
 	

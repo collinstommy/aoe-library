@@ -345,12 +345,12 @@
     "url": "https://www.aoe-elo.com",
     "description": "AoE II player rating, based only on tournament games",
     "tags": [
-      "tools"
+      "tool"
     ]
   },
   {
     "id": "41",
-    "title": "",
+    "title": "Age of Noob YouTube",
     "url": "https://www.youtube.com/c/AgeofNoob",
     "description": "Age of Noob's YouTube channel!",
     "tags": [
@@ -363,7 +363,7 @@
     "url": "http://tiny.cc/CivilizationTool",
     "description": "Civilization Tool created by Age of Noob for beginner players!",
     "tags": [
-      "tools"
+      "tool"
     ]
   },
   {
@@ -372,7 +372,7 @@
     "url": "https://github.com/DJSchaffner/aoe2de_patcher",
     "description": "A tool for patching AoE2 DE to previous versions of the game. (Steam version only)",
     "tags": [
-      "tools"
+      "tool"
     ]
   }
 ]
