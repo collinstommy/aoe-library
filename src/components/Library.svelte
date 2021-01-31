@@ -1,9 +1,12 @@
 <script>
-	import items from '../data.json';
-	import Tag from './Tag';
+	import dayjs from 'dayjs';
+	
+	import dataItems from '../data.json';
 	import Filters from './Filters';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero';
+	import Card from './Card';
+	
 
 	let activeFilters = [];
 
@@ -11,9 +14,26 @@
 		activeFilters = value;
 	});
 
-	$: selectedItems = activeFilters.length
-		? items.filter(({ tags }) => tags.some(tag => activeFilters.includes(tag)))
-		: items;
+	const getIsNew = epocDate => epocDate && dayjs(epocDate).diff(Date.now(), 'day') < 10;
+
+	const sortItems = (filters, array) => {
+		const filtered = filters.length
+		? array.filter(({ tags }) => tags.some(tag => filters.includes(tag)))
+		: array;
+		
+		filtered.sort((a, b) => {
+			const dateA = a.dateAdded;
+			const dateB = b.dateAdded;
+			const isANew = getIsNew(dateA);
+			const isBNew = getIsNew(dateB);
+			if(isANew && isBNew) return 0;
+			if(isANew) return -1;
+			return 1;
+		});
+		return filtered;
+	};
+
+	$: selectedItems = sortItems(activeFilters, dataItems);
 	
 </script>
 	
@@ -22,32 +42,11 @@
 		display: flex;
 		justify-content: center;
 	}
-
-	.link {
-		color: inherit;
-	}
-
-	.link:hover {
-		text-decoration: none;
-	}
-
-	.card {
-		height: 100%;
-	}
-
 	.item-container {
 		min-height: 100vh;
 	}
 
-	@media (max-width: 640px){
-		.description {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: -webkit-box;
-			-webkit-line-clamp: 5;
-			-webkit-box-orient: vertical;
-		}	
-	}
+
 </style>
 
 <main class="wrapper flex flex-col items-center">
@@ -58,20 +57,8 @@
 	<div class="p-2 md:p-4 item-container">
 		<Filters />
 		<section class="grid grid-cols-2 md:grid-cols-3 gap-4 section text-gray-900">
-			{#each selectedItems as { title, url, description, tags = [] } (title)}
-				<a class="link" href="{url}" target="_blank">
-					<article class="card hover:shadow-md rounded-md p-4 md:p-8 flex flex-col justify-between transition-shadow border border-gray-200 bg-white">
-					<div>
-						<h2 class="md:text-2xl text-xl">{title}</h2>
-						<p class="description mt-4 md:leading-relaxed">{description}</p>
-					</div>
-					<div class="flex flex-wrap md:mt-8 mt-3">
-						{#each tags as tag}
-							<Tag tag={tag} />
-						{/each}
-					</div>
-				</article>
-				</a>
+			{#each selectedItems as item (item.title)}
+				<Card {...item} />
 			{/each}
 		</section>
 	</div>
