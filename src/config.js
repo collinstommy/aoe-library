@@ -45,8 +45,8 @@
       text: ''
     },
     mobile: {
-      colorClass: 'bg-yellow-700',
-      fontColor: 'text-yellow-100',
+      colorClass: 'bg-pink-600',
+      fontColor: 'text-pink-100',
       text: ''
     },
     techTree: {
