@@ -389,5 +389,137 @@
       "techTree"
     ],
     "dateAdded": 1612111441
+  },
+  {
+    "id": "45",
+    "title": "DE Replays Manager",
+    "url": "https://github.com/gregstein/DE-Replays-Manager",
+    "description": "Manage Age of Empires 2 Definitive Replays & Downgrade or Upgrade to any version",
+    "tags": [
+      "tool"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "46",
+    "title": "Villagers Required",
+    "url": "https://aoe2-de-tools.herokuapp.com/villagers-required.html",
+    "description": "Number of Villagers Required to Sustain Constant Unit Production",
+    "tags": [
+      "tool"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "47",
+    "title": "AoE2 Calculator",
+    "url": "https://gbts.github.io/aoe2calc/",
+    "description": "Compare unit stats and see who wins in a fight",
+    "tags": [
+      "tool"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "48",
+    "title": "Unit Production Calculator",
+    "url": "https://grishrl.github.io/",
+    "description": "Calculate the number of villagers on each resource needed to sustain production",
+    "tags": [
+      "tool"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "49",
+    "title": "ZeroEmpires",
+    "url": "https://www.youtube.com/c/ZeroEmpires",
+    "description": "Strategy guides, tips and tricks regularly uploaded",
+    "tags": [
+      "youtube",
+      "guide"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "50",
+    "title": "MembTV YouTube",
+    "url": "https://www.youtube.com/c/MembAgeofEmpires2",
+    "description": "MembTV is one of the most veteran Twitch streamers in the Age of Empires community. Casts of pro games and tournaments",
+    "tags": [
+      "youtube"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "51",
+    "title": "Nili YouTube",
+    "url": "https://www.youtube.com/c/NiliAoE2",
+    "description": "Age of Empires 2 Tournament Commentator, Tournament Organizer and high level player",
+    "tags": [
+      "youtube"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "52",
+    "title": "TaToH YouTube",
+    "url": "https://www.youtube.com/channel/UCtPQLL9KACyYzoYXiMl1Nkg",
+    "description": "Soy Roberto, o más conocido como TaToH, y soy jugador profesional de Age of Empires II. Ahora mismo formo parte de Gamer Legion junto a DauT, TheViper, Nili, Slam y JorDan.",
+    "tags": [
+      "youtube"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "53",
+    "title": "Daut YouTube",
+    "url": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
+    "description": "AOE2 Pro Player - known as The Lord",
+    "tags": [
+      "youtube"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "54",
+    "title": "MBL YouTube",
+    "url": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
+    "description": "High level player with uploads of streams.",
+    "tags": [
+      "youtube"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "55",
+    "title": "Survivalist Twitch",
+    "url": "https://www.twitch.tv/survivalistaoe2de",
+    "description": "Having fun climbing the AOE2DE 1v1 RM ladder! 28 year old Canadian from the west coast. Playing at 1900+ 1v1 RM level. Coaching streams and high level AOE",
+    "tags": [
+      "twitch",
+      "guide"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "56",
+    "title": "grathwrang",
+    "url": "https://www.twitch.tv/grathwrang",
+    "description": "30 year old former PA announcer from Toronto, Canada who pushes streaming software and his own sanity to it's limits to bring you entertaining content!",
+    "tags": [
+      "twitch"
+    ],
+    "dateAdded": 1613913116585
+  },
+  {
+    "id": "57",
+    "title": "aoc_ashleylynn",
+    "url": "https://www.twitch.tv/aoc_ashleylynn",
+    "description": "Ranked games and tournament casts",
+    "tags": [
+      "twitch"
+    ],
+    "dateAdded": 1613913116585
   }
 ]
