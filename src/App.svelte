@@ -14,6 +14,16 @@
   @tailwind utilities;
   @tailwind colors;
 
+	@layer base {
+		h1 {
+			@apply text-5xl;
+		}
+		h2 {
+			@apply text-5xl;
+		}
+	}
+
+
 </style>
 <Router url="">
 	<Route path="/"><Library /></Route>
