@@ -20,6 +20,21 @@
 
 	$: selectedItems = sortItems(activeFilters, dataItems);
 
+// 	const url = `
+// https://id.twitch.tv/oauth2/authorize
+// ?client_id=e6hpabm5qkbhp1tmv20oe6nu0556gr
+// &redirect_uri=http://localhost:8080/callback
+// &response_type=code
+// &scope=user:read:email
+// 	`
+
+		const url = `
+https://id.twitch.tv/oauth2/authorize
+?client_id=e6hpabm5qkbhp1tmv20oe6nu0556gr
+&redirect_uri=http://localhost:3000/dev/auth/twitch/callback
+&response_type=code
+&scope=user:read:email
+	`;
 
 </script>
 	
@@ -39,8 +54,11 @@
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	/>
-	<a href={`https://id.twitch.tv/oauth2/authorize?client_id=e6hpabm5qkbhp1tmv20oe6nu0556gr&redirect_uri=http://localhost:8080&response_type=token&scope=user:read:email`}>
+	<a href={url}>
 		twitch
+	</a>
+	<a href="http://localhost:3000/dev/test">
+		test cookie
 	</a>
 	<div class="p-4 md:p-4 item-container">
 		<Filters />

@@ -3,6 +3,7 @@
 	import Footer from './components/Footer'; 
 	import Submit from './components/Submit'; 
 	import Contact from './components/Contact'; 
+	import AuthCallback from './components/AuthCallback'; 
 	import { Router, Link, Route } from 'svelte-routing';
 
 </script>
@@ -27,12 +28,9 @@
 </style>
 <Router url="">
 	<Route path="/"><Library /></Route>
-	<Route path="/submit">
-		<Submit />
-	</Route>
-	<Route path="/contact">
-		<Contact />
-	</Route>
+	<Route path="submit" component="{Submit}" />
+	<Route path="contact" component="{Contact}" />
+	<Route path="callback" component="{AuthCallback}" />
 	<Footer />
 </Router>
 
