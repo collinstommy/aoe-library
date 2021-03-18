@@ -42,7 +42,7 @@ export let dateAdded;
 
 <a class="link" href="{url}" target="_blank">
   <article class="card hover:shadow-md rounded-md p-4 md:p-8 flex flex-col justify-between transition-shadow border border-gray-200 bg-white">
-    {#if dateAdded}
+    {#if false}
       <div class="
         ribbon
         bg-blue-800
