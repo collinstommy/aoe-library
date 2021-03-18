@@ -1,12 +1,14 @@
 <script>
 import Tag from './Tag';
+import Icon from './Icon';
+import isNew from '../lib/isNew';
 
 export let url;
 export let title;
 export let description;
-export let tags;
 export let dateAdded;
 
+const isNewItem = isNew(dateAdded);
 </script>
 
 <style>
@@ -41,8 +43,21 @@ export let dateAdded;
 </style>
 
 <a class="link" href="{url}" target="_blank">
-  <article class="card hover:shadow-md rounded-md p-4 md:p-8 flex flex-col justify-between transition-shadow border border-gray-200 bg-white">
-    {#if dateAdded}
+  <article class="card
+    hover:shadow-md
+    rounded-md
+    p-4
+    flex
+    flex-col
+    justify-between
+    transition-shadow
+    border
+    border-gray-200
+    bg-white
+
+    md:p-8"
+  >
+    {#if isNewItem}
       <div class="
         ribbon
         bg-blue-800
@@ -61,10 +76,13 @@ export let dateAdded;
       <h2 class="md:text-2xl text-xl">{title}</h2>
       <p class="description mt-4 md:leading-relaxed">{description}</p>
     </div>
-    <div class="flex flex-wrap md:mt-8 mt-3">
-      {#each tags as tag}
-        <Tag tag={tag} />
-      {/each}
+    <div class="
+      flex
+      flex-wrap
+      md:mt-8
+      mt-3">
+      <Icon type="twitch" />
+      <Icon type="youtube" />
     </div>
   </article>
 </a>

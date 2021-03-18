@@ -255,15 +255,6 @@
     ]
   },
   {
-    "id": "31",
-    "title": "Hera",
-    "url": "https: //youtube.com/c/HeraAgeofEmpires2",
-    "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
-    "tags": [
-      "youtube"
-    ]
-  },
-  {
     "id": "32",
     "title": "Survivalist",
     "url": "https: //youtube.com/c/SurvivalistAoE",
@@ -312,9 +303,11 @@
   },
   {
     "id": "37",
-    "title": "Hera - Twitch",
-    "url": "https://www.twitch.tv/hera",
-    "description": "High level AOE",
+    "title": "Hera",
+    "twitch": "https://www.twitch.tv/hera",
+    "youtube": "https: //youtube.com/c/HeraAgeofEmpires2",
+    "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
+    "dateAdded": 1612111441,
     "tags": [
       "twitch",
       "buildOrder",
@@ -323,8 +316,10 @@
   },
   {
     "id": "38",
-    "title": "Viper - Twitch",
-    "url": "https://www.twitch.tv/viper",
+    "title": "Viper ",
+    "url": "",
+    "twitch": "https://www.twitch.tv/viper",
+    "youtube": "https://www.youtube.com/user/TheViperAOC",
     "description": "High level AOE",
     "tags": [
       "twitch"

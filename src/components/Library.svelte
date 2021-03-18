@@ -56,7 +56,7 @@
 	/>
 	<div class="p-2 md:p-4 item-container">
 		<Filters />
-		<section class="grid grid-cols-2 md:grid-cols-3 gap-4 section text-gray-900">
+		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 section text-gray-900">
 			{#each selectedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
