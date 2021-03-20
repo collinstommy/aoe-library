@@ -1,6 +1,7 @@
 <script>
 	import dayjs from 'dayjs';
-	
+	import { paginate, LightPaginationNav } from 'svelte-paginate'
+
 	import dataItems from '../data.json';
 	import Filters from './Filters';
 	import selectedFilters from '../stores/filters';
@@ -34,8 +35,11 @@
 		return filtered;
 	};
 
+  let currentPage = 1;
+  let pageSize = 12;
+
 	$: selectedItems = sortItems(activeFilters, dataItems);
-	
+  $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 	
 <style>
@@ -69,9 +73,19 @@
 		">
 		<Filters />
 		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-900 flex-1">
-			{#each selectedItems as item (item.title)}
+			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
 		</section>
+	</div>
+	<div class="my-4">
+		<LightPaginationNav
+			totalItems="{selectedItems.length}"
+			pageSize="{pageSize}"
+			currentPage="{currentPage}"
+			limit="{1}"
+			showStepOptions="{true}"
+			on:setPage="{(e) => currentPage = e.detail.page}"
+		/>
 	</div>
 </main>
