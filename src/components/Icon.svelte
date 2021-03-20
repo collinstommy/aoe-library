@@ -9,7 +9,7 @@
     youtube: {
       icon: 'ri-youtube-line',
       color: 'bg-red-200'
-    }
+    },
   };
 
   const { icon, color } = mapper[type];
@@ -28,7 +28,8 @@
   items-center
   justify-center
   mx-1
-  ${color}
+  ${color || 'bg-grey-800'}
+  hover:cursor-pointer
 `}>
   <i class={icon}></i>
 </figure>

@@ -5,7 +5,7 @@
     "url": "https://aoecompanion.com/",
     "description": "Directory of pro and community build orders. Build and share you own build orders.",
     "tags": [
-      "buildOrder",
+      "guide",
       "tool"
     ]
   },
@@ -25,7 +25,8 @@
     "url": "https://aoe2.net/",
     "description": "player profiles and ELOs",
     "tags": [
-      "tool"
+      "tool",
+      "stats"
     ]
   },
   {
@@ -34,7 +35,7 @@
     "url": "https://ageofempires.fandom.com/wiki/Age_of_Empires_II:Portal",
     "description": "Everything you need to know from civs, to strategies to tech trees.",
     "tags": [
-      "wiki"
+      "reference"
     ]
   },
   {
@@ -44,7 +45,7 @@
     "description": "civilizations tech trees",
     "tags": [
       "tool",
-      "techTree"
+      "reference"
     ]
   },
   {
@@ -54,7 +55,7 @@
     "description": "Building and tech reference",
     "tags": [
       "tool",
-      "techTree"
+      "reference"
     ]
   },
   {
@@ -140,7 +141,7 @@
     "description": "Build Order Guide",
     "tags": [
       "tool",
-      "buildOrder"
+      "guide"
     ]
   },
   {
@@ -167,7 +168,6 @@
     "url": "https://aoe2.guide/",
     "description": "Tips, guides and build orders.",
     "tags": [
-      "buildOrder",
       "guide"
     ]
   },
@@ -177,7 +177,7 @@
     "url": "https://liquipedia.net/ageofempires/Main_Page",
     "description": "Comprehensive Age of Empires wiki with articles covering everything from tournaments, to competitive players and teams.",
     "tags": [
-      "wiki"
+      "reference"
     ]
   },
   {
@@ -215,7 +215,7 @@
     "description": "AOE database of civs, units and tech trees.",
     "tags": [
       "mobile",
-      "techTree"
+      "reference"
     ]
   },
   {
@@ -255,19 +255,9 @@
     ]
   },
   {
-    "id": "32",
-    "title": "Survivalist",
-    "url": "https: //youtube.com/c/SurvivalistAoE",
-    "description": "High level games as well as tutorials videos including build orders and coaching streams.",
-    "tags": [
-      "youtube",
-      "guide"
-    ]
-  },
-  {
     "id": "33",
     "title": "Hjörleif",
-    "url": "https: //youtube.com/c/Hjoerleif",
+    "youtube": "https: //youtube.com/c/Hjoerleif",
     "description": "Detailed videos on how to improve specific areas of the your game including boarding luring and unit control.",
     "tags": [
       "youtube"
@@ -276,48 +266,39 @@
   {
     "id": "34",
     "title": "T90",
-    "url": "https://www.youtube.com/channel/UCZUT79WUUpZlZ-XMF7l4CFg",
+    "youtube": "https://www.youtube.com/channel/UCZUT79WUUpZlZ-XMF7l4CFg",
+    "twitch": "https://www.twitch.tv/t90official",
     "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
     "tags": [
-      "youtube"
+      "youtube",
+      "twitch"
     ]
   },
   {
     "id": "35",
     "title": "Humza Crumza",
-    "url": "https://www.youtube.com/channel/UCHgjuvs1eqjdS0pyxMh00Sw",
+    "youtube": "https://www.youtube.com/channel/UCHgjuvs1eqjdS0pyxMh00Sw",
     "description": "Civilization specific and non standard build orders.",
     "tags": [
       "youtube",
-      "buildOrder"
-    ]
-  },
-  {
-    "id": "36",
-    "title": "T90 - Twitch",
-    "url": "https://www.twitch.tv/t90official",
-    "description": "Low elo games, high level ranked and tournament streaming.",
-    "tags": [
-      "twitch"
+      "guide"
     ]
   },
   {
     "id": "37",
     "title": "Hera",
     "twitch": "https://www.twitch.tv/hera",
-    "youtube": "https: //youtube.com/c/HeraAgeofEmpires2",
+    "youtube": "https://youtube.com/c/HeraAgeofEmpires2",
     "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
     "dateAdded": 1612111441,
     "tags": [
       "twitch",
-      "buildOrder",
       "guide"
     ]
   },
   {
     "id": "38",
-    "title": "Viper ",
-    "url": "",
+    "title": "Viper",
     "twitch": "https://www.twitch.tv/viper",
     "youtube": "https://www.youtube.com/user/TheViperAOC",
     "description": "High level AOE",
@@ -328,7 +309,7 @@
   {
     "id": "39",
     "title": "Age of Noob Twitch",
-    "url": "https://www.twitch.tv/ageofnoobtv",
+    "twitch": "https://www.twitch.tv/ageofnoobtv",
     "description": "Age of Noob's Twitch Stream!",
     "tags": [
       "twitch"
@@ -346,7 +327,7 @@
   {
     "id": "41",
     "title": "Age of Noob YouTube",
-    "url": "https://www.youtube.com/c/AgeofNoob",
+    "youtube": "https://www.youtube.com/c/AgeofNoob",
     "description": "Age of Noob's YouTube channel!",
     "tags": [
       "youtube"
@@ -378,10 +359,10 @@
     "url": "https://play.google.com/store/apps/details?id=com.thunkable.android.wyfsysf.AOC_PACK&hl=en&gl=US",
     "description": "Age Of Empires II Taunts, Build Orders, Professional Age of Empires 2 Calendar, Live RM/DM Ladder, Live statistics for Age Of Empires Definitive Edition",
     "tags": [
-      "buildOrder",
+      "guide",
       "stats",
       "mobile",
-      "techTree"
+      "reference"
     ],
     "dateAdded": 1612111441
   },
@@ -428,7 +409,7 @@
   {
     "id": "49",
     "title": "ZeroEmpires",
-    "url": "https://www.youtube.com/c/ZeroEmpires",
+    "youtube": "https://www.youtube.com/c/ZeroEmpires",
     "description": "Strategy guides, tips and tricks regularly uploaded",
     "tags": [
       "youtube",
@@ -438,8 +419,8 @@
   },
   {
     "id": "50",
-    "title": "MembTV YouTube",
-    "url": "https://www.youtube.com/c/MembAgeofEmpires2",
+    "title": "MembTV",
+    "youtube": "https://www.youtube.com/c/MembAgeofEmpires2",
     "description": "MembTV is one of the most veteran Twitch streamers in the Age of Empires community. Casts of pro games and tournaments",
     "tags": [
       "youtube"
@@ -448,8 +429,8 @@
   },
   {
     "id": "51",
-    "title": "Nili YouTube",
-    "url": "https://www.youtube.com/c/NiliAoE2",
+    "title": "Nili",
+    "youtube": "https://www.youtube.com/c/NiliAoE2",
     "description": "Age of Empires 2 Tournament Commentator, Tournament Organizer and high level player",
     "tags": [
       "youtube"
@@ -458,8 +439,8 @@
   },
   {
     "id": "52",
-    "title": "TaToH YouTube",
-    "url": "https://www.youtube.com/channel/UCtPQLL9KACyYzoYXiMl1Nkg",
+    "title": "TaToH",
+    "youtube": "https://www.youtube.com/channel/UCtPQLL9KACyYzoYXiMl1Nkg",
     "description": "Soy Roberto, o más conocido como TaToH, y soy jugador profesional de Age of Empires II. Ahora mismo formo parte de Gamer Legion junto a DauT, TheViper, Nili, Slam y JorDan.",
     "tags": [
       "youtube"
@@ -468,8 +449,8 @@
   },
   {
     "id": "53",
-    "title": "Daut YouTube",
-    "url": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
+    "title": "Daut",
+    "youtube": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
     "description": "AOE2 Pro Player - known as The Lord",
     "tags": [
       "youtube"
@@ -478,8 +459,8 @@
   },
   {
     "id": "54",
-    "title": "MBL YouTube",
-    "url": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
+    "title": "MBL",
+    "youtube": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
     "description": "High level player with uploads of streams.",
     "tags": [
       "youtube"
@@ -488,8 +469,9 @@
   },
   {
     "id": "55",
-    "title": "Survivalist Twitch",
-    "url": "https://www.twitch.tv/survivalistaoe2de",
+    "title": "Survivalist",
+    "twitch": "https://www.twitch.tv/survivalistaoe2de",
+    "youtube": "https: //youtube.com/c/SurvivalistAoE",
     "description": "Having fun climbing the AOE2DE 1v1 RM ladder! 28 year old Canadian from the west coast. Playing at 1900+ 1v1 RM level. Coaching streams and high level AOE",
     "tags": [
       "twitch",
@@ -500,7 +482,7 @@
   {
     "id": "56",
     "title": "grathwrang",
-    "url": "https://www.twitch.tv/grathwrang",
+    "twitch": "https://www.twitch.tv/grathwrang",
     "description": "30 year old former PA announcer from Toronto, Canada who pushes streaming software and his own sanity to it's limits to bring you entertaining content!",
     "tags": [
       "twitch"
@@ -510,7 +492,7 @@
   {
     "id": "57",
     "title": "aoc_ashleylynn",
-    "url": "https://www.twitch.tv/aoc_ashleylynn",
+    "twitch": "https://www.twitch.tv/aoc_ashleylynn",
     "description": "Ranked games and tournament casts",
     "tags": [
       "twitch"

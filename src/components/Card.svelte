@@ -1,12 +1,15 @@
 <script>
 import Tag from './Tag';
 import Icon from './Icon';
+import Cta from './Cta';
 import isNew from '../lib/isNew';
 
 export let url;
 export let title;
 export let description;
 export let dateAdded;
+export let twitch;
+export let youtube;
 
 const isNewItem = isNew(dateAdded);
 </script>
@@ -21,10 +24,9 @@ const isNewItem = isNew(dateAdded);
 }
 
 .card {
-  height: 100%;
   position: relative;
+  height: 100%;
 }
-
 
 .ribbon {
   right: -4px;
@@ -79,10 +81,14 @@ const isNewItem = isNew(dateAdded);
     <div class="
       flex
       flex-wrap
+      justify-end
+      mt-3
+      
       md:mt-8
-      mt-3">
-      <Icon type="twitch" />
-      <Icon type="youtube" />
+      ">
+      {#if twitch} <a href={twitch}><Icon type="twitch" /></a>{/if}
+      {#if youtube} <a href={youtube}><Icon type="youtube" /></a>{/if}
+      {#if url}<Cta href={url}>View</Cta>{/if}
     </div>
   </article>
 </a>
