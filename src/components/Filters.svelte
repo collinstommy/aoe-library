@@ -29,11 +29,12 @@
 
 <aside class="filters flex flex-col my-5 mr-4">
 	<div class="flex justify-between items-baseline">
-		<label class="flex" for="showFilters" >
+		<label class="flex md:pointer-events-none" for="showFilters" >
 			<h3 class="text-xl mb-2 hidden md:block">Filter</h3>
 			<h3 class="text-xl mb-2 md:hidden">Toggle Filters</h3>
 			<i class={`ri-arrow-down-s-line
 				ml-1
+				md:hidden
 			`}></i>
 			<input class="hidden"
 				id="showFilters"
