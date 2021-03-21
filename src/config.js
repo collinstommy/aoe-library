@@ -4,11 +4,6 @@
       colorClass: 'bg-green-100',
       fontColor: 'text-green-700',
     },
-    buildOrder: {
-      colorClass: 'bg-yellow-200',
-      fontColor: 'tex-yellow-600',
-      text: 'build order'
-    },
     stats: {
       colorClass: 'bg-red-200',
       fontColor: 'text-red-700',
@@ -19,7 +14,7 @@
       fontColor: 'text-blue=700',
       text: ''
     },
-    wiki: {
+    reference: {
       colorClass: 'bg-purple-200',
       fontColor: 'text-purple-700',
       text: ''
@@ -38,20 +33,5 @@
       colorClass: 'bg-purple-700',
       fontColor: 'text-purple-100',
       text: ''
-    },
-    games: {
-      colorClass: 'bg-green-700',
-      fontColor: 'text-green-100',
-      text: ''
-    },
-    mobile: {
-      colorClass: 'bg-pink-600',
-      fontColor: 'text-pink-100',
-      text: ''
-    },
-    techTree: {
-      colorClass: 'bg-gray-700',
-      fontColor: 'text-gray-200',
-      text: 'tech tree'
     },
   };
