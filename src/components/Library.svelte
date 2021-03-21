@@ -37,7 +37,8 @@
 
   let currentPage = 1;
   let pageSize = 12;
-	console.log({ context: process.env.context });
+	console.log({ context: process.env.BRANCH });
+	console.log({ context: process.env.CONTEXT });
 
 	$: selectedItems = sortItems(activeFilters, dataItems);
   $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
