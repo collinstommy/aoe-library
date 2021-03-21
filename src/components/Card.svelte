@@ -1,12 +1,17 @@
 <script>
 import Tag from './Tag';
+import Icon from './Icon';
+import Cta from './Cta';
+import isNew from '../lib/isNew';
 
 export let url;
 export let title;
 export let description;
-export let tags;
 export let dateAdded;
+export let twitch;
+export let youtube;
 
+const isNewItem = isNew(dateAdded);
 </script>
 
 <style>
@@ -19,10 +24,9 @@ export let dateAdded;
 }
 
 .card {
-  height: 100%;
   position: relative;
+  height: 100%;
 }
-
 
 .ribbon {
   right: -4px;
@@ -41,8 +45,21 @@ export let dateAdded;
 </style>
 
 <a class="link" href="{url}" target="_blank">
-  <article class="card hover:shadow-md rounded-md p-4 md:p-8 flex flex-col justify-between transition-shadow border border-gray-200 bg-white">
-    {#if false}
+  <article class="card
+    hover:shadow-md
+    rounded-md
+    p-4
+    flex
+    flex-col
+    justify-between
+    transition-shadow
+    border
+    border-gray-200
+    bg-white
+
+    md:p-8"
+  >
+    {#if isNewItem}
       <div class="
         ribbon
         bg-blue-800
@@ -61,10 +78,17 @@ export let dateAdded;
       <h2 class="md:text-2xl text-xl">{title}</h2>
       <p class="description mt-4 md:leading-relaxed">{description}</p>
     </div>
-    <div class="flex flex-wrap md:mt-8 mt-3">
-      {#each tags as tag}
-        <Tag tag={tag} />
-      {/each}
+    <div class="
+      flex
+      flex-wrap
+      justify-end
+      mt-3
+      
+      md:mt-8
+      ">
+      {#if twitch} <a href={twitch}><Icon type="twitch" /></a>{/if}
+      {#if youtube} <a href={youtube}><Icon type="youtube" /></a>{/if}
+      {#if url}<Cta href={url}>View</Cta>{/if}
     </div>
   </article>
 </a>
