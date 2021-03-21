@@ -61,7 +61,8 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
-		})
+		}),
+		new webpack.EnvironmentPlugin(['CONTEXT'])
 	],
 	devtool: prod ? false : 'source-map',
 	devServer: {
