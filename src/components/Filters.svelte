@@ -1,59 +1,108 @@
 <script>
-	import { TAGS } from '../config';
+	import { TAGS } from '../config/tags';
 	import { setContext } from 'svelte'
 	import filters from '../stores/filters';
 	import { Link } from 'svelte-routing';
+	import Cta from './Cta';
 
 	const tags = Object.entries(TAGS);
+	let filterCount = 0;
+
+	const unsubscribe = filters.subscribe(value => {
+		filterCount = value.length;
+	});
+
+	let show = true;
 
 </script>
 	
 <style>
+	.label {
+		text-transform: capitalize;
+	}
+
+	.filters {
+		min-width: 200px;
+	}
+
 </style>
 
-<section class="w-full section flex flex-col my-5">
-	<h3 class="text-xl mb-2">Filter by:</h3>
-	<div class="flex items-start flex-col md:flex-row">
-		<div class="flex flex-wrap">
+<aside class="filters flex flex-col my-5 mr-4">
+	<div class="flex justify-between items-baseline">
+		<label class="flex md:pointer-events-none" for="showFilters" >
+			<h3 class="text-xl mb-2 hidden md:block">Filter</h3>
+			<h3 class="text-xl mb-2 md:hidden">Toggle Filters</h3>
+			<i class={`ri-arrow-down-s-line
+				ml-1
+				md:hidden
+			`}></i>
+			<input class="hidden"
+				id="showFilters"
+				name="showFilters"
+				type=checkbox bind:checked={show}
+			/>
+		</label>
+		<div class={`
+			${!filterCount && 'hidden'}
+			flex
+			justify-center
+			items-center	
+			rounded-full
+			w-11
+			h-11
+			bg-gray-200
+			font-bold
+
+			md:hidden
+			`}>
+			{filterCount}
+		</div>
+	</div>
+	<div class={`
+		flex
+		items-start
+		flex-col
+		md:flex-row
+
+		${!show && 'hidden'}
+	`}>
+		<div class="flex flex-col w-full">
 			{#each tags as [key, value]}
 				<label class={`
-					rounded-full
-					border-2
-					md:py-1
+					label
+					
+					w-full
 					px-3
-					mx-1
+					py-1
 					my-1
-					border-blue-800
-					bg-white
 					cursor-pointer
-					${$filters.includes(key) && 'bg-blue-800 text-white'}
+					rounded
+					flex
+					items-center
+					text-lg	
+
+					md:py-1
+					${$filters.includes(key) && 'bg-blue-100'}
 					`}
 					for="{key}"
 				>
-					{value.text || key}
-					<input type="checkbox"
-						class="appearance-none"
-						id="{key}"
-						name="{key}"
-						value="{key}"
-						bind:group={$filters}
-					/>
+					
+					<input
+					id="{key}"
+					name="{key}"
+					value="{key}"
+					type="checkbox"
+					bind:group={$filters}
+					class="
+						focus:ring-indigo-500
+						h-4
+						w-4
+						text-indigo-600
+						border-gray-300
+						rounded">
+					<span class="mx-2">{value.text || key}</span>
 				</label>
 			{/each}
 		</div>
-		<Link to="/submit">
-			<button class="px-3
-				py-2
-				bg-blue-800
-				border-2
-				rounded-md
-				text-white
-				hover:bg-blue-500
-				whitespace-nowrap
-				mt-3"
-			>
-				Add +
-			</button>
-		</Link>
 	</div>
-</section>
+</aside>
