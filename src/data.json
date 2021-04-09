@@ -516,5 +516,16 @@
     "tags": [
       "tool"
     ]
+  },
+  {
+     "id": "58",
+    "title": "Age of Analyticz",
+    "url": "https://ageofanalyticz.com",
+    "description": "Compare civ win rates across elos",
+    "dateAdded": 1617994142395,
+    "tags": [
+      "tool",
+      "stats"
+    ]
   }
 ]
