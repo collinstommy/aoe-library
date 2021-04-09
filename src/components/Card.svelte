@@ -1,7 +1,8 @@
 <script>
 import Tag from './Tag';
-import Icon from './Icon';
 import Cta from './Cta';
+import Star from './Star';
+import CardIcons from './CardIcons';
 import isNew from '../lib/isNew';
 
 export let url;
@@ -10,19 +11,16 @@ export let description;
 export let dateAdded;
 export let twitch;
 export let youtube;
+export let tags;
+export let type;
+export let voteCount;
+
+console.log({ voteCount });
 
 const isNewItem = isNew(dateAdded);
 </script>
 
 <style>
-.link {
-  color: inherit;
-}
-
-.link:hover {
-  text-decoration: none;
-}
-
 .card {
   position: relative;
   height: 100%;
@@ -30,6 +28,10 @@ const isNewItem = isNew(dateAdded);
 
 .ribbon {
   right: -4px;
+}
+
+.bottom {
+  min-height: 58px;
 }
 
 @media (max-width: 640px){
@@ -44,51 +46,66 @@ const isNewItem = isNew(dateAdded);
 
 </style>
 
-<a class="link" href="{url}" target="_blank">
-  <article class="card
-    hover:shadow-md
-    rounded-md
-    p-4
-    flex
-    flex-col
-    justify-between
-    transition-shadow
-    border
-    border-gray-200
-    bg-white
+<article class="card
+  rounded-md
+  px-4
+  py-6
+  flex
+  flex-col
+  justify-between
+  transition-shadow
+  border
+  border-gray-200
+  bg-white
 
-    md:p-8"
-  >
-    {#if isNewItem}
-      <div class="
-        ribbon
-        bg-blue-800
-        shadow-md
-        rounded-l-md
-        absolute
-        top-2
-        -right-0.5
-        py-1
-        px-4
-        text-sm
-        text-white
-      ">New</div>
-    {/if}
-    <div>
-      <h2 class="md:text-2xl text-xl">{title}</h2>
-      <p class="description mt-4 md:leading-relaxed">{description}</p>
+  md:px-8
+  md:py-6
+  "
+>
+  {#if isNewItem}
+    <div class="
+      ribbon
+      bg-blue-800
+      shadow-md
+      rounded-l-md
+      absolute
+      top-2
+      -right-0.5
+      py-1
+      px-4
+      text-sm
+      text-white
+    ">New</div>
+  {/if}
+  <div>
+    <h2 class="md:text-2xl text-xl">{title}</h2>
+    <p class="description mt-4 md:leading-relaxed text-gray-600">{description}</p>
+  </div>
+  <div class="
+    bottom
+    mt-6
+    
+    md:mt-8">
+    <div class="flex flex-wrap mt-1">
+      {#if tags}
+        {#each tags as tag}
+          <Tag tag={tag} />
+        {/each}
+      {/if}
     </div>
     <div class="
+      bottom
       flex
-      flex-wrap
-      justify-end
-      mt-3
-      
-      md:mt-8
+      justify-between
+      items-center
+      border-t
+      border-gray-200
+
+      mt-4
+      pt-3
       ">
-      {#if twitch} <a href={twitch}><Icon type="twitch" /></a>{/if}
-      {#if youtube} <a href={youtube}><Icon type="youtube" /></a>{/if}
-      {#if url}<Cta href={url}>View</Cta>{/if}
+      <Star checked votes={40}/>
+      <CardIcons {twitch} {youtube} {url} {type} />
     </div>
-  </article>
-</a>
+  </div>
+</article>

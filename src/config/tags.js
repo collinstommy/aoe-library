@@ -25,13 +25,9 @@
       text: ''
     },
     youtube: {
-      colorClass: 'bg-red-700',
-      fontColor: 'text-red-100',
-      text: ''
+      hidden: true
     },
     twitch: {
-      colorClass: 'bg-purple-700',
-      fontColor: 'text-purple-100',
-      text: ''
+      hidden: true
     },
   };

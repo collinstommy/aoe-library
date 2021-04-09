@@ -20,7 +20,7 @@
 
 <figure class={`
   ri-xl
-
+  
   rounded-full
   h-11
   w-11
@@ -30,6 +30,7 @@
   mx-1
   ${color || 'bg-grey-800'}
   hover:cursor-pointer
+  hover:shadow-md
 `}>
   <i class={icon}></i>
 </figure>

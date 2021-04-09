@@ -1,5 +1,5 @@
 <script>
-	import { TAGS } from '../config';
+	import { TAGS } from '../config/tags';
 	import { setContext } from 'svelte'
 	import filters from '../stores/filters';
 	import { Link } from 'svelte-routing';
@@ -78,7 +78,8 @@
 					cursor-pointer
 					rounded
 					flex
-					items-center	
+					items-center
+					text-lg	
 
 					md:py-1
 					${$filters.includes(key) && 'bg-blue-100'}
@@ -104,9 +105,4 @@
 			{/each}
 		</div>
 	</div>
-		<Link class="hidden md:block" to="/submit">
-			<Cta>
-				Add to Library
-			</Cta>
-		</Link>
 </aside>

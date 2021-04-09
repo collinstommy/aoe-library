@@ -214,9 +214,9 @@
     "url": "https://play.google.com/store/apps/details?id=com.aoedb",
     "description": "AOE database of civs, units and tech trees.",
     "tags": [
-      "mobile",
       "reference"
-    ]
+    ],
+    "type": "app"
   },
   {
     "id": "27",
@@ -239,7 +239,7 @@
   {
     "id": "29",
     "title": "Spirit of the Law",
-    "url": "https: //youtube.com/c/SpiritOfTheLaw",
+    "youtube": "https: //youtube.com/c/SpiritOfTheLaw",
     "description": "Videos on civilization overviews, commentaries, or fun questions exploring the mechanics of AoE2.,",
     "tags": [
       "youtube"
@@ -248,7 +248,7 @@
   {
     "id": "30",
     "title": "T-West",
-    "url": "https: //youtube.com/c/TWestYT",
+    "youtube": "https: //youtube.com/c/TWestYT",
     "description": "Videos on game mechanics, campaigns, and tutorials",
     "tags": [
       "youtube"
@@ -270,8 +270,7 @@
     "twitch": "https://www.twitch.tv/t90official",
     "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
     "tags": [
-      "youtube",
-      "twitch"
+      "youtube"
     ]
   },
   {
@@ -280,8 +279,8 @@
     "youtube": "https://www.youtube.com/channel/UCHgjuvs1eqjdS0pyxMh00Sw",
     "description": "Civilization specific and non standard build orders.",
     "tags": [
-      "youtube",
-      "guide"
+      "guide",
+      "youtube"
     ]
   },
   {
@@ -292,8 +291,9 @@
     "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
     "dateAdded": 1612111441,
     "tags": [
-      "twitch",
-      "guide"
+      "guide",
+      "youtube",
+      "twitch"
     ]
   },
   {
@@ -303,6 +303,7 @@
     "youtube": "https://www.youtube.com/user/TheViperAOC",
     "description": "High level AOE",
     "tags": [
+      "youtube",
       "twitch"
     ]
   },
@@ -312,7 +313,7 @@
     "twitch": "https://www.twitch.tv/ageofnoobtv",
     "description": "Age of Noob's Twitch Stream!",
     "tags": [
-      "twitch"
+      "youtube"
     ]
   },
   {
@@ -361,9 +362,9 @@
     "tags": [
       "guide",
       "stats",
-      "mobile",
       "reference"
     ],
+    "type": "app",
     "dateAdded": 1612111441
   },
   {
@@ -412,8 +413,8 @@
     "youtube": "https://www.youtube.com/c/ZeroEmpires",
     "description": "Strategy guides, tips and tricks regularly uploaded",
     "tags": [
-      "youtube",
-      "guide"
+      "guide",
+      "youtube"
     ],
     "dateAdded": 1613913116585
   },
@@ -421,9 +422,11 @@
     "id": "50",
     "title": "MembTV",
     "youtube": "https://www.youtube.com/c/MembAgeofEmpires2",
+    "twitch": "https://www.twitch.tv/membtv",
     "description": "MembTV is one of the most veteran Twitch streamers in the Age of Empires community. Casts of pro games and tournaments",
     "tags": [
-      "youtube"
+      "youtube",
+      "twitch"
     ],
     "dateAdded": 1613913116585
   },
@@ -442,30 +445,34 @@
     "title": "TaToH",
     "youtube": "https://www.youtube.com/channel/UCtPQLL9KACyYzoYXiMl1Nkg",
     "description": "Soy Roberto, o más conocido como TaToH, y soy jugador profesional de Age of Empires II. Ahora mismo formo parte de Gamer Legion junto a DauT, TheViper, Nili, Slam y JorDan.",
+    "dateAdded": 1613913116585,
     "tags": [
       "youtube"
-    ],
-    "dateAdded": 1613913116585
+    ]
   },
   {
     "id": "53",
     "title": "Daut",
     "youtube": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
+    "twitch": "https://www.twitch.tv/daut",
     "description": "AOE2 Pro Player - known as The Lord",
+    "dateAdded": 1613913116585,
     "tags": [
-      "youtube"
-    ],
-    "dateAdded": 1613913116585
+      "youtube",
+      "twitch"
+    ]
   },
   {
     "id": "54",
     "title": "MBL",
     "youtube": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
+    "twitch": "https://www.twitch.tv/mblaoc",
     "description": "High level player with uploads of streams.",
+    "dateAdded": 1613913116585,
     "tags": [
-      "youtube"
-    ],
-    "dateAdded": 1613913116585
+      "youtube",
+      "twitch"
+    ]
   },
   {
     "id": "55",
@@ -474,8 +481,9 @@
     "youtube": "https: //youtube.com/c/SurvivalistAoE",
     "description": "Having fun climbing the AOE2DE 1v1 RM ladder! 28 year old Canadian from the west coast. Playing at 1900+ 1v1 RM level. Coaching streams and high level AOE",
     "tags": [
-      "twitch",
-      "guide"
+      "guide",
+      "youtube",
+      "twitch"
     ],
     "dateAdded": 1613913116585
   },
@@ -484,19 +492,19 @@
     "title": "grathwrang",
     "twitch": "https://www.twitch.tv/grathwrang",
     "description": "30 year old former PA announcer from Toronto, Canada who pushes streaming software and his own sanity to it's limits to bring you entertaining content!",
+    "dateAdded": 1613913116585,
     "tags": [
       "twitch"
-    ],
-    "dateAdded": 1613913116585
+    ]
   },
   {
     "id": "57",
     "title": "aoc_ashleylynn",
     "twitch": "https://www.twitch.tv/aoc_ashleylynn",
     "description": "Ranked games and tournament casts",
+    "dateAdded": 1613913116585,
     "tags": [
       "twitch"
-    ],
-    "dateAdded": 1613913116585
+    ]
   }
 ]

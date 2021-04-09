@@ -63,7 +63,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
 		}),
-		new webpack.EnvironmentPlugin(['BRANCH','CONTEXT'])
+		new webpack.EnvironmentPlugin(['BRANCH'])
 	],
 	devtool: prod ? false : 'source-map',
 	devServer: {

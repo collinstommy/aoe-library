@@ -1,7 +1,6 @@
 <script>
-	import dayjs from 'dayjs';
 	import { paginate, LightPaginationNav } from 'svelte-paginate'
-
+	import { onMount } from 'svelte';
 	import dataItems from '../data.json';
 	import Filters from './Filters';
 	import selectedFilters from '../stores/filters';
@@ -9,39 +8,42 @@
 	import Card from './Card';
 	import { Link } from 'svelte-routing';
 	import Cta from './Cta';
-
+	import { sortItems, getIsNew } from '../lib/filtering';
+	import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
+
+	onMount(async () => {
+		const res = await fetch(voteEndpoint);
+		votes = await res.json();
+		console.log({ votes });
+	});
 
 	const unsubscribe = selectedFilters.subscribe(value => {
 		activeFilters = value;
 	});
 
-	const getIsNew = epocDate => epocDate && dayjs(epocDate).diff(Date.now(), 'day') < 10;
-
-	const sortItems = (filters, array) => {
-		const filtered = filters.length
-		? array.filter(({ tags }) => tags.some(tag => filters.includes(tag)))
-		: array;
-		
-		filtered.sort((a, b) => {
-			const dateA = a.dateAdded;
-			const dateB = b.dateAdded;
-			const isANew = getIsNew(dateA);
-			const isBNew = getIsNew(dateB);
-			if(isANew && isBNew) return 0;
-			if(isANew) return -1;
-			return 1;
-		});
-		return filtered;
-	};
-
   let currentPage = 1;
   let pageSize = 12;
-	console.log({ context: process.env.BRANCH });
-	console.log({ context: process.env.CONTEXT });
 
-	$: selectedItems = sortItems(activeFilters, dataItems);
+	let votes = [];
+
+	const getVoteCount = itemId => vote => vote.resourceId === itemId;
+	const addVotes = item => {
+		console.log({
+			item,
+			votes
+		});
+		const resource = votes.find(getVoteCount(item.id));
+		return {
+			...item,
+			voteCount: resource ? +resource.voteCount : 0,
+		};
+	};
+
+	$: selectedItems = sortItems(activeFilters, dataItems).map(addVotes);
   $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
+
+	
 </script>
 	
 <style>
@@ -59,11 +61,13 @@
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	>
-		<Link class="md:hidden mt-5" to="/submit">
-			<Cta>
-				Add to Library
-			</Cta>
-		</Link>
+		<div class="mt-5">
+			<Link to="/submit">
+				<Cta>
+					Add to Library
+				</Cta>
+			</Link>
+		</div>
 	</Hero>
 	<div class="
 		p-2

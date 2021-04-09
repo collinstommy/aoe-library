@@ -10,7 +10,6 @@
     text-white
     hover:bg-blue-500
     whitespace-nowrap
-    mt-3
   `;
 
 </script>
