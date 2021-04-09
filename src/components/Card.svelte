@@ -15,8 +15,6 @@ export let tags;
 export let type;
 export let voteCount;
 
-console.log({ voteCount });
-
 const isNewItem = isNew(dateAdded);
 </script>
 

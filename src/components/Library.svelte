@@ -29,10 +29,6 @@
 
 	const getVoteCount = itemId => vote => vote.resourceId === itemId;
 	const addVotes = item => {
-		console.log({
-			item,
-			votes
-		});
 		const resource = votes.find(getVoteCount(item.id));
 		return {
 			...item,
