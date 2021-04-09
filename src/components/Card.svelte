@@ -104,7 +104,8 @@ const isNewItem = isNew(dateAdded);
       mt-4
       pt-3
       ">
-      <Star checked votes={40}/>
+      <!-- <Star checked votes={40}/> -->
+      <div />
       <CardIcons {twitch} {youtube} {url} {type} />
     </div>
   </div>
