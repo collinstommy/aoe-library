@@ -3,6 +3,7 @@
 	import Footer from './components/Footer'; 
 	import Submit from './components/Submit'; 
 	import Contact from './components/Contact'; 
+	import Uptimes from './scenes/uptimes'; 
 	import { Router, Link, Route } from 'svelte-routing';
 
 </script>
@@ -22,6 +23,9 @@
 	</Route>
 	<Route path="/contact">
 		<Contact />
+	</Route>
+	<Route path="/uptimes">
+		<Uptimes />
 	</Route>
 	<Footer />
 </Router>
