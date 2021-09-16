@@ -47,9 +47,6 @@
 		display: flex;
 		justify-content: center;
 	}
-	.item-container {
-		max-width: 1440px;
-	}
 </style>
 
 <main class="wrapper flex flex-col items-center">
@@ -68,7 +65,7 @@
 	<div class="
 		p-2
 		md:p-4
-		item-container
+		main-container
 		flex
 		flex-col
 		md:flex-row

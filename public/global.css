@@ -2,8 +2,14 @@
 	max-width: 1440px;
 }
 
+.main-container {
+	max-width: 1440px;
+}
+
 body, html {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }

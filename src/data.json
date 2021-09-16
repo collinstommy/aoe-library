@@ -518,7 +518,7 @@
     ]
   },
   {
-     "id": "58",
+    "id": "58",
     "title": "Age of Analyticz",
     "url": "https://ageofanalyticz.com",
     "description": "Compare civ win rates across elos",
@@ -526,6 +526,36 @@
     "tags": [
       "tool",
       "stats"
+    ]
+  },
+  {
+    "id": "59",
+    "title": "SenseiDE",
+    "url": "https://github.com/gregstein/SenseiDE",
+    "description": "Tweak AoE2 DE Performance",
+    "dateAdded": 1621254343,
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "60",
+    "title": "GregStein",
+    "url": "",
+    "youtube": "https://www.youtube.com/channel/UCqLbA-adlhL9QaSsakKUYow",
+    "dateAdded": 1621254343,
+    "tags": [
+      "guide"
+    ]
+  },
+  {
+    "id": "61",
+    "title": "AoE Combat Simulator",
+    "url": "https://aoe-combatsim.com/",
+    "description": "Simulate combat outcomes",
+    "dateAdded": 1621254343,
+    "tags": [
+      "tool"
     ]
   }
 ]
