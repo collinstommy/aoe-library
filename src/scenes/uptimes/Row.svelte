@@ -23,7 +23,7 @@
       {feudalArrive}
     </Cell>
     <Cell>
-      <span class="hidden">+2 villagers</span>
+      <span class="">+2 villagers</span>
     </Cell>
     <Cell>
       {castleUp}
