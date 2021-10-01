@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/ui'),
+    require('@tailwindcss/forms'),
   ],
   purge: [
     './src/**/*.svelte',

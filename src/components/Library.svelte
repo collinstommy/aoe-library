@@ -6,8 +6,7 @@
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero';
 	import Card from './Card';
-	import { Link } from 'svelte-routing';
-	import Cta from './Cta';
+	import Nav from './Nav';
 	import { sortItems, getIsNew } from '../lib/filtering';
 	import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
@@ -47,9 +46,6 @@
 		display: flex;
 		justify-content: center;
 	}
-	.item-container {
-		max-width: 1440px;
-	}
 </style>
 
 <main class="wrapper flex flex-col items-center">
@@ -57,18 +53,11 @@
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	>
-		<div class="mt-5">
-			<Link to="/submit">
-				<Cta>
-					Add to Library
-				</Cta>
-			</Link>
-		</div>
 	</Hero>
 	<div class="
 		p-2
 		md:p-4
-		item-container
+		main-container
 		flex
 		flex-col
 		md:flex-row
