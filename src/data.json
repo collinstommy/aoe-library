@@ -539,6 +539,16 @@
     ]
   },
   {
+    "id": "59a",
+     "title": "Wheelbarrow Handcart Calculator/",
+     "url": "https://bstrasser53.github.io/WheelbarrowHandcartCalculator/",
+     "description": "Wheelbarrow and Handcart Calculator",
+     "dateAdded": 1631005845262,
+     "tags": [
+       "tool"
+     ]
+   },
+  {
     "id": "60",
     "title": "GregStein",
     "url": "",
@@ -560,22 +570,13 @@
   },
   {
     "id": "62",
-    "title": "AoE News",
-    "url": "https://mundoaoe.com/",
-    "description": "News about Age of Empires",
-    "dateAdded": 1621254343,
+    "title": "CaptureAge",
+    "url": "https://captureage.com/",
+    "description": "CaptureAge is a tool for analyzing and observing Age of Empires II: Definitive Edition, providing additional features like more zoom, reverse replay, instant timeline jumping and statistics.",
+    "dateAdded": 1633022309,
     "tags": [
-      "community"
-    ]
-  },
-  {
-    "id": "63",
-    "title": "AoE2 Scenario Parser",
-    "url": "https://github.com/KSneijders/AoE2ScenarioParser#aoe2scenarioparser",
-    "description": "A Python3 library to help you edit scenarios in Age of Empires II: Definitive Edition. Used to create scenarios like TWest's AoE2 Tetris and Alain713's Perk Pandemonium.",
-    "dateAdded": 1632759776,
-    "tags": [
-      "tool"
+      "tool",
+      "stats"
     ]
   }
 ]
