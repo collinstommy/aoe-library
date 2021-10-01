@@ -53,7 +53,6 @@
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	>
-		<Nav />
 	</Hero>
 	<div class="
 		p-2
