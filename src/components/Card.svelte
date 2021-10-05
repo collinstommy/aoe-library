@@ -1,8 +1,8 @@
 <script>
-import Tag from './Tag';
-import Cta from './Cta';
-import Star from './Star';
-import CardIcons from './CardIcons';
+import Tag from './Tag.svelte';
+import Cta from './Cta.svelte';
+import Star from './Star.svelte';
+import CardIcons from './CardIcons.svelte';
 import isNew from '../lib/isNew';
 
 export let url;

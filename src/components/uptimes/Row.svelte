@@ -5,7 +5,7 @@
   export let castleUp;
   export let castleArrive;
 
-  import Cell from './Cell';
+  import Cell from './Cell.svelte';
 
 </script>
 

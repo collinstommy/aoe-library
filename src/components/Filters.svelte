@@ -2,8 +2,7 @@
 	import { TAGS } from '../config/tags';
 	import { setContext } from 'svelte'
 	import filters from '../stores/filters';
-	import { Link } from 'svelte-routing';
-	import Cta from './Cta';
+	import Cta from './Cta.svelte';
 
 	const tags = Object.entries(TAGS);
 	let filterCount = 0;
