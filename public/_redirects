@@ -1,0 +1,4 @@
+/api/qa/*  https://t8ndalxa69.execute-api.us-east-1.amazonaws.com/qa/:splat  200
+/api/*  https://umz6qafyr5.execute-api.us-east-1.amazonaws.com/prod/:splat  200
+
+/*   /index.html   200
