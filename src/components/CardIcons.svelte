@@ -4,8 +4,8 @@
   export let url;
   export let type;
 
-  import Icon from './Icon';
-  import Cta from './Cta';
+  import Icon from './Icon.svelte';
+  import Cta from './Cta.svelte';
 
   const ctaText = type === 'app' ? 'Download' : 'View Site';
 

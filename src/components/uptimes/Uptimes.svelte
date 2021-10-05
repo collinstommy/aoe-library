@@ -1,16 +1,21 @@
 <script>
-  import Row from "./Row";
+  import Row from "./Row.svelte";
   import dayjs from "dayjs";
   import duration from "dayjs/plugin/duration";
-  import Radio from "../../components/Radio.svelte";
+  import Radio from "../Radio.svelte";
+import CheckBox from "../shared/CheckBox.svelte";
   dayjs.extend(duration);
 
   let loom = "true";
   let includeScout = true;
+  let isMalay = false;
 
   const VILL_TIME = 25;
   const FEUDAL_TIME = 130;
   const CASTLE_TIME = 160;
+
+  const MALAY_FEUDAL = 79;
+  const MALAY_CASTLE = 95;
 
   const asMinutes = (time) => {
     const minutes = Math.floor(time / 60);
@@ -22,13 +27,15 @@
     return duration.format("mm:ss");
   };
 
-  const getTime = (vills, loom, count) => {
+  const getTime = (vills, loom, count, isMalay) => {
     const loomTime = loom === "true" ? VILL_TIME : 0;
+    const feudal = isMalay ? MALAY_FEUDAL : FEUDAL_TIME;
+    const castle = isMalay ? MALAY_CASTLE : CASTLE_TIME;
 
     const feudalTime = ((vills - 3) * VILL_TIME) + loomTime;
-    const feudalArrive = feudalTime + FEUDAL_TIME;
+    const feudalArrive = feudalTime + feudal;
     const castleClick = feudalArrive + VILL_TIME * 2;
-    const castleArrive = castleClick + CASTLE_TIME;
+    const castleArrive = castleClick + castle;
 
     return {
       pop: count,
@@ -39,42 +46,36 @@
     };
   };
 
-  const getAllTimes = (loom, includeScout) => {
+  const getAllTimes = (loom, includeScout, isMalay) => {
     console.log({ includeScout });
     const result = [];
-    for (let i = 16; i < 31; i++) {
+    for (let i = 16; i < 32; i++) {
       const count = includeScout ? i + 1 : i;
-      result.push(getTime(i, loom, count));
+      result.push(getTime(i, loom, count, isMalay));
     }
     return result;
   };
 
   let times = [];
-  $: times = getAllTimes(loom, includeScout);
+  $: times = getAllTimes(loom, includeScout, isMalay);
 </script>
 
 <main class="flex flex-col flex-1 main-container w-full">
-  <div class="filters py-8">
+  <div class="filters pb-8">
     <div class="flex">
       <Radio id="withLoom" value="true" bind:group={loom}>With Loom</Radio>
       <Radio id="loom" value="false" bind:group={loom}>No Loom</Radio>
     </div>
-    <div class="flex items-start mt-4">
-      <div class="flex items-center h-5">
-        <input
-          id="includeScout"
-          name="includeScout"
-          type="checkbox"
-          class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-          bind:checked={includeScout}
-        />
-      </div>
-      <div class="ml-3 text-sm">
-        <label for="includeScout" class="font-medium text-gray-700"
-          >Include Starting Scout</label
-        >
-      </div>
-    </div>
+    <CheckBox
+      bind:checked={includeScout}
+      label="Include Starting Scout"
+      id="staring-scout"
+    />
+    <CheckBox
+      bind:checked={isMalay}
+      label="Malay"
+      id="is-malay"
+  />
   </div>
   <div class="flex flex-col">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -83,7 +84,7 @@
           <table class="min-w-full divide-y divide-gray-200">
             <thead>
               <tr
-                class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"
+                class="bg-blue-800 text-gray-100 uppercase text-sm leading-normal"
               >
                 <th class="py-3 px-6 text-left">{includeScout ? 'Pop' : 'Vills'}</th>
                 <th class="py-3 px-6 text-left">Click up feudal</th>

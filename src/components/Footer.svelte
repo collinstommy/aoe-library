@@ -1,6 +1,5 @@
 <script>
-	import { Link } from 'svelte-routing';
- 
+
 </script>
 
 <style>
@@ -21,7 +20,7 @@
 >
   <ul class="flex justify-between	items-center md:justify-center">
     <li class="hover:underline md:mx-8">
-      <Link to="/contact">Contact</Link> 
+      <a href="/contact">Contact</a> 
     </li>
     <li class="hover:underline md:mx-8">
       <a href="https://github.com/collinstommy/aoe-library">
