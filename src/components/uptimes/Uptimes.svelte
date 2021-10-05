@@ -1,7 +1,7 @@
 <script>
   import Row from "./Row.svelte";
   import dayjs from "dayjs";
-  import duration from "dayjs/plugin/duration";
+  import duration from "dayjs/plugin/duration.js";
   import Radio from "../Radio.svelte";
 import CheckBox from "../shared/CheckBox.svelte";
   dayjs.extend(duration);
@@ -60,7 +60,13 @@ import CheckBox from "../shared/CheckBox.svelte";
   $: times = getAllTimes(loom, includeScout, isMalay);
 </script>
 
-<main class="flex flex-col flex-1 main-container w-full">
+<style>
+  .container {
+    max-width: 1080px;
+  }
+</style>
+
+<main class="flex flex-col flex-1 w-full container">
   <div class="filters pb-8">
     <div class="flex">
       <Radio id="withLoom" value="true" bind:group={loom}>With Loom</Radio>
@@ -111,6 +117,3 @@ import CheckBox from "../shared/CheckBox.svelte";
     </div>
   </div>
 </main>
-
-<style>
-</style>
