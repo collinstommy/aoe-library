@@ -2,20 +2,18 @@
 	import { paginate, LightPaginationNav } from 'svelte-paginate'
 	import { onMount } from 'svelte';
 	import dataItems from '../data.json';
-	import Filters from './Filters';
+	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
-	import Hero from './Hero';
-	import Card from './Card';
-	import { Link } from 'svelte-routing';
-	import Cta from './Cta';
+	import Hero from './Hero.svelte';
+	import Card from './Card.svelte';
 	import { sortItems, getIsNew } from '../lib/filtering';
-	import { voteEndpoint } from '../config/endpoints';
+	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
 
 	onMount(async () => {
-		const res = await fetch(voteEndpoint);
-		votes = await res.json();
-		console.log({ votes });
+		// const res = await fetch(voteEndpoint);
+		// votes = await res.json();
+		// console.log({ votes });
 	});
 
 	const unsubscribe = selectedFilters.subscribe(value => {
@@ -47,30 +45,20 @@
 		display: flex;
 		justify-content: center;
 	}
-	.item-container {
-		max-width: 1440px;
-	}
 </style>
 
-<main class="wrapper flex flex-col items-center">
+<main class="wrapper flex flex-col items-center p-3">
 	<Hero
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	>
-		<div class="mt-5">
-			<Link to="/submit">
-				<Cta>
-					Add to Library
-				</Cta>
-			</Link>
-		</div>
 	</Hero>
 	<div class="
-		p-2
-		md:p-4
-		item-container
+		main-container
 		flex
 		flex-col
+
+		md:p-4
 		md:flex-row
 		">
 		<Filters />

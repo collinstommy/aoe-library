@@ -1,6 +1,5 @@
 <script>
-  import Hero from './Hero';  
-	import { Link } from 'svelte-routing';
+  import Hero from './Hero.svelte';  
 
   export let formId;
   export let title;
@@ -29,7 +28,7 @@
     description={description}
   />
   <div>
-    <Link class="py-4 flex hover:underline">&#8592; Back</Link>
+    <a href="/" class="py-4 flex hover:underline">&#8592; Back</a>
     <section class="section">
       <div class="form-target" />
     </section>
