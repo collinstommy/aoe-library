@@ -43,6 +43,7 @@ import CheckBox from "../shared/CheckBox.svelte";
       feudalArrive: asMinutes(feudalArrive),
       castleUp: asMinutes(castleClick),
       castleArrive: asMinutes(castleArrive),
+      hideCastle: vills < 22,
     };
   };
 
@@ -100,13 +101,14 @@ import CheckBox from "../shared/CheckBox.svelte";
               </tr>
             </thead>
             <tbody class="text-gray-800 text-md font-light">
-              {#each times as { pop, feudalUp, feudalArrive, castleUp, castleArrive }}
+              {#each times as { pop, feudalUp, feudalArrive, castleUp, castleArrive, hideCastle }}
                 <Row
                   {pop}
                   {feudalUp}
                   {feudalArrive}
                   {castleUp}
                   {castleArrive}
+                  {hideCastle}
                 />
               {/each}
             </tbody>

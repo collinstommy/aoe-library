@@ -4,6 +4,7 @@
   export let feudalArrive;
   export let castleUp;
   export let castleArrive;
+  export let hideCastle;
 
   import Cell from './Cell.svelte';
 
@@ -22,13 +23,13 @@
     <Cell>
       {feudalArrive}
     </Cell>
-    <Cell>
+    <Cell hidden={hideCastle}>
       <span class="">+2 villagers</span>
     </Cell>
-    <Cell>
+    <Cell hidden={hideCastle}>
       {castleUp}
     </Cell>
-    <Cell>
+    <Cell hidden={hideCastle}>
       {castleArrive}
     </Cell>
 </tr>
