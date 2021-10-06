@@ -12,7 +12,7 @@
 <style>
   /* your styles go here */
 </style>
-<tr class="border-b border-gray-200 hover:bg-gray-100">
+<tr class="border-b border-gray-200 even:bg-gray-200">
     <Cell>
       {pop}
     </Cell>

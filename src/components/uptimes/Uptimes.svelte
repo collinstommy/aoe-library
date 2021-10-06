@@ -100,7 +100,7 @@ import CheckBox from "../shared/CheckBox.svelte";
                 <th class="py-3 px-6 text-left">Arrive in castle</th>
               </tr>
             </thead>
-            <tbody class="text-gray-600 text-sm font-light">
+            <tbody class="text-gray-800 text-md font-light">
               {#each times as { pop, feudalUp, feudalArrive, castleUp, castleArrive }}
                 <Row
                   {pop}
