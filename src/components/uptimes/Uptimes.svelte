@@ -47,7 +47,6 @@ import CheckBox from "../shared/CheckBox.svelte";
   };
 
   const getAllTimes = (loom, includeScout, isMalay) => {
-    console.log({ includeScout });
     const result = [];
     for (let i = 16; i < 32; i++) {
       const count = includeScout ? i + 1 : i;
