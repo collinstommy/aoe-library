@@ -7,16 +7,19 @@ media_folder: 'static/images/uploads'
 local_backend: true
 
 collections:
-  - label: "Items"
-    name: "items"
+  - label: 'Items'
+    name: 'items'
+    extension: "json"
     folder: 'content/items'
-    widget: "list"
+    widget: 'list'
     summary: '{{fields.title}}'
     create: true
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Twitch Url, name: twitchUrl, widget: string}
-      - {label: YouTube Url, name: youtubeUrl, widget: string}
+      - {label: Twitch Url, name: twitch, widget: string}
+      - {label: Url, name: url, widget: string}
+      - {label: YouTube Url, name: youtube, widget: string}
+      - {label: Facebook Url, name: facebook, widget: string}
       - {label: Description, name: description, widget: string}
-      - {label: Date Added, name: dateAdded, widget: datetime}
-      - {label: Tags, name: tags, widget: select, multiple: true, options: ["tool", "stats", "guide", "reference", "community"]}
+      - {label: Date Added, name: dateAdded, widget: datetime, format: 'x', date_format: "DD/MM/YYYY" }
+      - {label: Tags, name: tags, widget: select, multiple: true, options: ['tool', 'stats', 'guide', 'reference', 'community']}
