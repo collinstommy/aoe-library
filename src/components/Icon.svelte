@@ -10,6 +10,10 @@
       icon: 'ri-youtube-line',
       color: 'bg-red-200'
     },
+    facebook: {
+      icon: 'ri-facebook-fill',
+      color: 'bg-blue-200'
+    },
   };
 
   const { icon, color } = mapper[type];

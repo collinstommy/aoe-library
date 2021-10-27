@@ -1,12 +1,15 @@
 <script>
 	import { paginate, LightPaginationNav } from 'svelte-paginate'
 	import { onMount } from 'svelte';
-	import dataItems from '../data.json';
 	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
 	import Card from './Card.svelte';
 	import { sortItems, getIsNew } from '../lib/filtering';
+import isNew from '$lib/isNew';
+
+	export let items;
+
 	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
 
@@ -19,7 +22,7 @@
 	const unsubscribe = selectedFilters.subscribe(value => {
 		activeFilters = value;
 	});
-
+	
   let currentPage = 1;
   let pageSize = 12;
 
@@ -34,10 +37,29 @@
 		};
 	};
 
-	$: selectedItems = sortItems(activeFilters, dataItems).map(addVotes);
-  $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
+	const setIsNew = item => {
+		return {
+			...item,
+			isNew: isNew(item.dateAdded)
+		};
+	};
 
-	
+	const byDate = (a, b) => {
+		if(a.isNew && !b.isNew){
+			return -1;
+		}
+		if(!a.isNew && b.isNew){
+			return 1;
+		}
+		return 0;
+	}
+
+	$: selectedItems = sortItems(activeFilters, items)
+		.map(addVotes)
+		.map(setIsNew)
+		.sort(byDate)
+  $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
+	console.log({ items });
 </script>
 	
 <style>

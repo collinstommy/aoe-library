@@ -1,0 +1,18 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "const": "^1.0.0",
+    "json-to-frontmatter-markdown": "^1.0.0",
+    "json-to-pretty-yaml": "^1.2.2",
+    "slugify": "^1.6.1",
+    "yaml": "^1.10.2"
+  }
+}

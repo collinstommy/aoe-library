@@ -3,19 +3,18 @@ import Tag from './Tag.svelte';
 import Cta from './Cta.svelte';
 import Star from './Star.svelte';
 import CardIcons from './CardIcons.svelte';
-import isNew from '../lib/isNew';
 
-export let url;
-export let title;
-export let description;
-export let dateAdded;
-export let twitch;
-export let youtube;
-export let tags;
-export let type;
-export let voteCount;
+export let url = '';
+export let title = '';
+export let description = '';
+export let isNew = null;
+export let twitch = '';
+export let youtube = '';
+export let facebook = '';
+export let tags = '';
+export let type = '';
+export let voteCount = null;
 
-const isNewItem = isNew(dateAdded);
 </script>
 
 <style>
@@ -60,7 +59,7 @@ const isNewItem = isNew(dateAdded);
   md:py-6
   "
 >
-  {#if isNewItem}
+  {#if isNew}
     <div class="
       ribbon
       bg-blue-800
@@ -104,7 +103,7 @@ const isNewItem = isNew(dateAdded);
       ">
       <!-- <Star checked votes={40}/> -->
       <div />
-      <CardIcons {twitch} {youtube} {url} {type} />
+      <CardIcons {facebook} {twitch} {youtube} {url} {type} />
     </div>
   </div>
 </article>
