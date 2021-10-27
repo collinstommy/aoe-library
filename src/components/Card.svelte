@@ -10,6 +10,7 @@ export let description = '';
 export let isNew = null;
 export let twitch = '';
 export let youtube = '';
+export let facebook = '';
 export let tags = '';
 export let type = '';
 export let voteCount = null;
@@ -102,7 +103,7 @@ export let voteCount = null;
       ">
       <!-- <Star checked votes={40}/> -->
       <div />
-      <CardIcons {twitch} {youtube} {url} {type} />
+      <CardIcons {facebook} {twitch} {youtube} {url} {type} />
     </div>
   </div>
 </article>
