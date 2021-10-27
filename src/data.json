@@ -7,7 +7,8 @@
     "tags": [
       "guide",
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "6",
@@ -17,7 +18,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "1",
@@ -27,7 +29,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "20",
@@ -36,7 +39,8 @@
     "description": "Everything you need to know from civs, to strategies to tech trees.",
     "tags": [
       "reference"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "2",
@@ -46,7 +50,8 @@
     "tags": [
       "tool",
       "reference"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "3",
@@ -56,7 +61,8 @@
     "tags": [
       "tool",
       "reference"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "4",
@@ -66,7 +72,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "5",
@@ -76,7 +83,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "7",
@@ -86,7 +94,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "8",
@@ -96,7 +105,8 @@
     "tags": [
       "tool",
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "9",
@@ -105,7 +115,8 @@
     "description": "Draft tool to picks civs for online games and tournaments.",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "10",
@@ -114,7 +125,8 @@
     "description": "Directory of downloadable maps.",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "11",
@@ -123,7 +135,8 @@
     "description": "Calendar of pro tournaments",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "12",
@@ -132,7 +145,8 @@
     "description": "A hotkey editor with some popular presets",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "15",
@@ -142,7 +156,8 @@
     "tags": [
       "tool",
       "guide"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "16",
@@ -151,7 +166,8 @@
     "description": "The Federation offers a motivation for players to engage with clans and a motivation for clans to be active and participate in clan events and tournaments.",
     "tags": [
       "community"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "17",
@@ -160,7 +176,8 @@
     "description": "Player stats by country and community links",
     "tags": [
       "stats"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "19",
@@ -169,7 +186,8 @@
     "description": "Tips, guides and build orders.",
     "tags": [
       "guide"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "21",
@@ -178,7 +196,8 @@
     "description": "Comprehensive Age of Empires wiki with articles covering everything from tournaments, to competitive players and teams.",
     "tags": [
       "reference"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "22",
@@ -187,7 +206,8 @@
     "description": "r/aoe2: Community for AoE2 players",
     "tags": [
       "community"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "23",
@@ -196,7 +216,8 @@
     "description": "Daily news on events and tournaments, recorded games, tips and tricks, patches, tools, maps.",
     "tags": [
       "community"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "24",
@@ -206,7 +227,8 @@
     "tags": [
       "tool",
       "guide"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "26",
@@ -216,6 +238,7 @@
     "tags": [
       "reference"
     ],
+    "dateAdded": 0,
     "type": "app"
   },
   {
@@ -225,7 +248,8 @@
     "description": "a free (as in freedom) game engine to implement Age of Empires",
     "tags": [
       "games"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "28",
@@ -234,7 +258,8 @@
     "description": "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.",
     "tags": [
       "games"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "29",
@@ -243,7 +268,8 @@
     "description": "Videos on civilization overviews, commentaries, or fun questions exploring the mechanics of AoE2.,",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "30",
@@ -252,7 +278,8 @@
     "description": "Videos on game mechanics, campaigns, and tutorials",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "33",
@@ -261,7 +288,8 @@
     "description": "Detailed videos on how to improve specific areas of the your game including boarding luring and unit control.",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "34",
@@ -271,7 +299,8 @@
     "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "35",
@@ -281,7 +310,8 @@
     "tags": [
       "guide",
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "37",
@@ -289,12 +319,12 @@
     "twitch": "https://www.twitch.tv/hera",
     "youtube": "https://youtube.com/c/HeraAgeofEmpires2",
     "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
-    "dateAdded": 1612111441,
     "tags": [
       "guide",
       "youtube",
       "twitch"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "38",
@@ -305,7 +335,8 @@
     "tags": [
       "youtube",
       "twitch"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "39",
@@ -314,7 +345,8 @@
     "description": "Age of Noob's Twitch Stream!",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "40",
@@ -323,7 +355,8 @@
     "description": "AoE II player rating, based only on tournament games",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "41",
@@ -332,7 +365,8 @@
     "description": "Age of Noob's YouTube channel!",
     "tags": [
       "youtube"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "42",
@@ -341,7 +375,8 @@
     "description": "Civilization Tool created by Age of Noob for beginner players!",
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "43",
@@ -351,8 +386,7 @@
     "tags": [
       "tool"
     ],
-    "data": "1612111441",
-    "dateAdded": 1612111441
+    "dateAdded": 0
   },
   {
     "id": "44",
@@ -365,7 +399,7 @@
       "reference"
     ],
     "type": "app",
-    "dateAdded": 1612111441
+    "dateAdded": 0
   },
   {
     "id": "45",
@@ -533,10 +567,10 @@
     "title": "SenseiDE",
     "url": "https://github.com/gregstein/SenseiDE",
     "description": "Tweak AoE2 DE Performance",
-    "dateAdded": 1621254343,
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "59a",
@@ -553,27 +587,27 @@
     "title": "GregStein",
     "url": "",
     "youtube": "https://www.youtube.com/channel/UCqLbA-adlhL9QaSsakKUYow",
-    "dateAdded": 1621254343,
     "tags": [
       "guide"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "61",
     "title": "AoE Combat Simulator",
     "url": "https://aoe-combatsim.com/",
     "description": "Simulate combat outcomes",
-    "dateAdded": 1621254343,
     "tags": [
       "tool"
-    ]
+    ],
+    "dateAdded": 0
   },
   {
     "id": "62",
     "title": "CaptureAge",
     "url": "https://captureage.com/",
     "description": "CaptureAge is a tool for analyzing and observing Age of Empires II: Definitive Edition, providing additional features like more zoom, reverse replay, instant timeline jumping and statistics.",
-    "dateAdded": 1633022309,
+    "dateAdded": 1631005845262,
     "tags": [
       "tool",
       "stats"
