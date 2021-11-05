@@ -59,7 +59,6 @@ import isNew from '$lib/isNew';
 		.map(setIsNew)
 		.sort(byDate)
   $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
-	console.log({ items });
 </script>
 	
 <style>
