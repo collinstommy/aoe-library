@@ -13,3 +13,47 @@ body, html {
 	align-items: center;
 	width: 100%;
 }
+
+/* hubspot form styling */
+/* TODO: move to component */
+.hs-form input[type='text'], input[type='email'] {
+	@apply focus:ring-indigo-500
+	focus:border-indigo-500
+	block
+	w-full
+	pl-7
+	pr-12
+	sm:text-sm
+	border-gray-300
+	rounded-md
+	py-1
+}
+
+.hs-form input[type='checkbox'] {
+	@apply mr-2
+}
+
+.hs-form label {
+	@apply block text-sm font-medium text-gray-700 dark:text-white
+}
+
+
+.hs-form .hs-form-field {
+	@apply mt-4
+}
+
+.hs-form input[type='submit'] {
+	@apply px-3
+	py-2
+	bg-gray-800
+	border-2
+	rounded-md
+	text-white
+	hover:underline
+	whitespace-nowrap
+	mt-3
+
+	dark:bg-gray-200
+	dark:text-gray-900
+}
+
