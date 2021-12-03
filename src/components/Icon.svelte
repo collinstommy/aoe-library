@@ -25,6 +25,7 @@
 <figure class={`
   ri-xl
   
+  text-black
   rounded-full
   h-11
   w-11

@@ -22,11 +22,15 @@
   {#if url}
     <a class="
       flex
-      items-center
+      items-baseline
       text-blue-800
       font-semibold
+      text-lg
+      
       hover:text-blue-500
-      text-lg	
+      hover:underline
+
+      dark:text-white
       "
       href={url}>
       <span>{ctaText}</span>

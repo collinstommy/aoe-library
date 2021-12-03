@@ -8,7 +8,7 @@
   
 </style>
 
-<div class="flex items-start mt-4">
+<div class="flex items-start ml-2">
   <div class="flex items-center h-5">
     <input
       id="{id}"
@@ -19,7 +19,7 @@
     />
   </div>
   <div class="ml-3 text-sm">
-    <label for="{id}" class="font-medium text-gray-700"
+    <label for="{id}" class="font-medium text-gray-700 dark:text-gray-200"
       >{label}</label
     >
   </div>

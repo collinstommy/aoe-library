@@ -11,7 +11,7 @@
     },
     guide: {
       colorClass: 'bg-blue-200',
-      fontColor: 'text-blue=700',
+      fontColor: 'text-blue-700',
       text: ''
     },
     reference: {

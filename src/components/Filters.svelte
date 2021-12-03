@@ -81,7 +81,7 @@
 					text-lg	
 
 					md:py-1
-					${$filters.includes(key) && 'bg-blue-100'}
+					${$filters.includes(key) && 'bg-blue-100 dark:bg-gray-700'}
 					`}
 					for="{key}"
 				>

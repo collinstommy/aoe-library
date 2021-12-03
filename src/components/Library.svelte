@@ -1,14 +1,25 @@
 <script>
-	import { paginate, LightPaginationNav } from 'svelte-paginate'
+	import { paginate, LightPaginationNav, DarkPaginationNav } from 'svelte-paginate'
 	import { onMount } from 'svelte';
 	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
 	import Card from './Card.svelte';
 	import { sortItems, getIsNew } from '../lib/filtering';
-import isNew from '$lib/isNew';
+  import isNew from '$lib/isNew';
+  import darkMode from '../stores/darkMode';
 
 	export let items;
+
+	let isDark;
+
+	darkMode.subscribe(value => {
+		isDark = value;
+	});
+
+	// TODO: fix pagination for dark mode
+
+	const Pagination = isDark ? DarkPaginationNav : LightPaginationNav;
 
 	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
@@ -83,14 +94,14 @@ import isNew from '$lib/isNew';
 		md:flex-row
 		">
 		<Filters />
-		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-900 flex-1">
+		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 flex-1">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
 		</section>
 	</div>
 	<div class="my-4">
-		<LightPaginationNav
+		<Pagination
 			totalItems="{selectedItems.length}"
 			pageSize="{pageSize}"
 			currentPage="{currentPage}"

@@ -14,8 +14,11 @@
   mt-3
   text-gray-100
   w-full
+  mt-10
   
   md:p-16
+
+  dark:bg-gray-800
   "
 >
   <ul class="flex justify-between	items-center md:justify-center">
@@ -24,7 +27,7 @@
     </li>
     <li class="hover:underline md:mx-8">
       <a href="https://github.com/collinstommy/aoe-library">
-          Contribute
+        Contribute
       </a>
     </li> 
   </ul>
