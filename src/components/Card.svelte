@@ -54,9 +54,14 @@ export let voteCount = null;
   border
   border-gray-200
   bg-white
+  text-gray-900
 
   md:px-8
   md:py-6
+
+  dark:bg-gray-800
+  dark:text-white
+
   "
 >
   {#if isNew}
@@ -76,7 +81,13 @@ export let voteCount = null;
   {/if}
   <div>
     <h2 class="md:text-2xl text-xl">{title}</h2>
-    <p class="description mt-4 md:leading-relaxed text-gray-600">{description}</p>
+    <p class="description
+    mt-4
+    md:leading-relaxed
+    text-gray-600
+
+    dark:text-gray-200
+    ">{description}</p>
   </div>
   <div class="
     bottom

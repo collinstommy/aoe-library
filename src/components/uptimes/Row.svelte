@@ -13,7 +13,17 @@
 <style>
   /* your styles go here */
 </style>
-<tr class="border-b border-gray-200 even:bg-gray-200">
+<tr class="
+  border-b
+  border-gray-200
+  even:bg-gray-200
+  
+  dark:even:bg-gray-700
+  dark:bg-gray-800
+  dark:text-gray-200
+  dark:border-gray-600
+  
+  ">
     <Cell>
       {pop}
     </Cell>
