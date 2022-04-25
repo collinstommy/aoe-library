@@ -29,4 +29,4 @@ Admin server will run at http://localhost:3000/admin/#/collections/items
 - [ ] Voting on items - users can star an item
 - [ ] Set up a database for items which can be directly populated via the form. Would required admin approval.
 - [ ] Featured Items. New tools or sites could be featured for a period of time. These would have a different UI treatment and appear at the top of the directory
-- [ ] Pagination
+- [x] Pagination
