@@ -7,7 +7,7 @@
     stats: {
       colorClass: 'bg-red-200',
       fontColor: 'text-red-700',
-      text: 'player stats'
+      text: 'stats'
     },
     guide: {
       colorClass: 'bg-blue-200',
