@@ -1,6 +1,6 @@
 <script>
-	import Hero from '../components/Hero.svelte';
-	import Uptimes from '../components/uptimes/Uptimes.svelte';
+	import Hero from '../../components/Hero.svelte';
+	import Uptimes from '../../components/uptimes/Uptimes.svelte';
 </script>
 
 <Hero

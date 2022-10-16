@@ -1,11 +1,3 @@
-<script>
-
-</script>
-
-<style>
-
-</style>
-
 <section class="
   text-center
   bg-blue-800

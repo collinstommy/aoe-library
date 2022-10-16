@@ -1,4 +1,6 @@
 <script>
+	import '../app.postcss';
+	import '../app.postcss';
 	import '../app.css';
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';

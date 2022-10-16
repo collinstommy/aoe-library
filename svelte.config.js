@@ -1,7 +1,7 @@
 import preprocess from "svelte-preprocess";
 import tailwind from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

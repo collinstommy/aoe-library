@@ -24,11 +24,11 @@
 	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
 
-	onMount(async () => {
-		// const res = await fetch(voteEndpoint);
-		// votes = await res.json();
-		// console.log({ votes });
-	});
+	// onMount(async () => {
+	// 	// const res = await fetch(voteEndpoint);
+	// 	// votes = await res.json();
+	// 	// console.log({ votes });
+	// });
 
 	const unsubscribe = selectedFilters.subscribe(value => {
 		activeFilters = value;
