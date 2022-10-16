@@ -67,10 +67,8 @@
 	}
 
 	const paginate = ({ items, pageSize, currentPage}) => {
-		console.log(currentPage);
 		const startIndex = getStartIndex(pageSize, currentPage)
 		const endIndex = getEndIndex(pageSize, currentPage, items.length)
-		console.log({ startIndex, endIndex });
 		return items.slice(startIndex, endIndex)
 	}
 
@@ -78,12 +76,13 @@
 		currentPage = i
 	}
 
+
 	$: selectedItems = sortItems(activeFilters, items)
 		.map(addVotes)
 		.map(setIsNew)
 		.sort(byDate)
 
-	$: pages = Array.from({ length: selectedItems.length / pageSize });
+	$: pages = Array.from({ length: Math.ceil(selectedItems.length / pageSize)});
   $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 	
