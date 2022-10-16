@@ -14,7 +14,6 @@ export let facebook = '';
 export let tags = '';
 export let type = '';
 export let voteCount = null;
-
 </script>
 
 <style>

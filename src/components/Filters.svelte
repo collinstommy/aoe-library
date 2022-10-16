@@ -1,6 +1,5 @@
 <script>
 	import { TAGS } from '../config/tags';
-	import { setContext } from 'svelte'
 	import filters from '../stores/filters';
 	import Cta from './Cta.svelte';
 

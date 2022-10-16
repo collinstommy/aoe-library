@@ -1,6 +1,6 @@
 <script>
 	import { paginate, LightPaginationNav, DarkPaginationNav } from 'svelte-paginate'
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
@@ -24,11 +24,11 @@
 	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
 
-	onMount(async () => {
-		// const res = await fetch(voteEndpoint);
-		// votes = await res.json();
-		// console.log({ votes });
-	});
+	// onMount(async () => {
+	// 	// const res = await fetch(voteEndpoint);
+	// 	// votes = await res.json();
+	// 	// console.log({ votes });
+	// });
 
 	const unsubscribe = selectedFilters.subscribe(value => {
 		activeFilters = value;
