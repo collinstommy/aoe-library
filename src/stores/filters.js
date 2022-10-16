@@ -6,13 +6,8 @@ import { writable } from 'svelte/store';
      return [...tags, tag];
  });
 
- const removeFilter = tag => update(tags => {
-  return tags.filter(items !== tag);
-});
-
  export default {
   addFilter,
-  removeFilter,
   subscribe,
   set
  }

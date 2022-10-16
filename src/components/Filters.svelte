@@ -4,6 +4,8 @@
 	import filters from '../stores/filters';
 	import Cta from './Cta.svelte';
 
+	export let setPage;
+
 	const tags = Object.entries(TAGS);
 	let filterCount = 0;
 
@@ -92,6 +94,7 @@
 					value="{key}"
 					type="checkbox"
 					bind:group={$filters}
+					on:click={() => setPage(0)}
 					class="
 						focus:ring-indigo-500
 						h-4

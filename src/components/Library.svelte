@@ -1,11 +1,12 @@
 <script>
-	import { paginate, LightPaginationNav, DarkPaginationNav } from 'svelte-paginate'
-	import { onMount } from 'svelte';
+	// import { paginate, LightPaginationNav, DarkPaginationNav } from 'svelte-paginate'
+	// import { onMount } from 'svelte';
 	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
 	import Card from './Card.svelte';
 	import { sortItems, getIsNew } from '../lib/filtering';
+	import { getStartIndex, getEndIndex } from '../lib/usePagination';
   import isNew from '$lib/isNew';
   import darkMode from '../stores/darkMode';
 
@@ -19,7 +20,7 @@
 
 	// TODO: fix pagination for dark mode
 
-	const Pagination = isDark ? DarkPaginationNav : LightPaginationNav;
+	// const Pagination = isDark ? DarkPaginationNav : LightPaginationNav;
 
 	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
@@ -34,7 +35,7 @@
 		activeFilters = value;
 	});
 	
-  let currentPage = 1;
+  let currentPage = 0;
   let pageSize = 12;
 
 	let votes = [];
@@ -65,10 +66,24 @@
 		return 0;
 	}
 
+	const paginate = ({ items, pageSize, currentPage}) => {
+		console.log(currentPage);
+		const startIndex = getStartIndex(pageSize, currentPage)
+		const endIndex = getEndIndex(pageSize, currentPage, items.length)
+		console.log({ startIndex, endIndex });
+		return items.slice(startIndex, endIndex)
+	}
+
+	const setPage = (i) => {
+		currentPage = i
+	}
+
 	$: selectedItems = sortItems(activeFilters, items)
 		.map(addVotes)
 		.map(setIsNew)
 		.sort(byDate)
+
+	$: pages = Array.from({ length: selectedItems.length / pageSize });
   $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 	
@@ -93,7 +108,7 @@
 		md:p-4
 		md:flex-row
 		">
-		<Filters />
+		<Filters {setPage}/>
 		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 flex-1">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
@@ -101,13 +116,38 @@
 		</section>
 	</div>
 	<div class="my-4">
-		<Pagination
+		<ul class='inline-flex items-center -space-x-px'>
+			{#each pages as page, i}
+				<button class={`py-2
+					px-3
+					leading-tight
+					text-gray-500
+					bg-white
+					border
+					border-gray-300
+					hover:bg-gray-100
+					hover:text-gray-700
+					dark:bg-gray-800
+					dark:border-gray-700
+					dark:text-gray-400
+					dark:hover:bg-gray-700
+					dark:hover:text-white
+					${i === currentPage && 'text-blue-600 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'}`
+					}
+					
+					on:click={() => setPage(i)}
+				>{i + 1}</button>
+			{/each}
+		</ul>
+		<!-- <Pagination
 			totalItems="{selectedItems.length}"
 			pageSize="{pageSize}"
 			currentPage="{currentPage}"
 			limit="{1}"
 			showStepOptions="{true}"
 			on:setPage="{(e) => currentPage = e.detail.page}"
-		/>
+		/> -->
 	</div>
 </main>
+
+

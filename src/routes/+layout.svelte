@@ -1,11 +1,11 @@
 <script>
-	import '../app.postcss';
-	import '../app.postcss';
 	import '../app.css';
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';
   import Cta from '../components/Cta.svelte';
   import darkMode from '../stores/darkMode';
+
+	export const prerender = true
 
 	let isDark;
 
