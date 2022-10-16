@@ -1,14 +1,11 @@
-const config = {
-  mode: "jit",
-  purge: ["./src/**/*.{html,js,svelte,ts}"],
-  darkMode: 'class',
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {},
   },
-
-  plugins: [
-    require('@tailwindcss/forms'),
-  ]
-};
-
-module.exports = config;
+  mode: 'jit',
+	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
+	plugins: [require('@tailwindcss/forms')],
+}

@@ -24,6 +24,11 @@
       fontColor: 'text-indigo-100',
       text: ''
     },
+    games: {
+      colorClass: 'bg-sky-700',
+      fontColor: 'text-sky-100',
+      text: ''
+    },
     youtube: {
       hidden: true
     },

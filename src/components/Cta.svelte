@@ -18,15 +18,12 @@
 
 </script>
 
-<style>
-  
-</style>
-  {#if href}
-   <a class={className} href={href}>
+{#if href}
+  <a class={className} href={href}>
+  <slot />
+</a>
+{:else}
+  <button class={className}  on:click={handleClick}>
     <slot />
-  </a>
-  {:else}
-    <button class={className}  on:click={handleClick}>
-      <slot />
-    </button>
-  {/if}
+  </button>
+{/if}

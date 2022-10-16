@@ -1,3 +1,11 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
 .section {
 	max-width: 1440px;
 }
@@ -6,7 +14,8 @@
 	max-width: 1440px;
 }
 
-body, html {
+body,
+html {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -16,7 +25,8 @@ body, html {
 
 /* hubspot form styling */
 /* TODO: move to component */
-.hs-form input[type='text'], input[type='email'] {
+.hs-form input[type='text'],
+input[type='email'] {
 	@apply focus:ring-indigo-500
 	focus:border-indigo-500
 	block
@@ -26,20 +36,19 @@ body, html {
 	sm:text-sm
 	border-gray-300
 	rounded-md
-	py-1
+	py-1;
 }
 
 .hs-form input[type='checkbox'] {
-	@apply mr-2
+	@apply mr-2;
 }
 
 .hs-form label {
-	@apply block text-sm font-medium text-gray-700 dark:text-white
+	@apply block text-sm font-medium text-gray-700 dark:text-white;
 }
 
-
 .hs-form .hs-form-field {
-	@apply mt-4
+	@apply mt-4;
 }
 
 .hs-form input[type='submit'] {
@@ -54,6 +63,13 @@ body, html {
 	mt-3
 
 	dark:bg-gray-200
-	dark:text-gray-900
+	dark:text-gray-900;
 }
 
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind components;
+
+@tailwind utilities;

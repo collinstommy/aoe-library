@@ -5,6 +5,8 @@
   import Cta from '../components/Cta.svelte';
   import darkMode from '../stores/darkMode';
 
+	export const prerender = true
+
 	let isDark;
 
 	darkMode.subscribe(value => {
