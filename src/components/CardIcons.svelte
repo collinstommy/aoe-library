@@ -15,7 +15,7 @@
 <style>
 </style>
 
-<div class="flex">
+<div class="flex items-center">
   {#if twitch} <a href={twitch}><Icon type="twitch" /></a>{/if}
   {#if youtube} <a href={youtube}><Icon type="youtube" /></a>{/if}
   {#if facebook} <a href={facebook}><Icon type="facebook" /></a>{/if}
@@ -26,6 +26,7 @@
       text-blue-800
       font-semibold
       text-lg
+      ml-1
       
       hover:text-blue-500
       hover:underline

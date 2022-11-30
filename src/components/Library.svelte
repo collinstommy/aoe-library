@@ -69,7 +69,8 @@
 	const paginate = ({ items, pageSize, currentPage}) => {
 		const startIndex = getStartIndex(pageSize, currentPage)
 		const endIndex = getEndIndex(pageSize, currentPage, items.length)
-		return items.slice(startIndex, endIndex)
+		console.log({ startIndex, endIndex });
+		return items.slice(startIndex, endIndex + 1)
 	}
 
 	const setPage = (i) => {
