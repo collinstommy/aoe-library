@@ -31,7 +31,7 @@
 	$: times = getAllTimes(loom, includeScout, selectedCiv);
 </script>
 
-<main class="container flex w-full flex-1 flex-col">
+<div class="container flex w-full flex-1 flex-col">
 	<div class="filters pb-8">
 		<div id="options" class="flex flex-col items-center md:flex-row md:items-baseline">
 			<div class="flex">
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</div>
-</main>
+</div>
 
 <style>
 	.container {

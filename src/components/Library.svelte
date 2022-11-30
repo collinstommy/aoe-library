@@ -83,7 +83,7 @@
 	$: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 
-<main class="wrapper flex flex-col items-center p-3">
+<div class="wrapper flex flex-col items-center p-3">
 	<Hero
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
@@ -138,7 +138,7 @@
 			on:setPage="{(e) => currentPage = e.detail.page}"
 		/> -->
 	</div>
-</main>
+</div>
 
 <style>
 	.wrapper {

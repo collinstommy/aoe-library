@@ -1,27 +1,16 @@
 <script>
-  export let title = '';
-  export let description = '';
+	export let title = '';
+	export let description = '';
 </script>
 
+<!-- 
+<section class="hero w-100 text-grey-800 w-full border-gray-600 p-8 text-center md:p-16">
+	<h1 class="my-2 text-4xl font-semibold">{title}</h1>
+	<p>{description}</p>
+	<slot />
+</section> -->
 <style>
-  .hero {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+	.hero {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
 </style>
-
-<section class="
-  hero
-
-  text-center
-  w-100
-  p-8
-  text-grey-800
-  w-full
-  
-  md:p-16
-  "
->
-  <h1 class="text-4xl my-2 font-semibold">{title}</h1>
-  <p>{description}</p>
-  <slot />
-</section>
