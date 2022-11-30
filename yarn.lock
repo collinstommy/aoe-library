@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@builder.io/partytown@^0.7.2":
-  "integrity" "sha512-TmRHuN4gdsOJxBGsPPirJAMuXDm0o9cx9t5ltSson+F+K5ES3eNiBCxBGvSSkoEARvZ+kl1n7WVi+8qNyJdeAQ=="
-  "resolved" "https://registry.npmjs.org/@builder.io/partytown/-/partytown-0.7.2.tgz"
-  "version" "0.7.2"
-
 "@cloudflare/workers-types@^3.14.0":
   "integrity" "sha512-u0cUQ4ntWFFwn5jx0ETa2ItvwvfOMjyaKF2fX2vFVujrSgNES/PnvRzPAhdt9CMYAMidInm0MGkIjxHRsFBaeg=="
   "resolved" "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-3.17.0.tgz"
