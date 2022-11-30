@@ -16,7 +16,9 @@
 	let show = true;
 </script>
 
-<aside class="filters rounded-2 mb-4 flex flex-col bg-gray-100 p-4 dark:bg-gray-800 md:m-0 md:mr-4">
+<aside
+	class="filters mb-4 flex flex-col rounded-md bg-gray-100 p-4 dark:bg-gray-800 md:m-0 md:mr-4"
+>
 	<div class="flex items-baseline justify-between">
 		<label class="flex md:pointer-events-none" for="showFilters">
 			<h3 class="mb-2 hidden text-xl font-semibold md:block">Filter</h3>
