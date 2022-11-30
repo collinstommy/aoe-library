@@ -17,12 +17,19 @@ npm run dev
 Navigate to [localhost:3000](http://localhost:3000). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
 Run local admin:
+
 ```
 npm run local:cms
 ```
 
 Admin server will run at http://localhost:3000/admin/#/collections/items
 
+## Analytics
+
+### Performance
+
+Before: 95
+Piwik: 60
 
 ## Proposed New Features
 
