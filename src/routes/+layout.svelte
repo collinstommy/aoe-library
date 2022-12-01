@@ -34,11 +34,11 @@
           mx-2
           rounded-full
           border
-          bg-blue-800
+          bg-indigo-800
           px-3
           py-2
           text-white
-          hover:bg-blue-500
+          hover:bg-indigo-500
           hover:underline
           md:mx-5
           md:px-6"

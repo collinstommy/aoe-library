@@ -62,7 +62,7 @@
 					<table class="min-w-full divide-y divide-gray-200 bg-gray-100 ">
 						<thead>
 							<tr
-								class="bg-blue-800 text-sm uppercase leading-normal text-gray-100 dark:bg-gray-700"
+								class="bg-indigo-800 text-sm uppercase leading-normal text-gray-100 dark:bg-gray-700"
 							>
 								<th class="py-3 px-6 text-left">{includeScout ? 'Pop' : 'Vills'}</th>
 								<th class="py-3 px-6 text-left">Click up feudal</th>

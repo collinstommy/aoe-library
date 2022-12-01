@@ -1,26 +1,24 @@
-<section class="
-  text-center
-  bg-blue-800
+<section
+	class="
   w-100
-  p-8
-  mt-3
-  text-gray-100
-  w-full
   mt-10
+  w-full
+  bg-indigo-800
+  p-8
+  text-center
+  text-gray-100
   
-  md:p-16
-
   dark:bg-gray-800
+
+  md:p-16
   "
 >
-  <ul class="flex justify-between	items-center md:justify-center">
-    <li class="hover:underline md:mx-8">
-      <a href="/contact">Contact</a> 
-    </li>
-    <li class="hover:underline md:mx-8">
-      <a href="https://github.com/collinstommy/aoe-library">
-        Contribute
-      </a>
-    </li> 
-  </ul>
+	<ul class="flex items-center	justify-between md:justify-center">
+		<li class="hover:underline md:mx-8">
+			<a href="/contact">Contact</a>
+		</li>
+		<li class="hover:underline md:mx-8">
+			<a href="https://github.com/collinstommy/aoe-library"> Contribute </a>
+		</li>
+	</ul>
 </section>

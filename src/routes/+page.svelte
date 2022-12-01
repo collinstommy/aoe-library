@@ -12,10 +12,10 @@
 </script>
 
 <section
-	class="hero w-100 text-grey-800 w-full border-gray-600 bg-gradient-to-r from-slate-900 to-indigo-900 p-8 text-center text-gray-100 dark:border-y dark:border-white md:mb-6 md:p-20"
+	class="hero w-100 text-grey-800 w-full border-gray-600 bg-indigo-900 p-10 text-center text-gray-100 dark:border-y dark:border-white md:mb-6 md:p-20"
 >
 	<h1 class="my-2 text-4xl font-semibold">AOE Library</h1>
-	<p>A directory of useful information and tools for Age of Empires 2</p>
+	<p class="hidden md:visible">A directory of useful information and tools for Age of Empires 2</p>
 	<slot />
 </section>
 
