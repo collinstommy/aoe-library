@@ -49,7 +49,7 @@
 		</div>
 	</nav>
 </header>
-<main class="wrapper flex flex-col items-center">
+<main class="wrapper flex flex-col">
 	<slot />
 </main>
 

@@ -17,7 +17,7 @@
 </script>
 
 <aside
-	class="filters mb-4 flex w-full flex-col rounded-md bg-gray-100 py-2 px-4 dark:border dark:border-gray-100 dark:bg-gray-800 md:m-0 md:mr-4 md:w-auto md:py-4"
+	class="filters mb-4 flex w-full flex-col rounded-md border border-indigo-400 bg-gray-100 py-2 px-4 dark:border dark:border-gray-100 dark:bg-gray-800 md:m-0 md:mr-4 md:w-auto md:border-0 md:py-4"
 >
 	<div class="flex items-baseline justify-between">
 		<label class="flex md:pointer-events-none" for="showFilters">
