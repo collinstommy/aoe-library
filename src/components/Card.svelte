@@ -41,7 +41,7 @@
 	{#if isNew}
 		<div
 			class="
-      ribbon absolute top-2 -right-0.5 rounded-l-md bg-blue-800 py-1 px-4 text-sm text-white shadow-md
+      ribbon absolute top-2 -right-0.5 rounded-l-md bg-indigo-800 py-1 px-4 text-sm text-white shadow-md
     "
 		>
 			New

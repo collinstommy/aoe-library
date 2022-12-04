@@ -7,14 +7,14 @@
 	import Card from './Card.svelte';
 	import { sortItems, getIsNew } from '../lib/filtering';
 	import { getStartIndex, getEndIndex } from '../lib/usePagination';
-  import isNew from '$lib/isNew';
-  import darkMode from '../stores/darkMode';
+	import isNew from '$lib/isNew';
+	import darkMode from '../stores/darkMode';
 
 	export let items;
 
 	let isDark;
 
-	darkMode.subscribe(value => {
+	darkMode.subscribe((value) => {
 		isDark = value;
 	});
 
@@ -31,25 +31,25 @@
 	// 	// console.log({ votes });
 	// });
 
-	const unsubscribe = selectedFilters.subscribe(value => {
+	const unsubscribe = selectedFilters.subscribe((value) => {
 		activeFilters = value;
 	});
-	
-  let currentPage = 0;
-  let pageSize = 12;
+
+	let currentPage = 0;
+	let pageSize = 12;
 
 	let votes = [];
 
-	const getVoteCount = itemId => vote => vote.resourceId === itemId;
-	const addVotes = item => {
+	const getVoteCount = (itemId) => (vote) => vote.resourceId === itemId;
+	const addVotes = (item) => {
 		const resource = votes.find(getVoteCount(item.id));
 		return {
 			...item,
-			voteCount: resource ? +resource.voteCount : 0,
+			voteCount: resource ? +resource.voteCount : 0
 		};
 	};
 
-	const setIsNew = item => {
+	const setIsNew = (item) => {
 		return {
 			...item,
 			isNew: isNew(item.dateAdded)
@@ -57,86 +57,77 @@
 	};
 
 	const byDate = (a, b) => {
-		if(a.isNew && !b.isNew){
+		if (a.isNew && !b.isNew) {
 			return -1;
 		}
-		if(!a.isNew && b.isNew){
+		if (!a.isNew && b.isNew) {
 			return 1;
 		}
 		return 0;
-	}
+	};
 
-	const paginate = ({ items, pageSize, currentPage}) => {
-		const startIndex = getStartIndex(pageSize, currentPage)
-		const endIndex = getEndIndex(pageSize, currentPage, items.length)
+	const paginate = ({ items, pageSize, currentPage }) => {
+		const startIndex = getStartIndex(pageSize, currentPage);
+		const endIndex = getEndIndex(pageSize, currentPage, items.length);
 		console.log({ startIndex, endIndex });
-		return items.slice(startIndex, endIndex + 1)
-	}
+		return items.slice(startIndex, endIndex + 1);
+	};
 
 	const setPage = (i) => {
-		currentPage = i
-	}
+		currentPage = i;
+	};
 
+	$: selectedItems = sortItems(activeFilters, items).map(addVotes).map(setIsNew).sort(byDate);
 
-	$: selectedItems = sortItems(activeFilters, items)
-		.map(addVotes)
-		.map(setIsNew)
-		.sort(byDate)
-
-	$: pages = Array.from({ length: Math.ceil(selectedItems.length / pageSize)});
-  $: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
+	$: pages = Array.from({ length: Math.ceil(selectedItems.length / pageSize) });
+	$: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
-	
-<style>
-	.wrapper {
-		display: flex;
-		justify-content: center;
-	}
-</style>
 
-<main class="wrapper flex flex-col items-center p-3">
+<div class="wrapper flex flex-col items-center">
 	<Hero
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
-	>
-	</Hero>
-	<div class="
+	/>
+	<div
+		class="
 		main-container
 		flex
 		flex-col
+		items-start
+		p-3
 
-		md:p-4
 		md:flex-row
-		">
-		<Filters {setPage}/>
-		<section class="grid grid-cols-1 md:grid-cols-3 gap-4 flex-1">
+		md:p-4
+		"
+	>
+		<Filters {setPage} />
+		<section class="grid flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
 		</section>
 	</div>
 	<div class="my-4">
-		<ul class='inline-flex items-center -space-x-px'>
+		<ul class="inline-flex items-center -space-x-px">
 			{#each pages as page, i}
-				<button class={`py-2
+				<button
+					class={`border
+					border-gray-300
+					bg-white
+					py-2
 					px-3
 					leading-tight
 					text-gray-500
-					bg-white
-					border
-					border-gray-300
 					hover:bg-gray-100
 					hover:text-gray-700
-					dark:bg-gray-800
 					dark:border-gray-700
+					dark:bg-gray-800
 					dark:text-gray-400
 					dark:hover:bg-gray-700
 					dark:hover:text-white
-					${i === currentPage && 'text-blue-600 bg-blue-50 hover:bg-blue-100 hover:text-blue-700'}`
-					}
-					
-					on:click={() => setPage(i)}
-				>{i + 1}</button>
+					${i === currentPage && 'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700'}`}
+					on:click={() => setPage(i)}>{i + 1}</button
+				>
 			{/each}
 		</ul>
 		<!-- <Pagination
@@ -148,6 +139,11 @@
 			on:setPage="{(e) => currentPage = e.detail.page}"
 		/> -->
 	</div>
-</main>
+</div>
 
-
+<style>
+	.wrapper {
+		display: flex;
+		justify-content: center;
+	}
+</style>
