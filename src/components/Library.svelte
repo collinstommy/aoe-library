@@ -1,6 +1,5 @@
 <script>
-	// import { paginate, LightPaginationNav, DarkPaginationNav } from 'svelte-paginate'
-	// import { onMount } from 'svelte';
+	import Fuse from 'fuse.js';
 	import Filters from './Filters.svelte';
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
@@ -9,6 +8,7 @@
 	import { getStartIndex, getEndIndex } from '../lib/usePagination';
 	import isNew from '$lib/isNew';
 	import darkMode from '../stores/darkMode';
+	import Search from './Search.svelte';
 
 	export let items;
 
@@ -18,18 +18,7 @@
 		isDark = value;
 	});
 
-	// TODO: fix pagination for dark mode
-
-	// const Pagination = isDark ? DarkPaginationNav : LightPaginationNav;
-
-	// import { voteEndpoint } from '../config/endpoints';
 	let activeFilters = [];
-
-	// onMount(async () => {
-	// 	// const res = await fetch(voteEndpoint);
-	// 	// votes = await res.json();
-	// 	// console.log({ votes });
-	// });
 
 	const unsubscribe = selectedFilters.subscribe((value) => {
 		activeFilters = value;
@@ -37,17 +26,6 @@
 
 	let currentPage = 0;
 	let pageSize = 12;
-
-	let votes = [];
-
-	const getVoteCount = (itemId) => (vote) => vote.resourceId === itemId;
-	const addVotes = (item) => {
-		const resource = votes.find(getVoteCount(item.id));
-		return {
-			...item,
-			voteCount: resource ? +resource.voteCount : 0
-		};
-	};
 
 	const setIsNew = (item) => {
 		return {
@@ -66,10 +44,11 @@
 		return 0;
 	};
 
+	let searchTerm = '';
+
 	const paginate = ({ items, pageSize, currentPage }) => {
 		const startIndex = getStartIndex(pageSize, currentPage);
 		const endIndex = getEndIndex(pageSize, currentPage, items.length);
-		console.log({ startIndex, endIndex });
 		return items.slice(startIndex, endIndex + 1);
 	};
 
@@ -77,7 +56,18 @@
 		currentPage = i;
 	};
 
-	$: selectedItems = sortItems(activeFilters, items).map(addVotes).map(setIsNew).sort(byDate);
+	$: searchAndSort = (items, activeFilters) => {
+		const sorted = sortItems(activeFilters, items);
+		if (!searchTerm) return sorted;
+		const fuse = new Fuse(sorted, {
+			keys: ['description', 'title'],
+			threshold: 0.3
+		});
+		const searched = fuse.search(searchTerm);
+		return searched.map(({ item }) => item);
+	};
+
+	$: selectedItems = searchAndSort(items, activeFilters).map(setIsNew).sort(byDate);
 
 	$: pages = Array.from({ length: Math.ceil(selectedItems.length / pageSize) });
 	$: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
@@ -88,20 +78,12 @@
 		title="AOE Library"
 		description="A directory of useful information and tools for Age of Empires 2"
 	/>
-	<div
-		class="
-		main-container
-		flex
-		flex-col
-		items-start
-		p-3
-
-		md:flex-row
-		md:p-4
-		"
-	>
-		<Filters {setPage} />
-		<section class="grid flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+	<div class="main-container flex w-full flex-col items-start p-3 md:flex-row md:p-4">
+		<aside class="w-full md:mr-4 md:w-auto">
+			<Search bind:searchTerm />
+			<Filters {setPage} />
+		</aside>
+		<section class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
@@ -130,14 +112,6 @@
 				>
 			{/each}
 		</ul>
-		<!-- <Pagination
-			totalItems="{selectedItems.length}"
-			pageSize="{pageSize}"
-			currentPage="{currentPage}"
-			limit="{1}"
-			showStepOptions="{true}"
-			on:setPage="{(e) => currentPage = e.detail.page}"
-		/> -->
 	</div>
 </div>
 
