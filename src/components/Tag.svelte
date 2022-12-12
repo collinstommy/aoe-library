@@ -1,28 +1,29 @@
 <script>
-  import { TAGS } from '../config/tags';
-  
-  export let tag;
+	import { TAGS } from '../config/tags';
 
-  const { colorClass, text, fontColor, hidden } = TAGS[tag] || {};
-  const label = text || tag;
+	export let tag;
+
+	const { colorClass, text, fontColor, hidden } = TAGS[tag] || {};
+	const label = text || tag;
 </script>
-	
-<style>
-	
-</style>
 
 {#if !hidden}
-  <div class={`
+	<div
+		class={`
+    mt-1
     rounded-full
-    text-sm
     py-1
     px-3
-    mt-1
+    text-sm
     font-medium
     ${colorClass}
     ${fontColor}
     mr-2
-  `}>
-    {label}
-  </div>
+  `}
+	>
+		{label}
+	</div>
 {/if}
+
+<style>
+</style>

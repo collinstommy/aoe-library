@@ -1,41 +1,46 @@
 <script>
-  export let type;
+	export let type;
 
-  const mapper = {
-    twitch: { 
-      icon: 'ri-twitch-fill',
-      color: 'bg-purple-200',
-    },
-    youtube: {
-      icon: 'ri-youtube-line',
-      color: 'bg-red-200'
-    },
-    facebook: {
-      icon: 'ri-facebook-fill',
-      color: 'bg-blue-200'
-    },
-  };
+	const mapper = {
+		twitch: {
+			icon: 'ri-twitch-fill'
+		},
+		youtube: {
+			icon: 'ri-youtube-line'
+		},
+		facebook: {
+			icon: 'ri-facebook-fill'
+		},
+		discord: {
+			icon: 'ri-discord-fill'
+		}
+	};
 
-  const { icon, color } = mapper[type];
+	const { icon, color } = mapper[type];
 </script>
+
+<figure
+	class={`
+  ri-xl
+  
+  mx-1
+  flex
+  h-11
+  w-11
+  items-center
+  justify-center
+  rounded-full
+  bg-gray-100
+  text-indigo-900
+  hover:cursor-pointer
+  hover:border
+  hover:border-white
+  hover:text-indigo-500
+  dark:bg-transparent
+`}
+>
+	<i class={icon} />
+</figure>
 
 <style>
 </style>
-
-<figure class={`
-  ri-xl
-  
-  text-black
-  rounded-full
-  h-11
-  w-11
-  flex
-  items-center
-  justify-center
-  mx-1
-  ${color || 'bg-grey-800'}
-  hover:cursor-pointer
-  hover:shadow-md
-`}>
-  <i class={icon}></i>
-</figure>

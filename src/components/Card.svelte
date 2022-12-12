@@ -13,7 +13,7 @@
 	export let facebook = '';
 	export let tags = '';
 	export let type = '';
-	export let voteCount = null;
+	export let discord = '';
 </script>
 
 <article
@@ -90,7 +90,7 @@
 		>
 			<!-- <Star checked votes={40}/> -->
 			<div />
-			<CardIcons {facebook} {twitch} {youtube} {url} {type} />
+			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} />
 		</div>
 	</div>
 </article>

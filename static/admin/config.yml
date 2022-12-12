@@ -20,6 +20,7 @@ collections:
       - {label: Url, name: url, widget: string, required: false }
       - {label: YouTube Url, name: youtube, widget: string, required: false }
       - {label: Facebook Url, name: facebook, widget: string, required: false }
-      - {label: Description, name: description, widget: string}
+      - {label: Discord Url, name: discord, widget: string, required: false }
+      - {label: Description, name: description, widget: string, required: false }
       - {label: Date Added, name: dateAdded, widget: datetime, format: 'x', date_format: "DD/MM/YYYY" }
       - {label: Tags, name: tags, widget: select, multiple: true, options: ['tool', 'stats', 'guide', 'reference', 'community']}
