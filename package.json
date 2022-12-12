@@ -32,7 +32,8 @@
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.3",
 		"@tailwindcss/ui": "^0.7.2",
-		"dayjs": "^1.10.4"
+		"dayjs": "^1.10.4",
+		"fuse.js": "^6.6.2"
 	},
 	"type": "module"
 }
