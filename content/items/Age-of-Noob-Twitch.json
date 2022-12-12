@@ -1,9 +1,10 @@
 {
-  "title": "Age of Noob Twitch",
+  "title": "Age of Noob",
   "twitch": "https://www.twitch.tv/ageofnoobtv",
-  "description": "Age of Noob's Twitch Stream!",
+  "description": "Gaming content creator, primarily the Age of Empires franchise!",
   "tags": [
     "youtube"
   ],
-  "dateAdded": 0
+  "dateAdded": "1632928096169",
+  "youtube": "https://www.youtube.com/c/AgeofNoob"
 }
