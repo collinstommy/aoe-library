@@ -37,6 +37,7 @@
   hover:border-white
   hover:text-indigo-500
   dark:bg-transparent
+  dark:text-white
 `}
 >
 	<i class={icon} />
