@@ -4,23 +4,16 @@
 	import selectedFilters from '../stores/filters';
 	import Hero from './Hero.svelte';
 	import Card from './Card.svelte';
-	import { sortItems, getIsNew } from '../lib/filtering';
+	import { sortItems } from '../lib/filtering';
 	import { getStartIndex, getEndIndex } from '../lib/usePagination';
 	import isNew from '$lib/isNew';
-	import darkMode from '../stores/darkMode';
 	import Search from './Search.svelte';
 
 	export let items;
 
-	let isDark;
-
-	darkMode.subscribe((value) => {
-		isDark = value;
-	});
-
 	let activeFilters = [];
 
-	const unsubscribe = selectedFilters.subscribe((value) => {
+	selectedFilters.subscribe((value) => {
 		activeFilters = value;
 	});
 

@@ -3,19 +3,27 @@
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';
 	import Cta from '../components/Cta.svelte';
-	import darkMode from '../stores/darkMode';
+
+	/* 
+		TODO: set theme in localStorage
+		https://rodneylab.com/using-local-storage-sveltekit/
+		https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript
+	*/
 
 	export const prerender = true;
+	$: isDark = true;
 
-	let isDark;
-
-	darkMode.subscribe((value) => {
-		isDark = value;
-	});
+	$: setDarkMode = (darkMode) => {
+		isDark = darkMode;
+		if (darkMode) {
+			document.querySelector('html').classList.add('dark');
+		} else {
+			document.querySelector('html').classList.remove('dark');
+		}
+	};
 
 	const handleClick = () => {
-		document.querySelector('html').classList.toggle('dark');
-		darkMode.update((mode) => !mode);
+		setDarkMode(!isDark);
 	};
 </script>
 
