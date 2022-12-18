@@ -1,11 +1,12 @@
 <script>
-  export let href;
-  export let handleClick;
+	export let href;
+	export let handleClick;
 
-  const className = `
+	const className = `
+    block
     px-3
     py-2
-    bg-gray-800
+    bg-indigo-800
     border-2
     rounded-md
     text-white
@@ -15,15 +16,14 @@
     dark:bg-gray-200
     dark:text-gray-900
   `;
-
 </script>
 
 {#if href}
-  <a class={className} href={href}>
-  <slot />
-</a>
+	<a class={className} {href}>
+		<slot />
+	</a>
 {:else}
-  <button class={className}  on:click={handleClick}>
-    <slot />
-  </button>
+	<button class={className} on:click={handleClick}>
+		<slot />
+	</button>
 {/if}

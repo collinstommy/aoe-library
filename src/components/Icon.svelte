@@ -1,5 +1,6 @@
 <script>
 	export let type;
+	export let className;
 
 	const mapper = {
 		twitch: {
@@ -13,12 +14,22 @@
 		},
 		discord: {
 			icon: 'ri-discord-fill'
+		},
+		hamburger: {
+			icon: 'ri-menu-line'
+		},
+		lightBulb: {
+			icon: 'ri-lightbulb-line'
+		},
+		moon: {
+			icon: 'ri-moon-line'
 		}
 	};
 
 	const { icon, color } = mapper[type];
 </script>
 
+<!-- TODO move styling logic into social icon component -->
 <figure
 	class={`
   ri-xl
@@ -29,15 +40,7 @@
   w-11
   items-center
   justify-center
-  rounded-full
-  bg-gray-100
-  text-indigo-900
-  hover:cursor-pointer
-  hover:border
-  hover:border-white
-  hover:text-indigo-500
-  dark:bg-transparent
-  dark:text-white
+	${className}
 `}
 >
 	<i class={icon} />

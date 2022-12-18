@@ -8,6 +8,7 @@
 	import { getStartIndex, getEndIndex } from '../lib/usePagination';
 	import isNew from '$lib/isNew';
 	import Search from './Search.svelte';
+	import Cta from './Cta.svelte';
 
 	export let items;
 
@@ -66,13 +67,12 @@
 	$: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 
-<div class="wrapper flex flex-col items-center">
-	<Hero
-		title="AOE Library"
-		description="A directory of useful information and tools for Age of Empires 2"
-	/>
+<div class="wrapper mt-3 flex flex-col items-center md:mt-8">
 	<div class="main-container flex w-full flex-col items-start p-3 md:flex-row md:p-4">
 		<aside class="w-full md:mr-4 md:w-auto">
+			<div class="mb-2 w-full text-center font-semibold">
+				<Cta href="/submit">Add Site</Cta>
+			</div>
 			<Search bind:searchTerm />
 			<Filters {setPage} />
 		</aside>

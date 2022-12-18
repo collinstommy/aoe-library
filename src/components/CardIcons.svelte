@@ -6,18 +6,17 @@
 	export let url;
 	export let type;
 
-	import Icon from './Icon.svelte';
-	import Cta from './Cta.svelte';
+	import SocialIcon from './SocialIcon.svelte';
 
 	const ctaText = type === 'app' ? 'Download' : 'View Site';
 </script>
 
 <div class="flex w-full items-center justify-between">
 	<div class="flex">
-		{#if twitch} <a href={twitch}><Icon type="twitch" /></a>{/if}
-		{#if youtube} <a href={youtube}><Icon type="youtube" /></a>{/if}
-		{#if facebook} <a href={facebook}><Icon type="facebook" /></a>{/if}
-		{#if discord} <a href={discord}><Icon type="discord" /></a>{/if}
+		{#if twitch} <a href={twitch}><SocialIcon type="twitch" /></a>{/if}
+		{#if youtube} <a href={youtube}><SocialIcon type="youtube" /></a>{/if}
+		{#if facebook} <a href={facebook}><SocialIcon type="facebook" /></a>{/if}
+		{#if discord} <a href={discord}><SocialIcon type="discord" /></a>{/if}
 	</div>
 	{#if url}
 		<div>
