@@ -57,14 +57,8 @@
 					<li>
 						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/uptimes">Uptimes</a>
 					</li>
-
 					<li>
-						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/">Library</a>
-					</li>
-					<li>
-						<a class="mx-2 block p-3 first-line:mx-2 hover:underline md:mx-5" href="/uptimes"
-							>Uptimes</a
-						>
+						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/submit">New Item</a>
 					</li>
 					<li>
 						<button on:click={handleClick} class="md:mt-o mt-0">

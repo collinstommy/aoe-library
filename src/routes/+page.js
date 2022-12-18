@@ -1,4 +1,3 @@
-export const prerender = true;
 
 export async function load() {
   const dataItems = import.meta.glob('../../content/items/*.json');
