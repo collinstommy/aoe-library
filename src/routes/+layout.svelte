@@ -75,7 +75,7 @@
 							{/if}
 						</button>
 					</li>
-					<!-- <li class="m-3 md:my-0"><Signin /></li> -->
+					<li class="m-3 md:my-0"><Signin /></li>
 				</ul>
 			</div>
 		</div>
