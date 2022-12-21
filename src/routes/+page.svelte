@@ -3,18 +3,10 @@
 
 	export let data;
 
-	async function add() {
-		const response = await fetch('/api/user', {
-			method: 'GET',
-			headers: {
-				'content-type': 'application/json'
-			}
-		});
-		console.log({ response });
-	}
+	console.log({ data });
 </script>
 
-<button on:click={add}>test</button>
+
 
 <Library items={data.items} />
 

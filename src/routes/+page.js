@@ -1,5 +1,5 @@
 
-export async function load() {
+export async function load({ fetch }) {
   const dataItems = import.meta.glob('../../content/items/*.json');
   let body = [];
 
@@ -11,11 +11,15 @@ export async function load() {
     }));
   }
 
+  const response = await fetch('/api/me');
+  const likes = await response.json();
+
   /**
   * @type {import('@sveltejs/kit').Load}
   */
   const items = await Promise.all(body)
   return {
-    items
+    likes,
+    items,
   };
 }

@@ -2,7 +2,7 @@
 import { json, error } from '@sveltejs/kit';
 import prisma from '../../../lib/server/prisma';
 
-export async function GET({ url, locals }) {
+export async function GET({ locals }) {
   const session = await locals.getSession()
 
   const user = await prisma.user.findUnique({
