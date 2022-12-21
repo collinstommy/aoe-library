@@ -8,7 +8,11 @@
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"local:cms": "netlify-cms-proxy-server",
-		"parse-data": "node ./lib/parse.js"
+		"parse-data": "node ./lib/parse.js",
+		"migrate": "prisma migrate dev --name init",
+		"reset": "NODE_ENV=development prisma migrate reset dev --name init",
+		"db-seed": "NODE_ENV=development prisma db seed",
+		"studio": "prisma studio"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
@@ -25,6 +29,7 @@
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.7.0",
 		"prettier-plugin-tailwindcss": "^0.2.0",
+		"prisma": "^4.7.1",
 		"svelte": "^3.44.0",
 		"svelte-preprocess": "^4.10.7",
 		"tailwindcss": "^3.1.8",
@@ -33,10 +38,13 @@
 	"dependencies": {
 		"@auth/core": "^0.1.4",
 		"@auth/sveltekit": "^0.1.6",
+		"@next-auth/prisma-adapter": "^1.0.5",
+		"@prisma/client": "^4.8.0",
 		"@tailwindcss/forms": "^0.5.3",
 		"@tailwindcss/ui": "^0.7.2",
 		"dayjs": "^1.10.4",
-		"fuse.js": "^6.6.2"
+		"fuse.js": "^6.6.2",
+		"next-auth": "^4.18.6"
 	},
 	"type": "module"
 }

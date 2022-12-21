@@ -6,7 +6,7 @@
 
 {#if $page.data.session}
 	<div class="flex">
-		<button on:click={() => signOut()} class="button">Sign out</button>
+		<button on:click={() => signOut()} class="button hover:underline ">Sign out</button>
 		{#if $page.data.session.user?.image}
 			<img
 				src={$page.data.session.user?.image}
