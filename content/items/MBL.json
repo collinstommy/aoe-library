@@ -1,11 +1,12 @@
 {
-  "title": "MBL",
-  "youtube": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
-  "twitch": "https://www.twitch.tv/mblaoc",
-  "description": "High level player with uploads of streams.",
-  "dateAdded": 1613913116585,
-  "tags": [
-    "youtube",
-    "twitch"
-  ]
+    "id": "aff3a834-1fab-4db0-9130-7a34d068ae6e",
+    "title": "MBL",
+    "youtube": "https://www.youtube.com/channel/UCHKDFOufgTikGmb7y-sZQ2w",
+    "twitch": "https://www.twitch.tv/mblaoc",
+    "description": "High level player with uploads of streams.",
+    "dateAdded": 1613913116585,
+    "tags": [
+        "youtube",
+        "twitch"
+    ]
 }

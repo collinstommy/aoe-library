@@ -1,9 +1,10 @@
 {
-  "title": "aoe2map",
-  "url": "https://aoe2map.net/",
-  "description": "Directory of downloadable maps.",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "0bce5dc3-92e6-477b-87d3-c227cf39a556",
+    "title": "aoe2map",
+    "url": "https://aoe2map.net/",
+    "description": "Directory of downloadable maps.",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

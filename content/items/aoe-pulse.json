@@ -1,10 +1,11 @@
 {
-  "dateAdded": "1639476245913",
-  "title": "AoE Pulse",
-  "url": "https://www.aoepulse.com",
-  "description": "Stats on win rates of different builds, age up times and civs.",
-  "tags": [
-    "tool",
-    "stats"
-  ]
+    "id": "f8a51356-2245-4fb5-98d3-5d67433d7387",
+    "dateAdded": "1639476245913",
+    "title": "AoE Pulse",
+    "url": "https://www.aoepulse.com",
+    "description": "Stats on win rates of different builds, age up times and civs.",
+    "tags": [
+        "tool",
+        "stats"
+    ]
 }

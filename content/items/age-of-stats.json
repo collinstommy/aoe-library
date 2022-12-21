@@ -1,9 +1,10 @@
 {
-  "dateAdded": "1652950715582",
-  "url": "https://agestats.net",
-  "title": "Age of Stats",
-  "description": "Win rates by Civ, Map, Unit type and more.",
-  "tags": [
-    "stats"
-  ]
+    "id": "a6b320e9-4bff-4a57-ba4d-488f0485b39a",
+    "dateAdded": "1652950715582",
+    "url": "https://agestats.net",
+    "title": "Age of Stats",
+    "description": "Win rates by Civ, Map, Unit type and more.",
+    "tags": [
+        "stats"
+    ]
 }

@@ -1,10 +1,11 @@
 {
-  "title": "Build Order Guide",
-  "url": "https://buildorderguide.com/",
-  "description": "Build Order Guide",
-  "tags": [
-    "tool",
-    "guide"
-  ],
-  "dateAdded": 0
+    "id": "d463d980-491b-45a7-a7da-db3f6d765b20",
+    "title": "Build Order Guide",
+    "url": "https://buildorderguide.com/",
+    "description": "Build Order Guide",
+    "tags": [
+        "tool",
+        "guide"
+    ],
+    "dateAdded": 0
 }

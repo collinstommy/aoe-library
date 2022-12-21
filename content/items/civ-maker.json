@@ -1,9 +1,10 @@
 {
-  "dateAdded": "1670861852055",
-  "description": "Civ Maker",
-  "url": "https://krakenmeister.com/civbuilder",
-  "title": "Civ Maker",
-  "tags": [
-    "tool"
-  ]
+    "id": "3001e418-2179-4f44-9876-a921c420607f",
+    "dateAdded": "1670861852055",
+    "description": "Civ Maker",
+    "url": "https://krakenmeister.com/civbuilder",
+    "title": "Civ Maker",
+    "tags": [
+        "tool"
+    ]
 }

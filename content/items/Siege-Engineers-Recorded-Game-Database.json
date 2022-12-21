@@ -1,10 +1,11 @@
 {
-  "title": "Siege Engineers Recorded Game Database",
-  "url": "https://aoe2recs.com/",
-  "description": "Recorded games directory and stats on players, civs and more.",
-  "tags": [
-    "tool",
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "a5b4b651-6aeb-40b1-a54a-54e453924c58",
+    "title": "Siege Engineers Recorded Game Database",
+    "url": "https://aoe2recs.com/",
+    "description": "Recorded games directory and stats on players, civs and more.",
+    "tags": [
+        "tool",
+        "stats"
+    ],
+    "dateAdded": 0
 }

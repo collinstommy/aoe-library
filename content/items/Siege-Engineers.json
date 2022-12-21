@@ -1,10 +1,11 @@
 {
-  "title": "Siege Engineers",
-  "url": "https://aoe2.se/",
-  "description": "Directory of tools and resources.",
-  "tags": [
-    "tool",
-    "guide"
-  ],
-  "dateAdded": 0
+    "id": "db6884a5-279e-4200-9141-6ff504de87c7",
+    "title": "Siege Engineers",
+    "url": "https://aoe2.se/",
+    "description": "Directory of tools and resources.",
+    "tags": [
+        "tool",
+        "guide"
+    ],
+    "dateAdded": 0
 }

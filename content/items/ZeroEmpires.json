@@ -1,10 +1,11 @@
 {
-  "title": "ZeroEmpires",
-  "youtube": "https://www.youtube.com/c/ZeroEmpires",
-  "description": "Strategy guides, tips and tricks regularly uploaded",
-  "tags": [
-    "guide",
-    "youtube"
-  ],
-  "dateAdded": 1613913116585
+    "id": "9c6bd4ec-d40f-4d76-a8fa-8a77b82f401d",
+    "title": "ZeroEmpires",
+    "youtube": "https://www.youtube.com/c/ZeroEmpires",
+    "description": "Strategy guides, tips and tricks regularly uploaded",
+    "tags": [
+        "guide",
+        "youtube"
+    ],
+    "dateAdded": 1613913116585
 }

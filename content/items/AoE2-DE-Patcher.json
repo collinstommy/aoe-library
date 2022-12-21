@@ -1,9 +1,10 @@
 {
-  "title": "AoE2 DE Patcher",
-  "url": "https://github.com/DJSchaffner/aoe2de_patcher",
-  "description": "A tool for patching AoE2 DE to previous versions of the game. (Steam version only)",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "493bde6d-e24b-49e5-a2bb-ff98f6e5eba3",
+    "title": "AoE2 DE Patcher",
+    "url": "https://github.com/DJSchaffner/aoe2de_patcher",
+    "description": "A tool for patching AoE2 DE to previous versions of the game. (Steam version only)",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

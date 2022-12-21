@@ -1,10 +1,11 @@
 {
-  "title": "aoe2techtree.net",
-  "url": "https://aoe2techtree.net/",
-  "description": "civilizations tech trees",
-  "tags": [
-    "tool",
-    "reference"
-  ],
-  "dateAdded": 0
+    "id": "0f93f03f-c002-4829-8e44-4ea9432b7e24",
+    "title": "aoe2techtree.net",
+    "url": "https://aoe2techtree.net/",
+    "description": "civilizations tech trees",
+    "tags": [
+        "tool",
+        "reference"
+    ],
+    "dateAdded": 0
 }

@@ -1,9 +1,10 @@
 {
-  "title": "Hotkey Editor",
-  "url": "https://aokhotkeys.appspot.com/",
-  "description": "A hotkey editor with some popular presets",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "c726e630-8f02-4255-9e63-ee84e37f8127",
+    "title": "Hotkey Editor",
+    "url": "https://aokhotkeys.appspot.com/",
+    "description": "A hotkey editor with some popular presets",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

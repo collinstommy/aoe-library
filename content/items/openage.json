@@ -1,9 +1,10 @@
 {
-  "title": "openage",
-  "url": "https://openage.sft.mx/",
-  "description": "a free (as in freedom) game engine to implement Age of Empires",
-  "tags": [
-    "games"
-  ],
-  "dateAdded": 0
+    "id": "d12f3bac-88d4-4dfb-a6be-0a967a38edc4",
+    "title": "openage",
+    "url": "https://openage.sft.mx/",
+    "description": "a free (as in freedom) game engine to implement Age of Empires",
+    "tags": [
+        "games"
+    ],
+    "dateAdded": 0
 }

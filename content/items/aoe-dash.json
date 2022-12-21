@@ -1,9 +1,10 @@
 {
-  "dateAdded": "1646744838284",
-  "title": "AOE Dash",
-  "url": "https://www.aoedash.net/",
-  "tags": [
-    "stats"
-  ],
-  "description": "Up to date stats and civ info"
+    "id": "11b893e7-8a44-4c36-9798-05daaa3b3236",
+    "dateAdded": "1646744838284",
+    "title": "AOE Dash",
+    "url": "https://www.aoedash.net/",
+    "tags": [
+        "stats"
+    ],
+    "description": "Up to date stats and civ info"
 }

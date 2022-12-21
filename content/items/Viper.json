@@ -1,12 +1,13 @@
 {
-  "title": "Viper",
-  "twitch": "https://www.twitch.tv/viper",
-  "youtube": "https://www.youtube.com/user/TheViperAOC",
-  "description": "High level AOE",
-  "tags": [
-    "youtube",
-    "twitch"
-  ],
-  "dateAdded": "1635338755545",
-  "facebook": "https://www.facebook.com/TheViper/"
+    "id": "77cd004e-1a0e-4c09-aef2-0edf381ab338",
+    "title": "Viper",
+    "twitch": "https://www.twitch.tv/viper",
+    "youtube": "https://www.youtube.com/user/TheViperAOC",
+    "description": "High level AOE",
+    "tags": [
+        "youtube",
+        "twitch"
+    ],
+    "dateAdded": "1635338755545",
+    "facebook": "https://www.facebook.com/TheViper/"
 }

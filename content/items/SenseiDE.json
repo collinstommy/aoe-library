@@ -1,9 +1,10 @@
 {
-  "title": "SenseiDE",
-  "url": "https://github.com/gregstein/SenseiDE",
-  "description": "Tweak AoE2 DE Performance",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "0aad85c9-0b99-42b9-9725-7d868df93e92",
+    "title": "SenseiDE",
+    "url": "https://github.com/gregstein/SenseiDE",
+    "description": "Tweak AoE2 DE Performance",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

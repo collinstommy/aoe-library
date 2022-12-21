@@ -1,11 +1,12 @@
 {
-  "title": "Daut",
-  "youtube": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
-  "twitch": "https://www.twitch.tv/daut",
-  "description": "AOE2 Pro Player - known as The Lord",
-  "dateAdded": 1613913116585,
-  "tags": [
-    "youtube",
-    "twitch"
-  ]
+    "id": "afdad888-072b-4dfe-a23e-c97281218f3a",
+    "title": "Daut",
+    "youtube": "https://www.youtube.com/channel/UC8m8Iah2xOHZvnBbpyOcEOA",
+    "twitch": "https://www.twitch.tv/daut",
+    "description": "AOE2 Pro Player - known as The Lord",
+    "dateAdded": 1613913116585,
+    "tags": [
+        "youtube",
+        "twitch"
+    ]
 }

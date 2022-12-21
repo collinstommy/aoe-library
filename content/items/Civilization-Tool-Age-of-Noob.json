@@ -1,9 +1,10 @@
 {
-  "title": "Civilization Tool - Age of Noob",
-  "url": "http://tiny.cc/CivilizationTool",
-  "description": "Civilization Tool created by Age of Noob for beginner players!",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "47b2d895-34e5-4710-ae3c-2c6b0c21cc16",
+    "title": "Civilization Tool - Age of Noob",
+    "url": "http://tiny.cc/CivilizationTool",
+    "description": "Civilization Tool created by Age of Noob for beginner players!",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

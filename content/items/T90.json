@@ -1,11 +1,12 @@
 {
-  "title": "T90",
-  "youtube": "https://www.youtube.com/channel/UCZUT79WUUpZlZ-XMF7l4CFg",
-  "twitch": "https://www.twitch.tv/t90official",
-  "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
-  "tags": [
-    "youtube"
-  ],
-  "dateAdded": "1635338763744",
-  "facebook": "https://www.facebook.com/T90Official"
+    "id": "f2acd262-25fb-42ab-9827-9c9e0dee9a59",
+    "title": "T90",
+    "youtube": "https://www.youtube.com/channel/UCZUT79WUUpZlZ-XMF7l4CFg",
+    "twitch": "https://www.twitch.tv/t90official",
+    "description": "Caster & Live streamer. Videos with low elo and high level players alike.",
+    "tags": [
+        "youtube"
+    ],
+    "dateAdded": "1635338763744",
+    "facebook": "https://www.facebook.com/T90Official"
 }

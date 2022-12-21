@@ -1,9 +1,10 @@
 {
-  "title": "aoe2.guide",
-  "url": "https://aoe2.guide/",
-  "description": "Tips, guides and build orders.",
-  "tags": [
-    "guide"
-  ],
-  "dateAdded": 0
+    "id": "20efbcf6-0517-40f3-9ccc-1dbd960e599e",
+    "title": "aoe2.guide",
+    "url": "https://aoe2.guide/",
+    "description": "Tips, guides and build orders.",
+    "tags": [
+        "guide"
+    ],
+    "dateAdded": 0
 }

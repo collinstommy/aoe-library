@@ -1,11 +1,12 @@
 {
-  "title": "MembTV",
-  "youtube": "https://www.youtube.com/c/MembAgeofEmpires2",
-  "twitch": "https://www.twitch.tv/membtv",
-  "description": "MembTV is one of the most veteran Twitch streamers in the Age of Empires community. Casts of pro games and tournaments",
-  "tags": [
-    "youtube",
-    "twitch"
-  ],
-  "dateAdded": 1613913116585
+    "id": "6f0c315c-19b9-4e11-a8f4-e7841964dc6c",
+    "title": "MembTV",
+    "youtube": "https://www.youtube.com/c/MembAgeofEmpires2",
+    "twitch": "https://www.twitch.tv/membtv",
+    "description": "MembTV is one of the most veteran Twitch streamers in the Age of Empires community. Casts of pro games and tournaments",
+    "tags": [
+        "youtube",
+        "twitch"
+    ],
+    "dateAdded": 1613913116585
 }

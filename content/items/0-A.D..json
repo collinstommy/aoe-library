@@ -1,9 +1,10 @@
 {
-  "title": "0 A.D.",
-  "url": "https://play0ad.com/",
-  "description": "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.",
-  "tags": [
-    "games"
-  ],
-  "dateAdded": 0
+    "id": "b6cb7fdc-4a7f-4020-b5e9-e14608c259b1",
+    "title": "0 A.D.",
+    "url": "https://play0ad.com/",
+    "description": "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.",
+    "tags": [
+        "games"
+    ],
+    "dateAdded": 0
 }

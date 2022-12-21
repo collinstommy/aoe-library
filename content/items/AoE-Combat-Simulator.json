@@ -1,9 +1,10 @@
 {
-  "title": "AoE Combat Simulator",
-  "url": "https://aoe-combatsim.com/",
-  "description": "Simulate combat outcomes",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "816bb7c3-8359-4206-8ae1-d90ea61d96de",
+    "title": "AoE Combat Simulator",
+    "url": "https://aoe-combatsim.com/",
+    "description": "Simulate combat outcomes",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

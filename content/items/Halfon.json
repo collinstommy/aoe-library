@@ -1,10 +1,11 @@
 {
-  "title": "Halfon",
-  "url": "https://halfon.aoe2.se/",
-  "description": "Building and tech reference",
-  "tags": [
-    "tool",
-    "reference"
-  ],
-  "dateAdded": 0
+    "id": "e802ee9e-59e0-4179-9236-0feb8345cd92",
+    "title": "Halfon",
+    "url": "https://halfon.aoe2.se/",
+    "description": "Building and tech reference",
+    "tags": [
+        "tool",
+        "reference"
+    ],
+    "dateAdded": 0
 }

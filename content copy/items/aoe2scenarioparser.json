@@ -1,0 +1,9 @@
+{
+  "dateAdded": "1659466220429",
+  "title": "AoE2ScenarioParser",
+  "url": "https://ksneijders.github.io/AoE2ScenarioParser/",
+  "description": "Python library for editing aoe2scenario files from Age of Empires 2 Definitive Edition",
+  "tags": [
+    "tool"
+  ]
+}
