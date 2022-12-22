@@ -1,6 +1,7 @@
 <script>
 	import Tag from './Tag.svelte';
 	import CardIcons from './CardIcons.svelte';
+	import { page } from '$app/stores';
 
 	export let url = '';
 	export let title = '';
@@ -12,6 +13,9 @@
 	export let tags = '';
 	export let type = '';
 	export let discord = '';
+	export let id = '';
+
+	const likeCount = new Map($page.data.likes).get(id) || 0;
 </script>
 
 <article
@@ -41,7 +45,7 @@
 		<div class=" bottom mt-4 flex items-center justify-between border-t border-gray-200 pt-3">
 			<!-- <Star checked votes={40}/> -->
 			<div />
-			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} />
+			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} {likeCount} />
 		</div>
 	</div>
 </article>

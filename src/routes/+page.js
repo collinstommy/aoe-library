@@ -11,15 +11,16 @@ export async function load({ fetch }) {
     }));
   }
 
-  const response = await fetch('/api/me');
-  const likes = await response.json();
+  const me = await (await fetch('/api/me')).json();
+  const likes = await (await fetch('/api/likes')).json();
 
   /**
   * @type {import('@sveltejs/kit').Load}
   */
   const items = await Promise.all(body)
   return {
-    likes,
+    me,
     items,
+    likes,
   };
 }

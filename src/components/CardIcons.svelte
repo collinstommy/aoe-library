@@ -7,6 +7,7 @@
 	export let discord;
 	export let url;
 	export let type;
+	export let likeCount;
 
 	import SocialIcon from './SocialIcon.svelte';
 
@@ -16,7 +17,7 @@
 <div class="flex w-full items-center justify-between">
 	<div class="flex items-center font-semibold">
 		<Icon type="star" className="text-yellow-100" />
-		<span>15</span>
+		<span>{likeCount}</span>
 	</div>
 	<div class="links">
 		<div class="flex">

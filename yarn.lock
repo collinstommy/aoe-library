@@ -268,6 +268,11 @@
     "svelte-hmr" "^0.15.1"
     "vitefu" "^0.2.3"
 
+"@sveltestack/svelte-query@^1.6.0":
+  "integrity" "sha512-C0wWuh6av1zu3Pzwrg6EQmX3BhDZQ4gMAdYu6Tfv4bjbEZTB00uEDz52z92IZdONh+iUKuyo0xRZ2e16k2Xifg=="
+  "resolved" "https://registry.npmjs.org/@sveltestack/svelte-query/-/svelte-query-1.6.0.tgz"
+  "version" "1.6.0"
+
 "@swc/helpers@0.4.14":
   "integrity" "sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw=="
   "resolved" "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"
