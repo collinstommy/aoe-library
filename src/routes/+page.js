@@ -20,7 +20,7 @@ async function getItems(dataItems, fetch) {
 	const items = await Promise.all(body);
 	return {
 		// me,
-		// items,
+		items
 		// likes
 	};
 }
