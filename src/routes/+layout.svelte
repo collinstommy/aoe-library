@@ -3,7 +3,7 @@
 	import '../app.css';
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';
-	import Nav from '../components/uptimes/Nav.svelte';
+	import Nav from '../components/Nav.svelte';
 
 	const queryClient = new QueryClient();
 </script>

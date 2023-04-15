@@ -1,11 +1,12 @@
 <script>
 	import '../app.css';
 	import '../tailwind.css';
-	import Signin from '../components/Signin.svelte';
-	import Icon from '../components/Icon.svelte';
-	import SocialIcon from '../components/SocialIcon.svelte';
+	import Icon from './Icon.svelte';
+	import SocialIcon from './SocialIcon.svelte';
+	import Signin from './Signin.svelte';
+	import { page } from '$app/stores';
 
-	/* 
+	/*
 		TODO: set theme in localStorage
 		https://rodneylab.com/using-local-storage-sveltekit/
 		https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript
@@ -13,6 +14,8 @@
 
 	let isDark = true;
 	$: isMenuOpen = false;
+
+	console.log({ page: page.data });
 
 	const setDarkMode = (darkMode) => {
 		isDark = darkMode;
@@ -57,7 +60,7 @@
 						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/uptimes">Uptimes</a>
 					</li>
 					<li>
-						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/submit">New Item</a>
+						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/submit">Submit Item</a>
 					</li>
 					<li>
 						<button on:click={handleClick} class="md:mt-o mt-0">
@@ -68,7 +71,7 @@
 							{/if}
 						</button>
 					</li>
-					<li class="m-3 md:my-0"><Signin /></li>
+					<!-- <li class="m-3 md:my-0"><Signin /></li> -->
 				</ul>
 			</div>
 		</div>

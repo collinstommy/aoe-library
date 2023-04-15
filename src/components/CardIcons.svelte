@@ -15,10 +15,10 @@
 </script>
 
 <div class="flex w-full items-center justify-between">
-	<div class="flex items-center font-semibold">
+	<!-- <div class="flex items-center font-semibold">
 		<Icon type="star" className="text-yellow-100" />
 		<span>{likeCount}</span>
-	</div>
+	</div> -->
 	<div class="links">
 		<div class="flex">
 			{#if twitch} <a href={twitch}><SocialIcon type="twitch" /></a>{/if}
