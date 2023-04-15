@@ -11,17 +11,17 @@ async function getItems(dataItems, fetch) {
 		);
 	}
 
-	const me = await (await fetch('/api/me')).json();
-	const likes = await (await fetch('/api/likes')).json();
+	// const me = await (await fetch('/api/me')).json();
+	// const likes = await (await fetch('/api/likes')).json();
 
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
 	const items = await Promise.all(body);
 	return {
-		me,
-		items,
-		likes
+		// me,
+		// items,
+		// likes
 	};
 }
 export async function load({ fetch }) {
