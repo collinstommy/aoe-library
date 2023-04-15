@@ -1,9 +1,10 @@
 {
-  "title": "Age of Noob YouTube",
-  "youtube": "https://www.youtube.com/c/AgeofNoob",
-  "description": "Age of Noob's YouTube channel!",
-  "tags": [
-    "youtube"
-  ],
-  "dateAdded": 0
+    "id": "d8cbb0f2-51c6-4b14-99b4-fd58c77f82d9",
+    "title": "Age of Noob YouTube",
+    "youtube": "https://www.youtube.com/c/AgeofNoob",
+    "description": "Age of Noob's YouTube channel!",
+    "tags": [
+        "youtube"
+    ],
+    "dateAdded": 0
 }

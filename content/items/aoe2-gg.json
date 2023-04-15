@@ -1,13 +1,14 @@
 {
-  "dateAdded": "1669629762140",
-  "title": "AOE2.GG",
-  "url": "https://www.aoe2.gg",
-  "youtube": "",
-  "twitch": "https://twitch.tv/zebeastgg",
-  "description": "Your one-stop AoE2 statistics and community. Claim player profiles, join or create clans, get streamer overlays and more!",
-  "tags": [
-    "tool",
-    "guide",
-    "community"
-  ]
+    "id": "5ee823e1-a602-4c0d-ab4c-984a7bbdfaf0",
+    "dateAdded": "1669629762140",
+    "title": "AOE2.GG",
+    "url": "https://www.aoe2.gg",
+    "youtube": "",
+    "twitch": "https://twitch.tv/zebeastgg",
+    "description": "Your one-stop AoE2 statistics and community. Claim player profiles, join or create clans, get streamer overlays and more!",
+    "tags": [
+        "tool",
+        "guide",
+        "community"
+    ]
 }

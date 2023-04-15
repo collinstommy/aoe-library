@@ -1,9 +1,10 @@
 {
-  "title": "T-West",
-  "youtube": "https: //youtube.com/c/TWestYT",
-  "description": "Videos on game mechanics, campaigns, and tutorials",
-  "tags": [
-    "youtube"
-  ],
-  "dateAdded": 0
+    "id": "777eaee4-e28a-4a80-aa11-8af90bdedad3",
+    "title": "T-West",
+    "youtube": "https: //youtube.com/c/TWestYT",
+    "description": "Videos on game mechanics, campaigns, and tutorials",
+    "tags": [
+        "youtube"
+    ],
+    "dateAdded": 0
 }

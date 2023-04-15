@@ -1,9 +1,10 @@
 {
-  "title": "AoE Nexus",
-  "url": "https://aoenexus.com/",
-  "description": "Player stats by country and community links",
-  "tags": [
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "142cc1ab-4cf3-4202-a058-7cf9699ec6b3",
+    "title": "AoE Nexus",
+    "url": "https://aoenexus.com/",
+    "description": "Player stats by country and community links",
+    "tags": [
+        "stats"
+    ],
+    "dateAdded": 0
 }

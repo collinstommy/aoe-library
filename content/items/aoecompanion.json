@@ -1,10 +1,11 @@
 {
-  "title": "aoecompanion",
-  "url": "https://aoecompanion.com/",
-  "description": "Directory of pro and community build orders. Build and share you own build orders.",
-  "tags": [
-    "guide",
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "d0a7eab7-d858-4e5c-a3f2-a65398137450",
+    "title": "aoecompanion",
+    "url": "https://aoecompanion.com/",
+    "description": "Directory of pro and community build orders. Build and share you own build orders.",
+    "tags": [
+        "guide",
+        "tool"
+    ],
+    "dateAdded": 0
 }

@@ -1,10 +1,11 @@
 {
-  "title": "aoestats",
-  "url": "https://aoestats.io/",
-  "description": "aoestats aggregates the latest ranked matches for Age of Empires II and provides in-depth data and statistics on a civilization basis; stats include: win rate, play rate, win rate vs. game length, and more!",
-  "tags": [
-    "tool",
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "23ce5fb4-b2bc-4e4a-83d9-c1424122c77c",
+    "title": "aoestats",
+    "url": "https://aoestats.io/",
+    "description": "aoestats aggregates the latest ranked matches for Age of Empires II and provides in-depth data and statistics on a civilization basis; stats include: win rate, play rate, win rate vs. game length, and more!",
+    "tags": [
+        "tool",
+        "stats"
+    ],
+    "dateAdded": 0
 }

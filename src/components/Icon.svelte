@@ -1,46 +1,22 @@
 <script>
 	export let type;
+	export let className;
 
-	const mapper = {
-		twitch: {
-			icon: 'ri-twitch-fill'
-		},
-		youtube: {
-			icon: 'ri-youtube-line'
-		},
-		facebook: {
-			icon: 'ri-facebook-fill'
-		},
-		discord: {
-			icon: 'ri-discord-fill'
-		}
+	const ICONS = {
+		twitch: 'ri-twitch-fill',
+		youtube: 'ri-youtube-line',
+		facebook: 'ri-facebook-fill',
+		discord: 'ri-discord-fill',
+		hamburger: 'ri-menu-line',
+		lightBulb: 'ri-lightbulb-line',
+		moon: 'ri-moon-line',
+		star: 'ri-star-line',
+		starFilled: 'ri-star-fill'
 	};
-
-	const { icon, color } = mapper[type];
 </script>
 
-<figure
-	class={`
-  ri-xl
-  
-  mx-1
-  flex
-  h-11
-  w-11
-  items-center
-  justify-center
-  rounded-full
-  bg-gray-100
-  text-indigo-900
-  hover:cursor-pointer
-  hover:border
-  hover:border-white
-  hover:text-indigo-500
-  dark:bg-transparent
-  dark:text-white
-`}
->
-	<i class={icon} />
+<figure class={`ri-xl mx-1 flex h-11 w-11 items-center justify-center ${className}`}>
+	<i class={ICONS[type]} />
 </figure>
 
 <style>

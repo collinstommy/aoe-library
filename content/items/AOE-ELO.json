@@ -1,9 +1,10 @@
 {
-  "title": "AOE ELO",
-  "url": "https://www.aoe-elo.com",
-  "description": "AoE II player rating, based only on tournament games",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "f94d78a1-0e0e-4481-91a6-e7ed091bb1ae",
+    "title": "AOE ELO",
+    "url": "https://www.aoe-elo.com",
+    "description": "AoE II player rating, based only on tournament games",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

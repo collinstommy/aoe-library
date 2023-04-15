@@ -1,9 +1,10 @@
 {
-  "title": "Random Rating Match Retriever",
-  "url": "https://thbrown.github.io/aoe2-de-random-elo/",
-  "description": "Find games with a random elo",
-  "dateAdded": 1617994142395,
-  "tags": [
-    "tool"
-  ]
+    "id": "8b2a6601-387a-4a4d-99bc-506cb78a4e47",
+    "title": "Random Rating Match Retriever",
+    "url": "https://thbrown.github.io/aoe2-de-random-elo/",
+    "description": "Find games with a random elo",
+    "dateAdded": 1617994142395,
+    "tags": [
+        "tool"
+    ]
 }

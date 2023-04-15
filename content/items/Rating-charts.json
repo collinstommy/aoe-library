@@ -1,10 +1,11 @@
 {
-  "title": "Rating charts",
-  "url": "https://ratings.aoe2.se/",
-  "description": "Charts showing where a player lies within the AOE rankings.",
-  "tags": [
-    "tool",
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "b108b21f-e624-4d7e-8367-8b326813b92e",
+    "title": "Rating charts",
+    "url": "https://ratings.aoe2.se/",
+    "description": "Charts showing where a player lies within the AOE rankings.",
+    "tags": [
+        "tool",
+        "stats"
+    ],
+    "dateAdded": 0
 }

@@ -4,10 +4,4 @@
 	export let data;
 </script>
 
-<Library items={data.items} />
-
-<style>
-	.hero {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-	}
-</style>
+<Library items={data.items} likes={data.likes} />

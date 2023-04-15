@@ -1,9 +1,10 @@
 {
-  "title": "Age of Empires Federation of Clans",
-  "url": "https://aoecf.com/",
-  "description": "The Federation offers a motivation for players to engage with clans and a motivation for clans to be active and participate in clan events and tournaments.",
-  "tags": [
-    "community"
-  ],
-  "dateAdded": 0
+    "id": "78f5d07a-b5e6-4b90-8937-569dda1e11a0",
+    "title": "Age of Empires Federation of Clans",
+    "url": "https://aoecf.com/",
+    "description": "The Federation offers a motivation for players to engage with clans and a motivation for clans to be active and participate in clan events and tournaments.",
+    "tags": [
+        "community"
+    ],
+    "dateAdded": 0
 }

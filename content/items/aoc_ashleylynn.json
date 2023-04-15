@@ -1,9 +1,10 @@
 {
-  "title": "aoc_ashleylynn",
-  "twitch": "https://www.twitch.tv/aoc_ashleylynn",
-  "description": "Ranked games and tournament casts",
-  "dateAdded": 1613913116585,
-  "tags": [
-    "twitch"
-  ]
+    "id": "bf2a9d56-0edd-4578-8c1d-9d1762e76fd4",
+    "title": "aoc_ashleylynn",
+    "twitch": "https://www.twitch.tv/aoc_ashleylynn",
+    "description": "Ranked games and tournament casts",
+    "dateAdded": 1613913116585,
+    "tags": [
+        "twitch"
+    ]
 }

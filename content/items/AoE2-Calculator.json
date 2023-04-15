@@ -1,9 +1,10 @@
 {
-  "title": "AoE2 Calculator",
-  "url": "https://gbts.github.io/aoe2calc/",
-  "description": "Compare unit stats and see who wins in a fight",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 1613913116585
+    "id": "009599eb-543c-4533-a603-114d7ccd218c",
+    "title": "AoE2 Calculator",
+    "url": "https://gbts.github.io/aoe2calc/",
+    "description": "Compare unit stats and see who wins in a fight",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 1613913116585
 }

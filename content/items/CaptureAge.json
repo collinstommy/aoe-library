@@ -1,10 +1,11 @@
 {
-  "title": "CaptureAge",
-  "url": "https://captureage.com/",
-  "description": "CaptureAge is a tool for analyzing and observing Age of Empires II: Definitive Edition, providing additional features like more zoom, reverse replay, instant timeline jumping and statistics.",
-  "dateAdded": 1631005845262,
-  "tags": [
-    "tool",
-    "stats"
-  ]
+    "id": "985b3244-24ee-484a-9ba0-41bbb5c12412",
+    "title": "CaptureAge",
+    "url": "https://captureage.com/",
+    "description": "CaptureAge is a tool for analyzing and observing Age of Empires II: Definitive Edition, providing additional features like more zoom, reverse replay, instant timeline jumping and statistics.",
+    "dateAdded": 1631005845262,
+    "tags": [
+        "tool",
+        "stats"
+    ]
 }

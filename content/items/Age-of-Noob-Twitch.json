@@ -1,10 +1,11 @@
 {
-  "title": "Age of Noob",
-  "twitch": "https://www.twitch.tv/ageofnoobtv",
-  "description": "Gaming content creator, primarily the Age of Empires franchise!",
-  "tags": [
-    "youtube"
-  ],
-  "dateAdded": "1632928096169",
-  "youtube": "https://www.youtube.com/c/AgeofNoob"
+    "id": "55d112cb-15d4-42b4-828b-b46ada95e318",
+    "title": "Age of Noob",
+    "twitch": "https://www.twitch.tv/ageofnoobtv",
+    "description": "Gaming content creator, primarily the Age of Empires franchise!",
+    "tags": [
+        "youtube"
+    ],
+    "dateAdded": "1632928096169",
+    "youtube": "https://www.youtube.com/c/AgeofNoob"
 }

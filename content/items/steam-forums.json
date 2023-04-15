@@ -1,9 +1,10 @@
 {
-  "dateAdded": "1670861528413",
-  "title": "Steam forums",
-  "url": "https://steamcommunity.com/app/813780/discussions/",
-  "description": "Steam forums for AOE DE",
-  "tags": [
-    "community"
-  ]
+    "id": "0a9f85ce-4e2e-4ca7-a44c-286bff0fc44e",
+    "dateAdded": "1670861528413",
+    "title": "Steam forums",
+    "url": "https://steamcommunity.com/app/813780/discussions/",
+    "description": "Steam forums for AOE DE",
+    "tags": [
+        "community"
+    ]
 }

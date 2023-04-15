@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { writeItems } from './src/build/writeItems';
+import { writeItems } from './lib/writeItems';
 
 const config = {
   plugins: [sveltekit(),

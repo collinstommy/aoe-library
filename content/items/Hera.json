@@ -1,12 +1,13 @@
 {
-  "title": "Hera",
-  "twitch": "https://www.twitch.tv/hera",
-  "youtube": "https://youtube.com/c/HeraAgeofEmpires2",
-  "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
-  "tags": [
-    "guide",
-    "youtube",
-    "twitch"
-  ],
-  "dateAdded": 0
+    "id": "00261472-d3ce-4f38-b706-bfc920803cb7",
+    "title": "Hera",
+    "twitch": "https://www.twitch.tv/hera",
+    "youtube": "https://youtube.com/c/HeraAgeofEmpires2",
+    "description": "Pro player with tutorials for beginners and advanced players. Other content includes recorded high level games and civ videos.",
+    "tags": [
+        "guide",
+        "youtube",
+        "twitch"
+    ],
+    "dateAdded": 0
 }

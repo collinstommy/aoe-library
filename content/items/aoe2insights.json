@@ -1,10 +1,11 @@
 {
-  "title": "aoe2insights",
-  "url": "https://www.aoe2insights.com/",
-  "description": "Comprehensive player profiles and detailed match analysis for Age of Empires 2 Definitive Edition",
-  "tags": [
-    "tool",
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "6b2300bb-6606-49ce-a8a3-d247af4191fe",
+    "title": "aoe2insights",
+    "url": "https://www.aoe2insights.com/",
+    "description": "Comprehensive player profiles and detailed match analysis for Age of Empires 2 Definitive Edition",
+    "tags": [
+        "tool",
+        "stats"
+    ],
+    "dateAdded": 0
 }

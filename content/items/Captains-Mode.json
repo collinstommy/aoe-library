@@ -1,9 +1,10 @@
 {
-  "title": "Captains Mode",
-  "url": "https://aoe2cm.net/",
-  "description": "Draft tool to picks civs for online games and tournaments.",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 0
+    "id": "43c65b5e-247f-40c7-bbf1-0469a0948b8d",
+    "title": "Captains Mode",
+    "url": "https://aoe2cm.net/",
+    "description": "Draft tool to picks civs for online games and tournaments.",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 0
 }

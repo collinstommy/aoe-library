@@ -1,9 +1,10 @@
 {
-  "title": "Unit Production Calculator",
-  "url": "https://grishrl.github.io/",
-  "description": "Calculate the number of villagers on each resource needed to sustain production",
-  "tags": [
-    "tool"
-  ],
-  "dateAdded": 1613913116585
+    "id": "5f501b2d-a8cc-413a-bf11-5630fa500d28",
+    "title": "Unit Production Calculator",
+    "url": "https://grishrl.github.io/",
+    "description": "Calculate the number of villagers on each resource needed to sustain production",
+    "tags": [
+        "tool"
+    ],
+    "dateAdded": 1613913116585
 }

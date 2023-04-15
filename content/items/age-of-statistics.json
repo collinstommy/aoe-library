@@ -1,9 +1,10 @@
 {
-  "dateAdded": "1650305522438",
-  "title": "Age of Statistics",
-  "url": "https://www.ageofstatistics.com/",
-  "description": "Stats for win rates by civ. Visualized in graphs",
-  "tags": [
-    "stats"
-  ]
+    "id": "9744b80c-e554-4ce5-9936-876c94706b00",
+    "dateAdded": "1650305522438",
+    "title": "Age of Statistics",
+    "url": "https://www.ageofstatistics.com/",
+    "description": "Stats for win rates by civ. Visualized in graphs",
+    "tags": [
+        "stats"
+    ]
 }

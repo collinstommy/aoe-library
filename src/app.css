@@ -27,16 +27,16 @@ html {
 /* TODO: move to component */
 .hs-form input[type='text'],
 input[type='email'] {
-	@apply focus:ring-indigo-500
-	focus:border-indigo-500
-	block
+	@apply block
 	w-full
+	rounded-md
+	border-gray-300
+	py-1
 	pl-7
 	pr-12
-	sm:text-sm
-	border-gray-300
-	rounded-md
-	py-1;
+	focus:border-indigo-500
+	focus:ring-indigo-500
+	sm:text-sm;
 }
 
 .hs-form input[type='checkbox'] {
@@ -52,15 +52,15 @@ input[type='email'] {
 }
 
 .hs-form input[type='submit'] {
-	@apply px-3
-	py-2
-	bg-gray-800
-	border-2
+	@apply mt-3
+	whitespace-nowrap
 	rounded-md
+	border-2
+	bg-gray-800
+	px-3
+	py-2
 	text-white
 	hover:underline
-	whitespace-nowrap
-	mt-3
 
 	dark:bg-gray-200
 	dark:text-gray-900;

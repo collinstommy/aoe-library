@@ -1,10 +1,11 @@
 {
-  "title": "aoe2.net",
-  "url": "https://aoe2.net/",
-  "description": "player profiles and ELOs",
-  "tags": [
-    "tool",
-    "stats"
-  ],
-  "dateAdded": 0
+    "id": "fa926d7f-4a83-44b9-9557-a6938eed5716",
+    "title": "aoe2.net",
+    "url": "https://aoe2.net/",
+    "description": "player profiles and ELOs",
+    "tags": [
+        "tool",
+        "stats"
+    ],
+    "dateAdded": 0
 }
