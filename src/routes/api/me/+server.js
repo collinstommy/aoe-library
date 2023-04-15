@@ -4,9 +4,8 @@ import prisma from '../../../lib/server/prisma';
 export async function GET({ locals }) {
 	const session = await locals.getSession();
 	if (!session) {
-		return;
+		return json({});
 	}
-	console.log({ user });
 	const user = await prisma.user.findUnique({
 		where: {
 			id: session.user.id
