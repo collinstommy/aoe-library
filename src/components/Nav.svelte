@@ -5,6 +5,7 @@
 	import SocialIcon from './SocialIcon.svelte';
 	import Signin from './Signin.svelte';
 	import { page } from '$app/stores';
+	import { getFlags } from '../lib/featureFlags';
 
 	/*
 		TODO: set theme in localStorage
@@ -12,10 +13,10 @@
 		https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript
 	*/
 
+	const { signIn } = getFlags($page);
+
 	let isDark = true;
 	$: isMenuOpen = false;
-
-	console.log({ page: page.data });
 
 	const setDarkMode = (darkMode) => {
 		isDark = darkMode;
@@ -71,7 +72,9 @@
 							{/if}
 						</button>
 					</li>
-					<!-- <li class="m-3 md:my-0"><Signin /></li> -->
+					{#if signIn}
+						<li class="m-3 md:my-0"><Signin /></li>
+					{/if}
 				</ul>
 			</div>
 		</div>
