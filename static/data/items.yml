@@ -366,6 +366,13 @@
     description: "Win rates by Civ, Map, Unit type and more."
     tags:
       - "stats"
+  - dateAdded: "1675502907587"
+    title: "AOC Rec"
+    url: "Https://www aocrec.com"
+    description: "An open aoe2 record database. Upload, download, parse, search aoe2 records. Generate game&player profiles, statistics and ELO rating based on uploaded records."
+    tags:
+      - "tool"
+      - "stats"
   - id: "bf2a9d56-0edd-4578-8c1d-9d1762e76fd4"
     title: "aoc_ashleylynn"
     twitch: "https://www.twitch.tv/aoc_ashleylynn"
@@ -511,6 +518,13 @@
     description: "Age of Empires II DE mod directory"
     tags:
       - "tool"
+  - dateAdded: "1675502772391"
+    title: "Morley Games "
+    url: "https://www.morleygames.co.uk"
+    youtube: "https://m.youtube.com/channel/UC5PRH_Fqqjj-JUZHcF7tpiw"
+    tags:
+      - "guide"
+    description: "Build orders for new and mid level players"
   - id: "d12f3bac-88d4-4dfb-a6be-0a967a38edc4"
     title: "openage"
     url: "https://openage.sft.mx/"

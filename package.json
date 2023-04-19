@@ -41,6 +41,7 @@
 	"dependencies": {
 		"@auth/core": "^0.1.4",
 		"@auth/sveltekit": "^0.1.6",
+		"@erickruano/clerk-svelte": "^0.0.6",
 		"@next-auth/prisma-adapter": "^1.0.5",
 		"@prisma/client": "^4.8.0",
 		"@sveltestack/svelte-query": "^1.6.0",

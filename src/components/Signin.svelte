@@ -2,10 +2,13 @@
 	import { signIn, signOut } from '@auth/sveltekit/client';
 	import { page } from '$app/stores';
 	import Cta from './Cta.svelte';
+	import SignInButton from './clerk/SignInButton.svelte';
 </script>
 
+<SignInButton />
+
 {#if $page.data.session}
-	<div class="flex">
+	<!-- <div class="flex">
 		<button on:click={() => signOut()} class="button hover:underline ">Sign out</button>
 		{#if $page.data.session.user?.image}
 			<img
@@ -14,7 +17,8 @@
 				class="ml-4 max-h-8 rounded"
 			/>
 		{/if}
-	</div>
+	</div> -->
 {:else}
-	<Cta handleClick={() => signIn('discord')}>Sign In</Cta>
+	<!-- <Cta handleClick={() => signIn('discord')}>Sign In</Cta> -->
+	<!-- <SignInButton /> -->
 {/if}

@@ -72,9 +72,7 @@
 							{/if}
 						</button>
 					</li>
-					{#if signIn}
-						<li class="m-3 md:my-0"><Signin /></li>
-					{/if}
+					<li class="m-3 md:my-0"><Signin /></li>
 				</ul>
 			</div>
 		</div>

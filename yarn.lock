@@ -42,6 +42,11 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
+"@erickruano/clerk-svelte@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/@erickruano/clerk-svelte/-/clerk-svelte-0.0.6.tgz"
+  integrity sha512-2s7aZ9pPbzay3Z/G4nq2m4FA0QZymAABkbOej3nk0f7oOUnC0I0qeVTUkog3sl3NjpKuSttK3lavSpk3LJodsA==
+
 "@esbuild-kit/cjs-loader@^2.4.0":
   version "2.4.1"
   resolved "https://registry.npmjs.org/@esbuild-kit/cjs-loader/-/cjs-loader-2.4.1.tgz"
