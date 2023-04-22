@@ -1,10 +1,9 @@
 <script>
 	import Row from './Row.svelte';
-	import Radio from '../Radio.svelte';
 	import CheckBox from '../shared/CheckBox.svelte';
 	import { Chinese, Generic, Goths, Malay, Mayans, Persians, Portuguese } from './civs';
 
-	let loom = 'true';
+	let loom = 'dark';
 	let includeScout = true;
 	let selectedCiv = 'Generic';
 
@@ -34,26 +33,32 @@
 <div class="flex flex-col items-center">
 	<div class="container flex w-full max-w-[1080px]  flex-col">
 		<div class="filters pb-8">
-			<div id="options" class="flex flex-col items-center md:flex-row md:items-baseline">
-				<div class="flex pt-4">
-					<Radio id="withLoom" value="true" bind:group={loom}>With Loom</Radio>
-					<Radio id="loom" value="false" bind:group={loom}>No Loom</Radio>
+			<div id="dropdowns" class="my-6 flex items-center gap-6 px-3 md:items-start md:px-0">
+				<div>
+					<label for="civs" class="pb-2 font-bold">Civ</label>
+					<select id="civs" class="p-1 dark:text-gray-800" bind:value={selectedCiv}>
+						<option>Generic</option>
+						<option>Chinese</option>
+						<option>Goths</option>
+						<option>Malay</option>
+						<option>Mayans</option>
+						<option>Persians</option>
+						<option>Portuguese</option>
+					</select>
 				</div>
+				<div>
+					<label for="loom" class="pb-2 font-bold">Loom</label>
+					<select id="loom" class="w-32 p-1 dark:text-gray-800" bind:value={loom}>
+						<option value="dark">In dark age</option>
+						<option value="feudal">In feudal age</option>
+						<option value="skip">Skip</option>
+					</select>
+				</div>
+			</div>
+			<div id="options" class="flex flex-col items-center md:flex-row md:items-baseline">
 				<div class="mt-3">
 					<CheckBox bind:checked={includeScout} label="Include Starting Scout" id="staring-scout" />
 				</div>
-			</div>
-			<div id="civ-dropdown" class="my-6 flex flex-col items-center md:items-start">
-				<label for="civs" class="pb-2 font-bold">Civ</label>
-				<select id="civs" class="p-1 dark:text-gray-800" bind:value={selectedCiv}>
-					<option>Generic</option>
-					<option>Chinese</option>
-					<option>Goths</option>
-					<option>Malay</option>
-					<option>Mayans</option>
-					<option>Persians</option>
-					<option>Portuguese</option>
-				</select>
 			</div>
 		</div>
 		<div class="flex flex-col">
