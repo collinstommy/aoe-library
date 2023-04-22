@@ -87,7 +87,7 @@ export class Goths extends Generic {
 export class Malay extends Generic {
 	constructor(isLoom) {
 		super(isLoom);
-		this.feudal = Math.round(FEUDAL_TIME / 1.6666666667);
-		this.castle = Math.round(CASTLE_TIME / 1.6666666667);
+		this.feudal = Math.round(FEUDAL_TIME / 1.66);
+		this.castle = Math.round(CASTLE_TIME / 1.66);
 	}
 }
