@@ -69,7 +69,7 @@ export class Persians extends Generic {
 			return LOOM_TIME;
 		} else {
 			// feudal
-			return Math.round(LOOM_TIME / 1.1);
+			return Math.floor(LOOM_TIME / 1.1);
 		}
 	}
 }
@@ -109,7 +109,7 @@ export class Goths extends Generic {
 export class Malay extends Generic {
 	constructor(loom) {
 		super(loom);
-		this.feudal = Math.round(FEUDAL_TIME / 1.66);
-		this.castle = Math.round(CASTLE_TIME / 1.66);
+		this.feudal = Math.floor(FEUDAL_TIME / 1.66);
+		this.castle = Math.floor(CASTLE_TIME / 1.66);
 	}
 }
