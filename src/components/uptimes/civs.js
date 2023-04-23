@@ -59,7 +59,7 @@ export class Persians extends Generic {
 export class Portuguese extends Generic {
 	constructor(isLoom) {
 		super(isLoom);
-		this.loomTime = LOOM_TIME / 1.3;
+		this.loomTime = Math.round(LOOM_TIME / 1.3);
 	}
 }
 
@@ -87,7 +87,7 @@ export class Goths extends Generic {
 export class Malay extends Generic {
 	constructor(isLoom) {
 		super(isLoom);
-		this.feudal = FEUDAL_TIME / 1.6666666667;
-		this.castle = CASTLE_TIME / 1.6666666667;
+		this.feudal = Math.round(FEUDAL_TIME / 1.66);
+		this.castle = Math.round(CASTLE_TIME / 1.66);
 	}
 }
