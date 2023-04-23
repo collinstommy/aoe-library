@@ -31,6 +31,7 @@
 </script>
 
 <div class="flex flex-col items-center">
+	<h1 class="pt-8 pb-4 text-4xl font-bold">Perfect Uptimes</h1>
 	<div class="container flex w-full max-w-[1080px]  flex-col">
 		<div class="filters pb-8">
 			<div id="dropdowns" class="my-6 flex items-center gap-6 px-3 md:items-start md:px-0">
