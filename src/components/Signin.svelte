@@ -1,24 +1,22 @@
 <script>
-	import { signIn, signOut } from '@auth/sveltekit/client';
-	import { page } from '$app/stores';
 	import Cta from './Cta.svelte';
-	import SignInButton from './clerk/SignInButton.svelte';
+	import clerkStore, { useAuth } from '$lib/client/clerk.client';
+	import { page } from '$app/stores';
+
+	console.log($page.data.session);
 </script>
 
-<SignInButton />
-
-{#if $page.data.session}
-	<!-- <div class="flex">
-		<button on:click={() => signOut()} class="button hover:underline ">Sign out</button>
-		{#if $page.data.session.user?.image}
+{#if $useAuth.status === 'authenticated'}
+	<div class="flex">
+		<button on:click={() => $clerkStore.signOut()} class="button hover:underline ">Sign out</button>
+		{#if $clerkStore?.user?.profileImageUrl}
 			<img
-				src={$page.data.session.user?.image}
-				alt={$page.data.session.user?.name ?? 'Profile image'}
+				src={$clerkStore?.user?.profileImageUrl}
+				alt={$clerkStore?.user?.name ?? 'Profile image'}
 				class="ml-4 max-h-8 rounded"
 			/>
 		{/if}
-	</div> -->
+	</div>
 {:else}
-	<!-- <Cta handleClick={() => signIn('discord')}>Sign In</Cta> -->
-	<!-- <SignInButton /> -->
+	<Cta handleClick={() => $clerkStore.openSignIn()}>Sign In</Cta>
 {/if}
