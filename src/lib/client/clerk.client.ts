@@ -12,6 +12,9 @@ function getClerkInstance() {
 		_clerk.load();
 		clerk = writable<Clerk>(_clerk);
 	}
+	if (!clerk) {
+		clerk = writable<Clerk>();
+	}
 	return clerk;
 }
 
