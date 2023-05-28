@@ -6,7 +6,7 @@
 	export let url = '';
 	export let title = '';
 	export let description = '';
-	export let isNew = null;
+	export let isNew = false;
 	export let twitch = '';
 	export let youtube = '';
 	export let facebook = '';
