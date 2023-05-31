@@ -8,7 +8,6 @@
 	import isNew from '$lib/isNew';
 	import Search from './Search.svelte';
 	import Cta from './Cta.svelte';
-	import { page } from '$app/stores';
 
 	export let items;
 
@@ -84,17 +83,22 @@
 			{/each}
 		</section>
 	</div>
-	<div class="my-4">
+	<nav class="my-4">
 		<ul class="inline-flex items-center -space-x-px">
 			{#each pages as page, i}
-				<button
-					class={`border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
-					${i === currentPage && 'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700'}`}
-					on:click={() => setPage(i)}>{i + 1}</button
-				>
+				<li>
+					<button
+						class={`border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
+					${
+						i === currentPage &&
+						'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:bg-gray-500 dark:text-gray-100'
+					}`}
+						on:click={() => setPage(i)}>{i + 1}</button
+					>
+				</li>
 			{/each}
 		</ul>
-	</div>
+	</nav>
 </div>
 
 <style>

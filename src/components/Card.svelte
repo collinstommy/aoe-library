@@ -42,9 +42,8 @@
 			{/if}
 		</div>
 		<div class=" bottom mt-4 flex items-center justify-between border-t border-gray-200 pt-3">
-			<Star itemId={id} />
-			<div />
 			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} />
+			<Star itemId={id} />
 		</div>
 	</div>
 </article>

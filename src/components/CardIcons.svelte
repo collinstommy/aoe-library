@@ -12,7 +12,7 @@
 </script>
 
 <div class="flex w-full items-center justify-between">
-	<div class="links">
+	<div class="links flex items-center gap-2">
 		<div class="flex">
 			{#if twitch} <a href={twitch}><SocialIcon type="twitch" /></a>{/if}
 			{#if youtube} <a href={youtube}><SocialIcon type="youtube" /></a>{/if}
