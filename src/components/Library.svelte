@@ -8,21 +8,9 @@
 	import isNew from '$lib/isNew';
 	import Search from './Search.svelte';
 	import Cta from './Cta.svelte';
-	import { useQuery } from '@sveltestack/svelte-query';
+	import { page } from '$app/stores';
 
 	export let items;
-	export let likes;
-
-	// const queryResult = useQuery(
-	// 	'allLikes',
-	// 	async () => {
-	// 		const likes = await (await fetch('/api/likes')).json();
-	// 		return likes;
-	// 	},
-	// 	{
-	// 		initialData: likes
-	// 	}
-	// );
 
 	let activeFilters = [];
 

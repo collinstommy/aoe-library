@@ -4,4 +4,4 @@
 	export let data;
 </script>
 
-<Library items={data.items} likes={data.likes} />
+<Library items={data.items} likes={data.likes} me={data.me} />

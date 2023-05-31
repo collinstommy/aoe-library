@@ -1,33 +1,28 @@
-import { sql } from 'drizzle-orm';
-import { db } from '../../../db';
-import { likes } from '../../../db/schema';
-import { json } from '@sveltejs/kit';
+import { json, error } from '@sveltejs/kit';
+import { getAllLikes } from '$lib/server/services/likes';
 
 export async function GET() {
-	let allLikes;
+	let allLikes: {
+		itemId: string | null;
+		likes: number;
+	}[];
+
 	try {
-		allLikes = await db
-			.select({
-				itemId: likes.itemId,
-				likes: sql<string>`COUNT(*)`
-			})
-			.from(likes)
-			.groupBy(likes.itemId);
-	} catch (error: any) {
-		console.log({ e: error.message });
+		allLikes = await getAllLikes();
+	} catch (e: any) {
+		console.log('Error getting likes', e);
+		throw error(500, 'Not found - unexpected error');
 	}
 
-	console.log({ allLikes });
+	const byId = allLikes.reduce<Record<string, number>>((map, like) => {
+		if (like.itemId) {
+			return {
+				...map,
+				[like.itemId]: like.likes
+			};
+		}
+		return map;
+	}, {});
 
-	// const byItem = allLikes.reduce((map, { itemId }) => {
-	// 	if (map.has(itemId)) {
-	// 		const existing = map.get(itemId);
-	// 		map.set(itemId, existing + 1);
-	// 	} else {
-	// 		map.set(itemId, 1);
-	// 	}
-	// 	return map;
-	// }, new Map());
-
-	return json(Array.from(allLikes));
+	return json(byId || []);
 }

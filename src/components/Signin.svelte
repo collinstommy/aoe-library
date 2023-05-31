@@ -1,9 +1,6 @@
 <script>
 	import Cta from './Cta.svelte';
 	import clerkStore, { useAuth } from '$lib/client/clerk.client';
-	import { page } from '$app/stores';
-
-	console.log($page.data.session);
 </script>
 
 {#if $useAuth.status === 'authenticated'}
