@@ -8,10 +8,13 @@
 	import isNew from '$lib/isNew';
 	import Search from './Search.svelte';
 	import Cta from './Cta.svelte';
+	import Sort from './Sort.svelte';
+	import { page } from '$app/stores';
 
 	export let items;
 
 	let activeFilters = [];
+	const likes = $page.data.likes;
 
 	selectedFilters.subscribe((value) => {
 		activeFilters = value;
@@ -20,24 +23,8 @@
 	let currentPage = 0;
 	let pageSize = 12;
 
-	const setIsNew = (item) => {
-		return {
-			...item,
-			isNew: isNew(item.dateAdded)
-		};
-	};
-
-	const byDate = (a, b) => {
-		if (a.isNew && !b.isNew) {
-			return -1;
-		}
-		if (!a.isNew && b.isNew) {
-			return 1;
-		}
-		return 0;
-	};
-
 	let searchTerm = '';
+	let sortBy = 'Newest';
 
 	// ToDo: move to separate file
 	const paginate = ({ items, pageSize, currentPage }) => {
@@ -51,8 +38,8 @@
 	};
 
 	// ToDo: move to separate file
-	$: searchAndSort = (items, activeFilters) => {
-		const sorted = sortItems(activeFilters, items);
+	$: searchAndSort = (items, activeFilters, sortBy, likes) => {
+		const sorted = sortItems(activeFilters, items, sortBy, likes);
 		if (!searchTerm) return sorted;
 		const fuse = new Fuse(sorted, {
 			keys: ['description', 'title'],
@@ -62,19 +49,21 @@
 		return searched.map(({ item }) => item);
 	};
 
-	$: selectedItems = searchAndSort(items, activeFilters).map(setIsNew).sort(byDate);
+	$: selectedItems = searchAndSort(items, activeFilters, sortBy, likes);
 
 	$: pages = Array.from({ length: Math.ceil(selectedItems.length / pageSize) });
+
 	$: paginatedItems = paginate({ items: selectedItems, pageSize, currentPage });
 </script>
 
 <div class="wrapper mt-3 flex flex-col items-center md:mt-8">
 	<div class="main-container flex w-full flex-col items-start p-3 md:flex-row md:p-4">
-		<aside class="w-full md:mr-4 md:w-auto">
-			<div class="mb-2 w-full text-center font-semibold">
+		<aside class="flex w-full flex-col gap-2 md:mr-4 md:w-auto md:max-w-xs">
+			<div class="w-full text-center font-semibold">
 				<Cta href="/submit">Add Site</Cta>
 			</div>
 			<Search bind:searchTerm />
+			<Sort bind:sortBy />
 			<Filters {setPage} />
 		</aside>
 		<section class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">

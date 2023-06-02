@@ -33,7 +33,7 @@ Admin server will run at http://localhost:3000/admin/#/collections/items
 
 ## Proposed New Features
 - [ ] Set up a database for items which can be directly populated via the form. Would required admin approval.
-- [x] Featured Items. New tools or sites could be featured for a period of time. These would have a different UI treatment and appear at the top of the directory
+- [ ] Featured Items. New tools or sites could be featured for a period of time. These would have a different UI treatment and appear at the top of the directory
 - [x] Pagination
 
 ## To Do
