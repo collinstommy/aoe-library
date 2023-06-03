@@ -17,7 +17,7 @@
 	export let id = '';
 </script>
 
-<article
+<li
 	class="card transition-shado md:py- flex flex-col justify-between rounded-md border border-gray-200 bg-white px-4 py-6 text-gray-900 dark:bg-gray-800 dark:text-white md:px-8"
 >
 	{#if isNew}
@@ -46,7 +46,7 @@
 			<Star itemId={id} />
 		</div>
 	</div>
-</article>
+</li>
 
 <style>
 	.card {

@@ -221,13 +221,6 @@
     tags:
       - "youtube"
     dateAdded: 1613913116585
-  - id: "3a356911-257d-4df0-96d7-0ea73807133a"
-    title: "Professional Age of Empires 2 Calendar"
-    url: "https://aoe2calendar.com/"
-    description: "Calendar of pro tournaments"
-    tags:
-      - "tool"
-    dateAdded: 0
   - id: "8b2a6601-387a-4a4d-99bc-506cb78a4e47"
     title: "Random Rating Match Retriever"
     url: "https://thbrown.github.io/aoe2-de-random-elo/"

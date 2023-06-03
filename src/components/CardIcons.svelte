@@ -14,10 +14,11 @@
 <div class="flex w-full items-center justify-between">
 	<div class="links flex items-center gap-2">
 		<div class="flex">
-			{#if twitch} <a href={twitch}><SocialIcon type="twitch" /></a>{/if}
-			{#if youtube} <a href={youtube}><SocialIcon type="youtube" /></a>{/if}
-			{#if facebook} <a href={facebook}><SocialIcon type="facebook" /></a>{/if}
-			{#if discord} <a href={discord}><SocialIcon type="discord" /></a>{/if}
+			{#if twitch} <a href={twitch} aria-label="twitch"><SocialIcon type="twitch" /></a>{/if}
+			{#if youtube} <a href={youtube} aria-label="youtube"><SocialIcon type="youtube" /></a>{/if}
+			{#if facebook}
+				<a href={facebook} aria-label="facebook"><SocialIcon type="facebook" /></a>{/if}
+			{#if discord} <a href={discord} aria-label="discord"><SocialIcon type="discord" /></a>{/if}
 		</div>
 		{#if url}
 			<div>

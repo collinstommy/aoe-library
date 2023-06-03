@@ -5,7 +5,6 @@
 	import Card from './Card.svelte';
 	import { sortItems } from '../lib/filtering';
 	import { getStartIndex, getEndIndex } from '../lib/usePagination';
-	import isNew from '$lib/isNew';
 	import Search from './Search.svelte';
 	import Cta from './Cta.svelte';
 	import Sort from './Sort.svelte';
@@ -66,26 +65,26 @@
 			<Sort bind:sortBy />
 			<Filters {setPage} />
 		</aside>
-		<section class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+		<ul class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
-		</section>
+		</ul>
 	</div>
 	<nav class="my-4">
 		<ul class="inline-flex items-center -space-x-px">
-			{#each pages as page, i}
-				<li>
+			<li>
+				{#each pages as page, i}
 					<button
 						class={`border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white
-					${
-						i === currentPage &&
-						'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:bg-gray-500 dark:text-gray-100'
-					}`}
+							${
+								i === currentPage &&
+								'bg-blue-50 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:bg-gray-500 dark:text-gray-100'
+							}`}
 						on:click={() => setPage(i)}>{i + 1}</button
 					>
-				</li>
-			{/each}
+				{/each}
+			</li>
 		</ul>
 	</nav>
 </div>
