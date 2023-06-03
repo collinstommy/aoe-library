@@ -30,6 +30,11 @@
 	$: times = getAllTimes(loom, includeScout, selectedCiv);
 </script>
 
+<svelte:head>
+	<title>AOE Library - AOE2 Perfect Uptimes</title>
+	<meta name="description" content="Find the best possible age up times for AOE2 civs" />
+</svelte:head>
+
 <div class="flex flex-col items-center">
 	<section class="m-4 rounded-lg p-6 text-gray-900 dark:bg-gray-600 dark:text-gray-200 dark:shadow">
 		<h1 class="page-heading pb-4 text-center">AOE2 Perfect Uptimes</h1>
