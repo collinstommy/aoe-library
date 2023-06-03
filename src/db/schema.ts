@@ -1,4 +1,4 @@
-import { int, mysqlTable, varchar, serial, timestamp } from 'drizzle-orm/mysql-core';
+import { mysqlTable, varchar, serial, timestamp } from 'drizzle-orm/mysql-core';
 
 import type { InferModel } from 'drizzle-orm';
 
