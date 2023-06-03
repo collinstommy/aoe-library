@@ -53,7 +53,7 @@
 				<p class="text-sm dark:text-gray-300">Tools and websites for Age of Empires 2</p>
 			</div>
 			<div class="md:flex">
-				<button on:click={handleHanmburgerClick} class="visible md:hidden"
+				<button on:click={handleHanmburgerClick} class="visible md:hidden" aria-label="Open Menu"
 					><Icon type="hamburger" />
 				</button>
 				<ul

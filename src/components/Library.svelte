@@ -90,11 +90,11 @@
 			<Search bind:searchTerm />
 			<Filters {setPage} />
 		</aside>
-		<section class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+		<ul class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 			{#each paginatedItems as item (item.title)}
 				<Card {...item} />
 			{/each}
-		</section>
+		</ul>
 	</div>
 	<div class="my-4">
 		<ul class="inline-flex items-center -space-x-px">
