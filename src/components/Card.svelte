@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
 	import Tag from './Tag.svelte';
 	import CardIcons from './CardIcons.svelte';
-	import { page } from '$app/stores';
 	import Star from './Star.svelte';
 
 	export let url = '';

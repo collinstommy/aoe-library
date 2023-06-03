@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { page } from '$app/stores';
+	import clerkStore, { isLoggedIn } from '$lib/client/clerk.client';
 
 	export let itemId: string;
 
@@ -13,8 +14,13 @@
 <form
 	method="POST"
 	action="?/updateLike"
-	use:enhance={() => {
-		loading = true;
+	use:enhance={({ cancel }) => {
+		if (!$isLoggedIn) {
+			cancel();
+			$clerkStore.openSignIn();
+		} else {
+			loading = true;
+		}
 
 		return async ({ update }) => {
 			await update();

@@ -14,9 +14,6 @@
 		"seed": "NODE_ENV=development prisma db seed",
 		"studio": "prisma studio"
 	},
-	"prisma": {
-		"seed": "tsx prisma/seed.ts"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.15.5",

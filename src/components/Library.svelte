@@ -66,7 +66,7 @@
 			<Filters {setPage} />
 		</aside>
 		<ul class="grid w-full flex-1 grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
-			{#each paginatedItems as item (item.title)}
+			{#each paginatedItems as { dateAdded, ...item } (item.title)}
 				<Card {...item} />
 			{/each}
 		</ul>

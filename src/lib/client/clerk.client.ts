@@ -1,8 +1,9 @@
 import Clerk from '@clerk/clerk-js';
 import type { ActiveSessionResource } from '@clerk/types';
-import { writable, type Writable } from 'svelte/store';
+import { derived, writable, type Writable } from 'svelte/store';
 import { browser } from '$app/environment';
 import { PUBLIC_CLERK_PUBLISHABLE_KEY } from '$env/static/public';
+import { invalidateAll, goto } from '$app/navigation';
 
 let clerk: Writable<Clerk>;
 
@@ -39,6 +40,8 @@ export const useAuth: Writable<UseAuthProps> = writable<UseAuthProps>(
 			if (browser && clerk) {
 				const unsubscribe = clerk.addListener(({ user, session }) => {
 					if (user && session && user === session.user) {
+						// invalidate api calls
+						invalidateAll();
 						set({ status: 'authenticated', session });
 					} else if (!user && !session) {
 						set({ status: 'unauthenticated', session: null });
@@ -55,5 +58,9 @@ export const useAuth: Writable<UseAuthProps> = writable<UseAuthProps>(
 		});
 	}
 );
+
+export const isLoggedIn = derived(useAuth, ($auth) => {
+	return $auth.status === 'authenticated';
+});
 
 export default getClerkInstance();

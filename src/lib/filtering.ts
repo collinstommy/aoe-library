@@ -12,30 +12,32 @@ type Item = {
 	likeCount: number;
 };
 
-function byNewest(a: Item, b: Item) {
-	return Number(b.dateAdded) - Number(a.dateAdded);
-}
-
-function byOldest(a: Item, b: Item) {
-	return Number(a.dateAdded) - Number(b.dateAdded);
-}
-
-function byLikes(a: Item, b: Item) {
-	return b.likeCount - a.likeCount;
-}
-
-const sortByMap = {
-	Newest: byNewest,
-	Oldest: byOldest,
-	Likes: byLikes
-};
-
 export const sortItems = (
 	filters: string[],
 	items: Item[],
 	sortBy: SortByOption,
 	likeByItem: Record<string, number>
 ) => {
+	function byNewest(a: Item, b: Item) {
+		return Number(b.dateAdded) - Number(a.dateAdded);
+	}
+
+	function byOldest(a: Item, b: Item) {
+		return Number(a.dateAdded) - Number(b.dateAdded);
+	}
+
+	function byLikes(a: Item, b: Item) {
+		const aCount = likeByItem[a.id] || 0;
+		const bCount = likeByItem[b.id] || 0;
+		return bCount - aCount;
+	}
+
+	const sortByMap = {
+		Newest: byNewest,
+		Oldest: byOldest,
+		Likes: byLikes
+	};
+
 	const isMatch = (item: Item) => {
 		const matchTag = item.tags && item.tags.some((tag) => filters.includes(tag));
 
@@ -46,13 +48,8 @@ export const sortItems = (
 	};
 
 	const filtered = filters.length ? items.filter(isMatch) : items;
-	const withLikes = filtered.map((item) => ({
-		...item,
-		likeCount: likeByItem[item.id] || 0
-	}));
-
-	withLikes.sort(sortByMap[sortBy]);
-	return withLikes;
+	filtered.sort(sortByMap[sortBy]);
+	return filtered;
 };
 
 export const getIsNew = (epocDate: string | number) =>

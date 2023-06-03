@@ -12,4 +12,4 @@
 </svelte:head>
 
 <title>AOE Library</title>
-<Library items={data.items} likes={data.likes} me={data.me} />
+<Library items={data.items} />

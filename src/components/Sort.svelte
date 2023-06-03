@@ -1,10 +1,9 @@
 <script>
 	const options = [
-		{ value: 'Newest', label: 'Date Added: Newest' },
-		{ value: 'Likes', label: 'Likes' },
-		{ label: 'Date Added: Oldest', value: 'Oldest' }
+		{ value: 'Newest', label: 'Newest' },
+		{ label: 'Oldest', value: 'Oldest' },
+		{ value: 'Likes', label: 'Likes' }
 	];
-
 	export let sortBy;
 </script>
 
@@ -25,10 +24,15 @@
 		md:flex-row
 	`}
 	>
-		<div class="flex w-full flex-wrap gap-2">
+		<div class="flex w-full flex-wrap items-start gap-2">
 			{#each options as { label, value }}
-				<label for={value} class="rounded-full bg-gray-500 px-4 py-1">
-					<input type="radio" name={value} {value} id={value} bind:group={sortBy} />
+				<label
+					for={value}
+					class={`rounded-full bg-gray-500 px-4 py-1 ${
+						sortBy === value && 'outline outline-2 outline-white'
+					}`}
+				>
+					<input class="hidden" type="radio" name={value} {value} id={value} bind:group={sortBy} />
 					{label}
 				</label>
 			{/each}

@@ -70,9 +70,9 @@
 					<li>
 						<button on:click={handleClick} class="md:mt-o mt-0">
 							{#if isDark}
-								<SocialIcon className="bg-transparent" type="lightBulb" />
+								<SocialIcon type="lightBulb" />
 							{:else}
-								<SocialIcon className="" type="moon" />
+								<SocialIcon type="moon" />
 							{/if}
 						</button>
 					</li>

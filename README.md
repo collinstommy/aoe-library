@@ -8,11 +8,6 @@
 npm install
 ```
 
-Seed db:
-```
-deno run ./src/db/seed.ts
-```
-
 
 ...then start webpack:
 
