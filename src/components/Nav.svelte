@@ -46,7 +46,12 @@
 		class="max-w-container mx-auto w-full px-1 text-indigo-900  dark:text-white md:px-4"
 	>
 		<div class="mx-2 flex items-center justify-between">
-			<a class="ml-2 text-lg" href="/">AOE Library</a>
+			<div>
+				<a class="" href="/">
+					<h1 class="mb-1 text-3xl">AOE Library</h1>
+				</a>
+				<p class="text-sm text-gray-300">Tools and websites for Age of Empires 2</p>
+			</div>
 			<div class="md:flex">
 				<button on:click={handleHanmburgerClick} class="visible md:hidden"
 					><Icon type="hamburger" />
@@ -62,6 +67,9 @@
 					</li>
 					<li>
 						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/submit">Submit Item</a>
+					</li>
+					<li>
+						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/about">About</a>
 					</li>
 					<li>
 						<button on:click={handleClick} class="md:mt-o mt-0">

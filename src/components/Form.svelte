@@ -18,8 +18,9 @@
 	<script src="//js.hsforms.net/forms/v2.js" on:load={initializeHSForm}></script>
 </svelte:head>
 
-<div class="flex flex-1 flex-col items-center">
-	<Hero {title} {description} />
+<div class="mt-6 flex flex-1 flex-col items-center gap-3">
+	<h1 class="page-heading">Submit a new item</h1>
+	<p>Add a new tools or site by filling in the form below</p>
 	<div>
 		<a href="/" class="flex py-4 hover:underline">&#8592; Back</a>
 		<section class="section">

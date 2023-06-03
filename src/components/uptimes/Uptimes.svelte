@@ -31,7 +31,22 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<h1 class="pt-8 pb-4 text-4xl font-bold">Perfect Uptimes</h1>
+	<section class="m-4 rounded-lg bg-gray-600 p-6 shadow">
+		<h1 class="page-heading pb-4 text-center">AOE2 Perfect Uptimes</h1>
+		<p class="prose-invert">Below you will find the best possible age up times for AOE2 civs.</p>
+		<p>To achieve these uptimes check out build orders from one of these sites:</p>
+		<ul class="mt-2 pl-6">
+			<li class="list-disc">
+				<a href="https://aoecompanion.com/" class="hover:underline">Aoe Companion</a>
+			</li>
+			<li class="list-disc">
+				<a href="https://www.morleygames.co.uk/aoe2-generic-build-orders/" class="hover:underline"
+					>Morley Games</a
+				>
+			</li>
+		</ul>
+	</section>
+
 	<div class="container flex w-full max-w-[1080px]  flex-col">
 		<div class="filters pb-8">
 			<div id="dropdowns" class="my-6 flex items-center gap-6 px-3 md:items-start md:px-0">

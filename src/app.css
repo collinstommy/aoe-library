@@ -66,6 +66,13 @@ input[type='email'] {
 	dark:text-gray-900;
 }
 
+.page-heading {
+	@apply text-4xl;
+	@apply font-bold;
+	@apply mb-2;
+}
+
+
 @tailwind components;
 
 @tailwind utilities;
