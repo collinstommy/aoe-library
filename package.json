@@ -11,7 +11,6 @@
 		"parse-data": "node ./lib/parse.js",
 		"migrate": "prisma migrate dev --name init",
 		"reset": "NODE_ENV=development prisma migrate reset dev --name init",
-		"seed": "NODE_ENV=development prisma db seed",
 		"studio": "prisma studio"
 	},
 	"devDependencies": {
