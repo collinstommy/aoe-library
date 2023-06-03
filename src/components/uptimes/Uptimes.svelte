@@ -31,7 +31,7 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<section class="m-4 rounded-lg bg-gray-600 p-6 shadow">
+	<section class="m-4 rounded-lg p-6 text-gray-900 dark:bg-gray-600 dark:text-gray-200 dark:shadow">
 		<h1 class="page-heading pb-4 text-center">AOE2 Perfect Uptimes</h1>
 		<p class="prose-invert">Below you will find the best possible age up times for AOE2 civs.</p>
 		<p>To achieve these uptimes check out build orders from one of these sites:</p>

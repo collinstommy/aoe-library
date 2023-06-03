@@ -50,7 +50,7 @@
 				<a class="" href="/">
 					<h1 class="mb-1 text-3xl">AOE Library</h1>
 				</a>
-				<p class="text-sm text-gray-300">Tools and websites for Age of Empires 2</p>
+				<p class="text-sm dark:text-gray-300">Tools and websites for Age of Empires 2</p>
 			</div>
 			<div class="md:flex">
 				<button on:click={handleHanmburgerClick} class="visible md:hidden"

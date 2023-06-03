@@ -2,7 +2,7 @@
 </script>
 
 <div class="m-3 flex flex-1 flex-col items-center ">
-	<article class="prose prose-invert my-3  prose-headings:text-center">
+	<article class="prose my-3 prose-headings:text-center  dark:prose-invert">
 		<h1 class="">About</h1>
 		<p>
 			AOE Library is primarily a list of useful sites and tools build by those in the Age of Empires
