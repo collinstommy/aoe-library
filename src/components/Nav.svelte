@@ -68,7 +68,7 @@
 						<a class="mx-2 block p-3 hover:underline md:mx-5" href="/about">About</a>
 					</li>
 					<li>
-						<button on:click={handleClick} class="md:mt-o mt-0">
+						<button on:click={handleClick} aria-label="Toggle Dark Mode" class="md:mt-o mt-0">
 							{#if isDark}
 								<SocialIcon type="lightBulb" />
 							{:else}
