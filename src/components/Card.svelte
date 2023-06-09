@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
 	import Tag from './Tag.svelte';
 	import CardIcons from './CardIcons.svelte';
-	import { page } from '$app/stores';
+	import Star from './Star.svelte';
 
 	export let url = '';
 	export let title = '';
 	export let description = '';
-	export let isNew = null;
+	export let isNew = false;
 	export let twitch = '';
 	export let youtube = '';
 	export let facebook = '';
@@ -14,8 +14,6 @@
 	export let type = '';
 	export let discord = '';
 	export let id = '';
-
-	const likeCount = new Map($page.data.likes).get(id) || 0;
 </script>
 
 <li
@@ -43,9 +41,8 @@
 			{/if}
 		</div>
 		<div class=" bottom mt-4 flex items-center justify-between border-t border-gray-200 pt-3">
-			<!-- <Star checked votes={40}/> -->
-			<div />
-			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} {likeCount} />
+			<CardIcons {facebook} {twitch} {youtube} {url} {type} {discord} />
+			<Star itemId={id} />
 		</div>
 	</div>
 </li>

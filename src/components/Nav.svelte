@@ -4,16 +4,12 @@
 	import Icon from './Icon.svelte';
 	import SocialIcon from './SocialIcon.svelte';
 	import Signin from './Signin.svelte';
-	import { page } from '$app/stores';
-	import { getFlags } from '../lib/featureFlags';
 
 	/*
 		TODO: set theme in localStorage
 		https://rodneylab.com/using-local-storage-sveltekit/
 		https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript
 	*/
-
-	const { signIn } = getFlags($page);
 
 	let isDark = true;
 	$: isMenuOpen = false;
@@ -74,15 +70,13 @@
 					<li>
 						<button on:click={handleClick} aria-label="Toggle Dark Mode" class="md:mt-o mt-0">
 							{#if isDark}
-								<SocialIcon className="bg-transparent" type="lightBulb" />
+								<SocialIcon type="lightBulb" />
 							{:else}
-								<SocialIcon className="" type="moon" />
+								<SocialIcon type="moon" />
 							{/if}
 						</button>
 					</li>
-					{#if signIn}
-						<li class="m-3 md:my-0"><Signin /></li>
-					{/if}
+					<li class="m-3 md:my-0"><Signin /></li>
 				</ul>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 <script>
-	export let href;
-	export let handleClick;
+	export let href = '';
+	export let handleClick = () => {};
 
 	const className = `
     block

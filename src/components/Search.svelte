@@ -2,7 +2,7 @@
 	export let searchTerm = '';
 </script>
 
-<form class="mb-2 w-full">
+<form class="w-full">
 	<label for="default-search" class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white"
 		>Search</label
 	>

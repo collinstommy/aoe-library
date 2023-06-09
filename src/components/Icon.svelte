@@ -1,6 +1,6 @@
 <script>
 	export let type;
-	export let className;
+	export let className = '';
 
 	const ICONS = {
 		twitch: 'ri-twitch-fill',

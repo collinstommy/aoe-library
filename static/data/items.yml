@@ -359,9 +359,9 @@
     description: "Win rates by Civ, Map, Unit type and more."
     tags:
       - "stats"
-  - dateAdded: "1675502907587"
+  - dateAdded: "0"
     title: "AOC Rec"
-    url: "Https://www aocrec.com"
+    url: "https://www.aocrec.com"
     description: "An open aoe2 record database. Upload, download, parse, search aoe2 records. Generate game&player profiles, statistics and ELO rating based on uploaded records."
     tags:
       - "tool"
@@ -518,6 +518,7 @@
     tags:
       - "guide"
     description: "Build orders for new and mid level players"
+    id: "ad84b1a4-bac0-4007-901e-6de508614669"
   - id: "d12f3bac-88d4-4dfb-a6be-0a967a38edc4"
     title: "openage"
     url: "https://openage.sft.mx/"
@@ -540,7 +541,7 @@
     tags:
       - "community"
   - id: "40f14015-108d-4245-9604-dc9608bf4495"
-    dateAdded: "1670861771313"
+    dateAdded: "0"
     url: "https://www.voobly.com/forum/view/253"
     title: "Voobly Forums"
     tags:

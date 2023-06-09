@@ -1,10 +1,7 @@
 {
-  "dateAdded": "1675502907587",
-  "title": "AOC Rec",
-  "url": "Https://www aocrec.com",
-  "description": "An open aoe2 record database. Upload, download, parse, search aoe2 records. Generate game&player profiles, statistics and ELO rating based on uploaded records.",
-  "tags": [
-    "tool",
-    "stats"
-  ]
+	"dateAdded": "0",
+	"title": "AOC Rec",
+	"url": "https://www.aocrec.com",
+	"description": "An open aoe2 record database. Upload, download, parse, search aoe2 records. Generate game&player profiles, statistics and ELO rating based on uploaded records.",
+	"tags": ["tool", "stats"]
 }

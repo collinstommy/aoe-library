@@ -1,13 +1,10 @@
 <script>
-	import Icon from './Icon.svelte';
-
 	export let twitch;
 	export let youtube;
 	export let facebook;
 	export let discord;
 	export let url;
 	export let type;
-	export let likeCount;
 
 	import SocialIcon from './SocialIcon.svelte';
 
@@ -15,11 +12,7 @@
 </script>
 
 <div class="flex w-full items-center justify-between">
-	<!-- <div class="flex items-center font-semibold">
-		<Icon type="star" className="text-yellow-100" />
-		<span>{likeCount}</span>
-	</div> -->
-	<div class="links">
+	<div class="links flex items-center gap-2">
 		<div class="flex">
 			{#if twitch} <a href={twitch} aria-label="twitch"><SocialIcon type="twitch" /></a>{/if}
 			{#if youtube} <a href={youtube} aria-label="youtube"><SocialIcon type="youtube" /></a>{/if}
