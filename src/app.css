@@ -47,6 +47,10 @@ input[type='email'] {
 	@apply block text-sm font-medium text-gray-700 dark:text-white;
 }
 
+.hs-form input {
+	@apply dark:text-black;
+}
+
 .hs-form .hs-form-field {
 	@apply mt-4;
 }

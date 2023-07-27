@@ -533,6 +533,14 @@
     description: "The king of meme strats. Highly entertaining 1v1 and team games with crazy strategies and build orders."
     tags:
       - "guide"
+  - dateAdded: "1690490503639"
+    title: "RTS Overlay"
+    url: "https://github.com/CraftySalamander/RTS_Overlay"
+    youtube: "https://www.youtube.com/@craftysalamander4371/videos"
+    description: "Import build orders from buildorderguide.com (or design your own) and display them in this great overlay."
+    tags:
+      - "tool"
+      - "guide"
   - id: "0a9f85ce-4e2e-4ca7-a44c-286bff0fc44e"
     dateAdded: "1670861528413"
     title: "Steam forums"

@@ -2,8 +2,6 @@
 	import { TAGS } from '../config/tags';
 	import filters from '../stores/filters';
 
-	export let setPage;
-
 	const tags = Object.entries(TAGS);
 	let filterCount = 0;
 
@@ -65,7 +63,6 @@
 						value={key}
 						type="checkbox"
 						bind:group={$filters}
-						on:click={() => setPage(0)}
 						class="
 						h-4
 						w-4
